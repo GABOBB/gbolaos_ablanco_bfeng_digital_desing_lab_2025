@@ -1,0 +1,7 @@
+# Ignorar archivos temporales de Quartus
+problema_1/db/*.flock
+problema_1/db/*.rdr
+problema_1/db/*.quic
+problema_1/db/*.tmp
+problema_1/db/*.log
+problema_1/db/*.bak
