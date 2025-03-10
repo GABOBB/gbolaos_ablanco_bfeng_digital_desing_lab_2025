@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Mar  9 20:49:09 2025
+Analysis & Elaboration Status : Successful - Mon Mar 10 00:21:07 2025
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Problema3
-Top-level Entity Name : Problema3
+Top-level Entity Name : Problema3_FPGA
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
