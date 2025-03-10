@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/PC/Desktop/problema_3/simulation/modelsim
+vp3
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1741607543
+!i10b 1
+!s100 kiGmXX2^TIQFSBjC95NZ93
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>zhNz<>YO_^=WjJUO9mol1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1741605609
+8C:/Users/PC/Desktop/problema_3/p3.sv
+FC:/Users/PC/Desktop/problema_3/p3.sv
+!i122 0
+L0 1 73
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1741607543.000000
+!s107 C:/Users/PC/Desktop/problema_3/p3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/PC/Desktop/problema_3|C:/Users/PC/Desktop/problema_3/p3.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/PC/Desktop/problema_3
+Z9 tCvgOpt 0
+vp3_tb
+R1
+R2
+!i10b 1
+!s100 6fA9h86SbCb3]fRP^[4XU0
+R3
+In1Oc9dmSN;48k1aTmXghI0
+R4
+S1
+R0
+w1741607492
+8C:/Users/PC/Desktop/problema_3/p3_tb.sv
+FC:/Users/PC/Desktop/problema_3/p3_tb.sv
+!i122 1
+L0 1 93
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/PC/Desktop/problema_3/p3_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/PC/Desktop/problema_3|C:/Users/PC/Desktop/problema_3/p3_tb.sv|
+!i113 1
+R7
+R8
+R9
