@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Sumador Completo de 1 Bit
+entity SumadorCompleto1Bit is
+    Port (
+        A, B, Cin : in STD_LOGIC;
+        S, Cout   : out STD_LOGIC
+    );
+end SumadorCompleto1Bit;
+
+architecture Behavioral of SumadorCompleto1Bit is
+begin
+    S <= A XOR B XOR Cin;
+    Cout <= (A AND B) OR (Cin AND (A XOR B));
+end Behavioral;
+
+-- Módulo Principal: p2
+entity p2 is
+    Port (
+        A, B  : in STD_LOGIC_VECTOR (3 downto 0);
+        Cin   : in STD_LOGIC;
+        S     : out STD_LOGIC_VECTOR (3 downto 0);
+        Cout  : out STD_LOGIC
+    );
+end p2;
+
+architecture Structural of p2 is
+    signal C : STD_LOGIC_VECTOR (4 downto 0);
+begin
+    C(0) <= Cin;
+
+    -- Instancias de los sumadores de 1 bit
+    Sumador0: entity work.SumadorCompleto1Bit port map (A(0), B(0), C(0), S(0), C(1));
+    Sumador1: entity work.SumadorCompleto1Bit port map (A(1), B(1), C(1), S(1), C(2));
+    Sumador2: entity work.SumadorCompleto1Bit port map (A(2), B(2), C(2), S(2), C(3));
+    Sumador3: entity work.SumadorCompleto1Bit port map (A(3), B(3), C(3), S(3), C(4));
+
+    Cout <= C(4);
+end Structural;
