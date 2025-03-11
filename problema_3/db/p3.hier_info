@@ -1,5 +1,4 @@
 |p3
-clk => ~NO_FANOUT~
 decrementar => inicial[0].OUTPUTSELECT
 decrementar => inicial[1].OUTPUTSELECT
 decrementar => inicial[2].OUTPUTSELECT
