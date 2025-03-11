@@ -17,7 +17,7 @@ module p2_tb();
         A = 4'b1111; B = 4'b0001; Cin = 0;
         #40;
         
-        A = 4'b0110; B = 4'b1001; Cin = 1;
+        A = 4'b0110; B = 4'b1001; Cin = 0;
         #40;
     end
 endmodule

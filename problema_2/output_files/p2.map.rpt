@@ -1,5 +1,5 @@
 Analysis & Elaboration report for p2
-Mon Mar 10 19:59:19 2025
+Mon Mar 10 20:27:40 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Mar 10 19:59:19 2025          ;
+; Analysis & Elaboration Status ; Successful - Mon Mar 10 20:27:40 2025          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; p2                                             ;
 ; Top-level Entity Name         ; p2                                             ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Mar 10 19:59:13 2025
+    Info: Processing started: Mon Mar 10 20:27:33 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off p2 -c p2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -173,9 +173,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file p2_tb.s
 Info (12127): Elaborating entity "p2" for the top level hierarchy
 Info (12128): Elaborating entity "SumadorCompleto1Bit" for hierarchy "SumadorCompleto1Bit:Sumador0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv Line: 18
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Mon Mar 10 19:59:19 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Mon Mar 10 20:27:40 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:15
 
 
