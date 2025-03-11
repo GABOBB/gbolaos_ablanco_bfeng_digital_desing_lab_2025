@@ -1,0 +1,90 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/simulation/modelsim
+vp2
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1741658393
+!i10b 1
+!s100 ;?Tme@V1;UGKe6C09>BIm0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib8Wc7EZgm;PjJEeI30fOm2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1741658321
+Z6 8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv
+Z7 FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv
+!i122 0
+L0 9 16
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1741658393.000000
+Z10 !s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2
+Z14 tCvgOpt 0
+vp2_tb
+R1
+R2
+!i10b 1
+!s100 QoNR@X3g1f;DElO05hmPo1
+R3
+I[c74zFP>ZERU9mB6kA@Pi3
+R4
+S1
+R0
+w1741658329
+8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv
+FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv
+!i122 1
+L0 1 23
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv|
+!i113 1
+R12
+R13
+R14
+vSumadorCompleto1Bit
+R1
+R2
+!i10b 1
+!s100 zW:z::^WXCP2n<`T4MVXI1
+R3
+IN9>aaiF9J31=e^i:[hBMz1
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 1 7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@sumador@completo1@bit
