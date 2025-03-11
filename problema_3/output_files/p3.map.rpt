@@ -1,5 +1,5 @@
-Analysis & Elaboration report for p3
-Mon Mar 10 05:51:41 2025
+Analysis & Synthesis report for p3
+Tue Mar 11 07:57:31 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -7,11 +7,19 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |p3
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |p3
+ 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -35,52 +43,31 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                 ;
-+-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Mar 10 05:51:41 2025          ;
-; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                 ; p3                                             ;
-; Top-level Entity Name         ; p3                                             ;
-; Family                        ; Cyclone V                                      ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
-; Total registers               ; N/A until Partition Merge                      ;
-; Total pins                    ; N/A until Partition Merge                      ;
-; Total virtual pins            ; N/A until Partition Merge                      ;
-; Total block memory bits       ; N/A until Partition Merge                      ;
-; Total PLLs                    ; N/A until Partition Merge                      ;
-; Total DLLs                    ; N/A until Partition Merge                      ;
-+-------------------------------+------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |p3 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; N              ; 6     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Mar 11 07:57:31 2025          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; p3                                             ;
+; Top-level Entity Name           ; p3                                             ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 6                                              ;
+; Total pins                      ; 24                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -166,38 +153,256 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; p3.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv                      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                         ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                        ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                    ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                         ;         ;
+; db/lpm_divide_62m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_62m.tdf      ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/sign_div_unsign_9kh.tdf ;         ;
+; db/alt_u_div_ose.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/alt_u_div_ose.tdf       ;         ;
+; db/lpm_divide_3am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_3am.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                             ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                     ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 51                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Combinational ALUT usage for logic          ; 102                                                                                                                       ;
+;     -- 7 input functions                    ; 0                                                                                                                         ;
+;     -- 6 input functions                    ; 0                                                                                                                         ;
+;     -- 5 input functions                    ; 9                                                                                                                         ;
+;     -- 4 input functions                    ; 20                                                                                                                        ;
+;     -- <=3 input functions                  ; 73                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Dedicated logic registers                   ; 6                                                                                                                         ;
+;                                             ;                                                                                                                           ;
+; I/O pins                                    ; 24                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Total DSP Blocks                            ; 0                                                                                                                         ;
+;                                             ;                                                                                                                           ;
+; Maximum fan-out node                        ; lpm_divide:Div0|lpm_divide_3am:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider|add_sub_3_result_int[4]~1 ;
+; Maximum fan-out                             ; 16                                                                                                                        ;
+; Total fan-out                               ; 360                                                                                                                       ;
+; Average fan-out                             ; 2.31                                                                                                                      ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                        ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Entity Name         ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |p3                                    ; 102 (44)            ; 6 (6)                     ; 0                 ; 0          ; 24   ; 0            ; |p3                                                                                                 ; p3                  ; work         ;
+;    |lpm_divide:Div0|                   ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_3am:auto_generated|  ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Div0|lpm_divide_3am:auto_generated                                                   ; lpm_divide_3am      ; work         ;
+;          |sign_div_unsign_9kh:divider| ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Div0|lpm_divide_3am:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;             |alt_u_div_ose:divider|    ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Div0|lpm_divide_3am:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider ; alt_u_div_ose       ; work         ;
+;    |lpm_divide:Mod0|                   ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_62m:auto_generated|  ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                   ; lpm_divide_62m      ; work         ;
+;          |sign_div_unsign_9kh:divider| ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;             |alt_u_div_ose:divider|    ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |p3|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider ; alt_u_div_ose       ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 6     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 6     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |p3 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 6     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_62m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_3am ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 6                           ;
+;     CLR               ; 6                           ;
+; arriav_lcell_comb     ; 104                         ;
+;     arith             ; 34                          ;
+;         0 data inputs ; 8                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 2                           ;
+;     normal            ; 60                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 9                           ;
+;     shared            ; 10                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 8                           ;
+; boundary_port         ; 24                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.10                        ;
+; Average LUT depth     ; 5.30                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Mar 10 05:51:32 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off p3 -c p3 --analysis_and_elaboration
+    Info: Processing started: Tue Mar 11 07:57:21 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off p3 -c p3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file p3.sv
-    Info (12023): Found entity 1: p3 File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 1
+    Info (12023): Found entity 1: p3 File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file p3_tb.sv
-    Info (12023): Found entity 1: p3_tb File: C:/Users/PC/Desktop/problema_3/p3_tb.sv Line: 1
+    Info (12023): Found entity 1: p3_tb File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3_tb.sv Line: 1
 Info (12127): Elaborating entity "p3" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at p3.sv(14): object "decimal" assigned a value but never read File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 14
-Warning (10230): Verilog HDL assignment warning at p3.sv(22): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 22
-Warning (10230): Verilog HDL assignment warning at p3.sv(26): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 26
-Warning (10230): Verilog HDL assignment warning at p3.sv(30): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 30
-Warning (10240): Verilog HDL Always Construct warning at p3.sv(16): inferring latch(es) for variable "inicial", which holds its previous value in one or more paths through the always construct File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at p3.sv(47): truncated value with size 32 to match size of target (4) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 47
-Warning (10230): Verilog HDL assignment warning at p3.sv(48): truncated value with size 32 to match size of target (4) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 48
-Info (10041): Inferred latch for "inicial[0]" at p3.sv(16) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Info (10041): Inferred latch for "inicial[1]" at p3.sv(16) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Info (10041): Inferred latch for "inicial[2]" at p3.sv(16) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Info (10041): Inferred latch for "inicial[3]" at p3.sv(16) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Info (10041): Inferred latch for "inicial[4]" at p3.sv(16) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Info (10041): Inferred latch for "inicial[5]" at p3.sv(16) File: C:/Users/PC/Desktop/problema_3/p3.sv Line: 16
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Mon Mar 10 05:51:41 2025
-    Info: Elapsed time: 00:00:09
+Warning (10230): Verilog HDL assignment warning at p3.sv(17): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at p3.sv(21): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at p3.sv(25): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at p3.sv(32): truncated value with size 32 to match size of target (4) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at p3.sv(33): truncated value with size 32 to match size of target (4) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_62m.tdf
+    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_62m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/sign_div_unsign_9kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
+    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/alt_u_div_ose.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3am.tdf
+    Info (12023): Found entity 1: lpm_divide_3am File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_3am.tdf Line: 25
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "inicial[0]~reg0" is converted into an equivalent circuit using register "inicial[0]~reg0_emulated" and latch "inicial[0]~1" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[1]~reg0" is converted into an equivalent circuit using register "inicial[1]~reg0_emulated" and latch "inicial[1]~5" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[2]~reg0" is converted into an equivalent circuit using register "inicial[2]~reg0_emulated" and latch "inicial[2]~9" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[3]~reg0" is converted into an equivalent circuit using register "inicial[3]~reg0_emulated" and latch "inicial[3]~13" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[4]~reg0" is converted into an equivalent circuit using register "inicial[4]~reg0_emulated" and latch "inicial[4]~17" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[5]~reg0" is converted into an equivalent circuit using register "inicial[5]~reg0_emulated" and latch "inicial[5]~21" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 126 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 102 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Tue Mar 11 07:57:31 2025
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
 
