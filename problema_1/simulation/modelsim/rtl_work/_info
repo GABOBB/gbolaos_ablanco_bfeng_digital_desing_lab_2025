@@ -9,57 +9,138 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/simulation/modelsim
-vP1
+vB_to_BCD
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1741563092
+Z2 !s110 1741756346
 !i10b 1
-!s100 <H1[:HcNCV?mT_:U53cGb0
+!s100 =N>mYNnTV54E31?HFadIg2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I4Nohlik1ke8fi2ElgVKOc3
+IJ>B`Tm5i1K037jG:W>l]41
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1741563024
-8D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv
-FD:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv
+Z5 w1741671666
+Z6 8D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv
+Z7 FD:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv
 !i122 0
-L0 1 5
-Z5 OV;L;2020.1;71
+L0 9 17
+Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1741563092.000000
-!s107 D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1|D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv|
+Z9 !s108 1741756346.000000
+Z10 !s107 D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1|D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1
-Z9 tCvgOpt 0
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1
+Z14 tCvgOpt 0
+n@b_to_@b@c@d
+vBCD_to_7Seg
+R1
+R2
+!i10b 1
+!s100 ^<8UHdl<]5RJ8K99?hW=P0
+R3
+Ib7KzCkU:]LS52W3B_Oz3_3
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 27 20
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@b@c@d_to_7@seg
+vP1
+R1
+R2
+!i10b 1
+!s100 k6BS^Fd`dPlV0hFO9gB:k0
+R3
+I4LGzSCbYZ[Dc^B]Se7g@Z1
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 49 38
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
 n@p1
 vP1_tb
 R1
 R2
 !i10b 1
-!s100 7?kPO209FLae?6FBUOfNK1
+!s100 LM_Y]?bYG[98k>n_2TQFQ0
 R3
-I>zoU@oQ8UG0HJN6>BXWjG0
+IO6o:;_45]8gK1o=o]5cfo1
 R4
 S1
 R0
-w1741563025
+w1741756252
 8D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1_tb.sv
 FD:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1_tb.sv
 !i122 1
-L0 1 21
-R5
+L0 1 41
+R8
 r1
 !s85 0
 31
-R6
+R9
 !s107 D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1|D:/TEC/I_25/taller/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_1/P1_tb.sv|
 !i113 1
-R7
-R8
-R9
+R12
+R13
+R14
 n@p1_tb
+vswitchReader
+R1
+R2
+!i10b 1
+!s100 Pk_nOCnHIe>=fczGYld>o2
+R3
+IDZ>z9RVe_=zD08]ZVAAV>1
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 1 7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+nswitch@reader

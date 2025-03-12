@@ -3,20 +3,20 @@ switches[0] => switches[0].IN1
 switches[1] => switches[1].IN1
 switches[2] => switches[2].IN1
 switches[3] => switches[3].IN1
-seg_decenas[0] <= BCD_to_7Seg:display_decenas.seg
-seg_decenas[1] <= BCD_to_7Seg:display_decenas.seg
-seg_decenas[2] <= BCD_to_7Seg:display_decenas.seg
-seg_decenas[3] <= BCD_to_7Seg:display_decenas.seg
-seg_decenas[4] <= BCD_to_7Seg:display_decenas.seg
-seg_decenas[5] <= BCD_to_7Seg:display_decenas.seg
-seg_decenas[6] <= BCD_to_7Seg:display_decenas.seg
-seg_unidades[0] <= BCD_to_7Seg:display_unidades.seg
-seg_unidades[1] <= BCD_to_7Seg:display_unidades.seg
-seg_unidades[2] <= BCD_to_7Seg:display_unidades.seg
-seg_unidades[3] <= BCD_to_7Seg:display_unidades.seg
-seg_unidades[4] <= BCD_to_7Seg:display_unidades.seg
-seg_unidades[5] <= BCD_to_7Seg:display_unidades.seg
-seg_unidades[6] <= BCD_to_7Seg:display_unidades.seg
+seg_decenas[0] << BCD_to_7Seg:display_decenas.seg
+seg_decenas[1] << BCD_to_7Seg:display_decenas.seg
+seg_decenas[2] << BCD_to_7Seg:display_decenas.seg
+seg_decenas[3] << BCD_to_7Seg:display_decenas.seg
+seg_decenas[4] << BCD_to_7Seg:display_decenas.seg
+seg_decenas[5] << BCD_to_7Seg:display_decenas.seg
+seg_decenas[6] << BCD_to_7Seg:display_decenas.seg
+seg_unidades[0] << BCD_to_7Seg:display_unidades.seg
+seg_unidades[1] << BCD_to_7Seg:display_unidades.seg
+seg_unidades[2] << BCD_to_7Seg:display_unidades.seg
+seg_unidades[3] << BCD_to_7Seg:display_unidades.seg
+seg_unidades[4] << BCD_to_7Seg:display_unidades.seg
+seg_unidades[5] << BCD_to_7Seg:display_unidades.seg
+seg_unidades[6] << BCD_to_7Seg:display_unidades.seg
 
 
 |P1|switchReader:sw
