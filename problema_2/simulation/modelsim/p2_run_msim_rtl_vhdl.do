@@ -50,8 +50,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/SumadorCompleto1Bit.vhd}
 vcom -93 -work work {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.vhd}
+vcom -93 -work work {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/SumadorCompleto1Bit.vhd}
 
 vcom -93 -work work {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.vhd}
 

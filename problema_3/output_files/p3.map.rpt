@@ -1,5 +1,5 @@
 Analysis & Synthesis report for p3
-Tue Mar 11 07:57:31 2025
+Tue Mar 11 16:14:54 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 11 07:57:31 2025          ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 11 16:14:54 2025          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; p3                                             ;
 ; Top-level Entity Name           ; p3                                             ;
@@ -158,33 +158,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
-; p3.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv                      ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                         ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                        ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                    ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                         ;         ;
-; db/lpm_divide_62m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_62m.tdf      ;         ;
-; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/sign_div_unsign_9kh.tdf ;         ;
-; db/alt_u_div_ose.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/alt_u_div_ose.tdf       ;         ;
-; db/lpm_divide_3am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_3am.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; p3.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv                      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                          ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                         ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                     ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                          ;         ;
+; db/lpm_divide_62m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_62m.tdf      ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/sign_div_unsign_9kh.tdf ;         ;
+; db/alt_u_div_ose.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/alt_u_div_ose.tdf       ;         ;
+; db/lpm_divide_3am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_3am.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -338,7 +338,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -348,50 +348,50 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue Mar 11 07:57:21 2025
+    Info: Processing started: Tue Mar 11 16:14:48 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off p3 -c p3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file p3.sv
-    Info (12023): Found entity 1: p3 File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 1
+    Info (12023): Found entity 1: p3 File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file p3_tb.sv
-    Info (12023): Found entity 1: p3_tb File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3_tb.sv Line: 1
+    Info (12023): Found entity 1: p3_tb File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3_tb.sv Line: 1
 Info (12127): Elaborating entity "p3" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at p3.sv(17): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 17
-Warning (10230): Verilog HDL assignment warning at p3.sv(21): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at p3.sv(25): truncated value with size 32 to match size of target (6) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 25
-Warning (10230): Verilog HDL assignment warning at p3.sv(32): truncated value with size 32 to match size of target (4) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
-Warning (10230): Verilog HDL assignment warning at p3.sv(33): truncated value with size 32 to match size of target (4) File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at p3.sv(17): truncated value with size 32 to match size of target (6) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at p3.sv(21): truncated value with size 32 to match size of target (6) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at p3.sv(25): truncated value with size 32 to match size of target (6) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at p3.sv(32): truncated value with size 32 to match size of target (4) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at p3.sv(33): truncated value with size 32 to match size of target (4) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 32
     Info (12134): Parameter "LPM_WIDTHN" = "6"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_62m.tdf
-    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_62m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_62m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/sign_div_unsign_9kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/sign_div_unsign_9kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
-    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/alt_u_div_ose.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/alt_u_div_ose.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 33
     Info (12134): Parameter "LPM_WIDTHN" = "6"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3am.tdf
-    Info (12023): Found entity 1: lpm_divide_3am File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_3am.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_3am File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/db/lpm_divide_3am.tdf Line: 25
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "inicial[0]~reg0" is converted into an equivalent circuit using register "inicial[0]~reg0_emulated" and latch "inicial[0]~1" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
-    Warning (13310): Register "inicial[1]~reg0" is converted into an equivalent circuit using register "inicial[1]~reg0_emulated" and latch "inicial[1]~5" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
-    Warning (13310): Register "inicial[2]~reg0" is converted into an equivalent circuit using register "inicial[2]~reg0_emulated" and latch "inicial[2]~9" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
-    Warning (13310): Register "inicial[3]~reg0" is converted into an equivalent circuit using register "inicial[3]~reg0_emulated" and latch "inicial[3]~13" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
-    Warning (13310): Register "inicial[4]~reg0" is converted into an equivalent circuit using register "inicial[4]~reg0_emulated" and latch "inicial[4]~17" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
-    Warning (13310): Register "inicial[5]~reg0" is converted into an equivalent circuit using register "inicial[5]~reg0_emulated" and latch "inicial[5]~21" File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[0]~reg0" is converted into an equivalent circuit using register "inicial[0]~reg0_emulated" and latch "inicial[0]~1" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[1]~reg0" is converted into an equivalent circuit using register "inicial[1]~reg0_emulated" and latch "inicial[1]~5" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[2]~reg0" is converted into an equivalent circuit using register "inicial[2]~reg0_emulated" and latch "inicial[2]~9" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[3]~reg0" is converted into an equivalent circuit using register "inicial[3]~reg0_emulated" and latch "inicial[3]~13" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[4]~reg0" is converted into an equivalent circuit using register "inicial[4]~reg0_emulated" and latch "inicial[4]~17" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
+    Warning (13310): Register "inicial[5]~reg0" is converted into an equivalent circuit using register "inicial[5]~reg0_emulated" and latch "inicial[5]~21" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -400,9 +400,9 @@ Info (21057): Implemented 126 device resources after synthesis - the final resou
     Info (21059): Implemented 20 output pins
     Info (21061): Implemented 102 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4911 megabytes
-    Info: Processing ended: Tue Mar 11 07:57:31 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4892 megabytes
+    Info: Processing ended: Tue Mar 11 16:14:54 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
 
 

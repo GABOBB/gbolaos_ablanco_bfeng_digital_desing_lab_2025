@@ -1,21 +1,49 @@
 |p2
-A[0] => sumadorcompleto1bit:Sumador0.A
-A[1] => sumadorcompleto1bit:Sumador1.A
-A[2] => sumadorcompleto1bit:Sumador2.A
-A[3] => sumadorcompleto1bit:Sumador3.A
-B[0] => sumadorcompleto1bit:Sumador0.B
-B[1] => sumadorcompleto1bit:Sumador1.B
-B[2] => sumadorcompleto1bit:Sumador2.B
-B[3] => sumadorcompleto1bit:Sumador3.B
-Cin => sumadorcompleto1bit:Sumador0.Cin
-S[0] << sumadorcompleto1bit:Sumador0.S
-S[1] << sumadorcompleto1bit:Sumador1.S
-S[2] << sumadorcompleto1bit:Sumador2.S
-S[3] << sumadorcompleto1bit:Sumador3.S
-Cout << sumadorcompleto1bit:Sumador3.Cout
+A[0] => SumadorCompleto1Bit:SUM0.A
+A[1] => SumadorCompleto1Bit:SUM1.A
+A[2] => SumadorCompleto1Bit:SUM2.A
+A[3] => SumadorCompleto1Bit:SUM3.A
+B[0] => SumadorCompleto1Bit:SUM0.B
+B[1] => SumadorCompleto1Bit:SUM1.B
+B[2] => SumadorCompleto1Bit:SUM2.B
+B[3] => SumadorCompleto1Bit:SUM3.B
+Cin => SumadorCompleto1Bit:SUM0.Cin
+S[0] << SumadorCompleto1Bit:SUM0.S
+S[1] << SumadorCompleto1Bit:SUM1.S
+S[2] << SumadorCompleto1Bit:SUM2.S
+S[3] << SumadorCompleto1Bit:SUM3.S
+Cout << SumadorCompleto1Bit:SUM3.Cout
+HEX0[0] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] << Mux13.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] << Mux12.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] << Mux11.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] << Mux10.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] << Mux9.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] << Mux8.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[0] << Mux20.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[1] << Mux19.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[2] << Mux18.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[3] << Mux17.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[4] << Mux16.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[5] << Mux15.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[6] << Mux14.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[0] << Mux27.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[1] << Mux26.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[2] << Mux25.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[3] << Mux24.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[4] << Mux23.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[5] << Mux22.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[6] << Mux21.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|p2|SumadorCompleto1Bit:Sumador0
+|p2|SumadorCompleto1Bit:SUM0
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -26,7 +54,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|p2|SumadorCompleto1Bit:Sumador1
+|p2|SumadorCompleto1Bit:SUM1
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -37,7 +65,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|p2|SumadorCompleto1Bit:Sumador2
+|p2|SumadorCompleto1Bit:SUM2
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -48,7 +76,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|p2|SumadorCompleto1Bit:Sumador3
+|p2|SumadorCompleto1Bit:SUM3
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
