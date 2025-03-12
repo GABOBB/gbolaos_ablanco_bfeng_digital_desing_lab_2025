@@ -1,7 +1,7 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
@@ -9,82 +9,132 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/simulation/modelsim
-vp2
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1741660399
-!i10b 1
-!s100 ;?Tme@V1;UGKe6C09>BIm0
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ib8Wc7EZgm;PjJEeI30fOm2
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-S1
-R0
-Z5 w1741658321
-Z6 8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv
-Z7 FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv
+Ep2
+Z1 w1741744853
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
-L0 9 16
-Z8 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z9 !s108 1741660398.000000
-Z10 !s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv|
-Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.sv|
-!i113 1
-Z12 o-sv -work work
-Z13 !s92 -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2
-Z14 tCvgOpt 0
-vp2_tb
-R1
-R2
-!i10b 1
-!s100 zV`hi:eNeo8knlb60i?B^3
-R3
-IHPc5]]S4:H00S^l[m8njd2
-R4
-S1
 R0
-w1741660369
-8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv
-FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv
-!i122 1
-L0 1 23
-R8
-r1
-!s85 0
+Z5 8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.vhd
+Z6 FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.vhd
+l0
+L5 1
+VDJiF4<ge8I1X6m=0TL>BG2
+!s100 OAQ8=IUJeBI]kWlI?i9Sj1
+Z7 OV;C;2020.1;71
 31
-!s108 1741660399.000000
-!s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.sv|
-!i113 1
-R12
-R13
-R14
-vSumadorCompleto1Bit
-R1
-R2
+Z8 !s110 1741744880
 !i10b 1
-!s100 zW:z::^WXCP2n<`T4MVXI1
+Z9 !s108 1741744880.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.vhd|
+Z11 !s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
 R3
-IN9>aaiF9J31=e^i:[hBMz1
 R4
-S1
-R0
-R5
-R6
+DEx4 work 2 p2 0 22 DJiF4<ge8I1X6m=0TL>BG2
+!i122 0
+l50
+L18 55
+VgKQ@;ZLRAz`LlGT?2YnI=1
+!s100 []PD^UYDikF:9:z3GY3Bj1
 R7
-!i122 0
-L0 1 7
-R8
-r1
-!s85 0
 31
+R8
+!i10b 1
 R9
 R10
 R11
 !i113 1
 R12
 R13
-R14
-n@sumador@completo1@bit
+Ep2_tb
+Z14 w1741730401
+R2
+R3
+R4
+!i122 2
+R0
+Z15 8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.vhd
+Z16 FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.vhd
+l0
+L5 1
+VEI<2kZEjhC;2SnPcX;gNg1
+!s100 fQC16UdIMD?mSSR=GDC;T0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.vhd|
+!s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 5 p2_tb 0 22 EI<2kZEjhC;2SnPcX;gNg1
+!i122 2
+l26
+L8 53
+V]C4E<ifK>mKFmdGdoLB2I1
+!s100 WQXSz50J<0Kb<[aSfe19P2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/p2_tb.vhd|
+!i113 1
+R12
+R13
+Esumadorcompleto1bit
+Z19 w1741729783
+R2
+R3
+R4
+!i122 1
+R0
+Z20 8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/SumadorCompleto1Bit.vhd
+Z21 FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/SumadorCompleto1Bit.vhd
+l0
+L5 1
+VWTmm?ZT83_I4YDlVEQafK3
+!s100 ;0TX7SihcDPo?ZVEHEO5K1
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/SumadorCompleto1Bit.vhd|
+Z23 !s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_2/SumadorCompleto1Bit.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 19 sumadorcompleto1bit 0 22 WTmm?ZT83_I4YDlVEQafK3
+!i122 1
+l14
+L13 6
+VdP[im>TBC6MeI59VzXhX:3
+!s100 h`bN;O4NBXYP?J@YWoL9o0
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13

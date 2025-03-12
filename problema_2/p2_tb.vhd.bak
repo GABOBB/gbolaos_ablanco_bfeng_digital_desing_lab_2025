@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity p2_tb is
+end p2_tb;
+
+architecture Behavioral of p2_tb is
+    -- Señales de prueba
+    signal A, B  : STD_LOGIC_VECTOR (3 downto 0);
+    signal Cin   : STD_LOGIC;
+    signal S     : STD_LOGIC_VECTOR (3 downto 0);
+    signal Cout  : STD_LOGIC;
+
+begin
+    -- Instancia del módulo bajo prueba (DUT)
+    DUT: entity work.p2 port map (A, B, Cin, S, Cout);
+
+    -- Proceso de prueba
+    stimulus_process: process
+    begin
+        A <= "0011"; B <= "0101"; Cin <= '0';
+        wait for 40 ns;
+        
+        A <= "0111"; B <= "1000"; Cin <= '0';
+        wait for 40 ns;
+        
+        A <= "1111"; B <= "0001"; Cin <= '0';
+        wait for 40 ns;
+        
+        A <= "0110"; B <= "1001"; Cin <= '1';
+        wait for 40 ns;
+
+        -- Finalizar la simulación
+        wait;
+    end process;
+end Behavioral;

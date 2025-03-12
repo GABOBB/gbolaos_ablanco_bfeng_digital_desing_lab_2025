@@ -45,9 +45,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/PC/Desktop/problema_3 {C:/Users/PC/Desktop/problema_3/p3.sv}
+vlog -sv -work work +incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3 {C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv}
 
-vlog -sv -work work +incdir+C:/Users/PC/Desktop/problema_3 {C:/Users/PC/Desktop/problema_3/p3_tb.sv}
+vlog -sv -work work +incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3 {C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3_tb.sv}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  p3_tb
 
