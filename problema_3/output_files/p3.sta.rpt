@@ -1,5 +1,5 @@
 Timing Analyzer report for p3
-Tue Mar 11 16:15:53 2025
+Tue Mar 11 22:16:11 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -102,18 +102,18 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.27        ;
+; Average used               ; 1.26        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.7%      ;
-;     Processor 3            ;   2.6%      ;
-;     Processor 4            ;   2.6%      ;
-;     Processor 5            ;   2.6%      ;
-;     Processor 6            ;   2.6%      ;
-;     Processor 7            ;   2.6%      ;
-;     Processors 8-16        ;   1.3%      ;
+;     Processor 2            ;   2.5%      ;
+;     Processor 3            ;   2.5%      ;
+;     Processor 4            ;   2.5%      ;
+;     Processor 5            ;   2.4%      ;
+;     Processor 6            ;   2.4%      ;
+;     Processor 7            ;   2.4%      ;
+;     Processors 8-16        ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -132,8 +132,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------+-----------------+-------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name  ; Note ;
 +-----------+-----------------+-------------+------+
-; 34.81 MHz ; 34.81 MHz       ; decrementar ;      ;
-; 53.12 MHz ; 53.12 MHz       ; menos       ;      ;
+; 35.82 MHz ; 35.82 MHz       ; decrementar ;      ;
+; 54.88 MHz ; 54.88 MHz       ; menos       ;      ;
 +-----------+-----------------+-------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -149,8 +149,8 @@ HTML report is unavailable in plain text report export.
 +-------------+---------+---------------+
 ; Clock       ; Slack   ; End Point TNS ;
 +-------------+---------+---------------+
-; decrementar ; -18.525 ; -83.145       ;
-; menos       ; -17.826 ; -82.783       ;
+; decrementar ; -17.902 ; -79.627       ;
+; menos       ; -17.220 ; -78.714       ;
 +-------------+---------+---------------+
 
 
@@ -159,8 +159,8 @@ HTML report is unavailable in plain text report export.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; menos       ; 0.821 ; 0.000         ;
-; decrementar ; 1.887 ; 0.000         ;
+; menos       ; 1.029 ; 0.000         ;
+; decrementar ; 1.805 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -169,7 +169,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; menos ; -5.882 ; -34.882               ;
+; menos ; -6.185 ; -36.767               ;
 +-------+--------+-----------------------+
 
 
@@ -178,7 +178,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; menos ; 0.844 ; 0.000                 ;
+; menos ; 1.099 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -187,8 +187,8 @@ HTML report is unavailable in plain text report export.
 +-------------+--------+----------------------------+
 ; Clock       ; Slack  ; End Point TNS              ;
 +-------------+--------+----------------------------+
-; menos       ; -0.394 ; -3.376                     ;
-; decrementar ; 0.252  ; 0.000                      ;
+; menos       ; -0.394 ; -3.397                     ;
+; decrementar ; 0.281  ; 0.000                      ;
 +-------------+--------+----------------------------+
 
 
@@ -203,8 +203,8 @@ No synchronizer chains to report.
 +-----------+-----------------+-------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name  ; Note ;
 +-----------+-----------------+-------------+------+
-; 34.86 MHz ; 34.86 MHz       ; decrementar ;      ;
-; 53.98 MHz ; 53.98 MHz       ; menos       ;      ;
+; 35.49 MHz ; 35.49 MHz       ; decrementar ;      ;
+; 55.49 MHz ; 55.49 MHz       ; menos       ;      ;
 +-----------+-----------------+-------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -214,8 +214,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+---------+---------------+
 ; Clock       ; Slack   ; End Point TNS ;
 +-------------+---------+---------------+
-; decrementar ; -18.494 ; -82.380       ;
-; menos       ; -17.525 ; -80.594       ;
+; decrementar ; -17.976 ; -79.031       ;
+; menos       ; -17.020 ; -76.456       ;
 +-------------+---------+---------------+
 
 
@@ -224,8 +224,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; menos       ; 0.572 ; 0.000         ;
-; decrementar ; 1.796 ; 0.000         ;
+; menos       ; 0.712 ; 0.000         ;
+; decrementar ; 1.740 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -234,7 +234,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; menos ; -5.474 ; -32.474              ;
+; menos ; -5.697 ; -33.956              ;
 +-------+--------+----------------------+
 
 
@@ -243,7 +243,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; menos ; 0.526 ; 0.000                ;
+; menos ; 0.738 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -252,8 +252,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+--------+---------------------------+
 ; Clock       ; Slack  ; End Point TNS             ;
 +-------------+--------+---------------------------+
-; menos       ; -0.394 ; -3.376                    ;
-; decrementar ; 0.194  ; 0.000                     ;
+; menos       ; -0.394 ; -3.400                    ;
+; decrementar ; 0.250  ; 0.000                     ;
 +-------------+--------+---------------------------+
 
 
@@ -268,8 +268,8 @@ No synchronizer chains to report.
 +-------------+---------+---------------+
 ; Clock       ; Slack   ; End Point TNS ;
 +-------------+---------+---------------+
-; decrementar ; -10.663 ; -48.909       ;
-; menos       ; -10.463 ; -50.340       ;
+; decrementar ; -10.169 ; -46.562       ;
+; menos       ; -10.087 ; -48.080       ;
 +-------------+---------+---------------+
 
 
@@ -278,8 +278,8 @@ No synchronizer chains to report.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; menos       ; 0.722 ; 0.000         ;
-; decrementar ; 1.240 ; 0.000         ;
+; menos       ; 0.851 ; 0.000         ;
+; decrementar ; 1.183 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -288,7 +288,7 @@ No synchronizer chains to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; menos ; -3.729 ; -22.062               ;
+; menos ; -3.927 ; -23.379               ;
 +-------+--------+-----------------------+
 
 
@@ -297,7 +297,7 @@ No synchronizer chains to report.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; menos ; 0.722 ; 0.000                 ;
+; menos ; 0.913 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -306,8 +306,8 @@ No synchronizer chains to report.
 +-------------+--------+----------------------------+
 ; Clock       ; Slack  ; End Point TNS              ;
 +-------------+--------+----------------------------+
-; menos       ; -0.317 ; -2.085                     ;
-; decrementar ; 0.030  ; 0.000                      ;
+; menos       ; -0.318 ; -2.102                     ;
+; decrementar ; 0.029  ; 0.000                      ;
 +-------------+--------+----------------------------+
 
 
@@ -322,8 +322,8 @@ No synchronizer chains to report.
 +-------------+--------+---------------+
 ; Clock       ; Slack  ; End Point TNS ;
 +-------------+--------+---------------+
-; decrementar ; -9.951 ; -45.540       ;
-; menos       ; -9.354 ; -44.319       ;
+; decrementar ; -9.539 ; -43.467       ;
+; menos       ; -9.039 ; -42.225       ;
 +-------------+--------+---------------+
 
 
@@ -332,8 +332,8 @@ No synchronizer chains to report.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; menos       ; 0.388 ; 0.000         ;
-; decrementar ; 1.089 ; 0.000         ;
+; menos       ; 0.564 ; 0.000         ;
+; decrementar ; 1.058 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -342,7 +342,7 @@ No synchronizer chains to report.
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; menos ; -3.069 ; -18.130              ;
+; menos ; -3.189 ; -19.035              ;
 +-------+--------+----------------------+
 
 
@@ -351,7 +351,7 @@ No synchronizer chains to report.
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; menos ; 0.367 ; 0.000                ;
+; menos ; 0.522 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -360,8 +360,8 @@ No synchronizer chains to report.
 +-------------+--------+---------------------------+
 ; Clock       ; Slack  ; End Point TNS             ;
 +-------------+--------+---------------------------+
-; menos       ; -0.310 ; -2.032                    ;
-; decrementar ; 0.009  ; 0.000                     ;
+; menos       ; -0.311 ; -2.038                    ;
+; decrementar ; 0.022  ; 0.000                     ;
 +-------------+--------+---------------------------+
 
 
@@ -376,12 +376,12 @@ No synchronizer chains to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -18.525  ; 0.388 ; -5.882   ; 0.367   ; -0.394              ;
-;  decrementar     ; -18.525  ; 1.089 ; N/A      ; N/A     ; 0.009               ;
-;  menos           ; -17.826  ; 0.388 ; -5.882   ; 0.367   ; -0.394              ;
-; Design-wide TNS  ; -165.928 ; 0.0   ; -34.882  ; 0.0     ; -3.376              ;
-;  decrementar     ; -83.145  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  menos           ; -82.783  ; 0.000 ; -34.882  ; 0.000   ; -3.376              ;
+; Worst-case Slack ; -17.976  ; 0.564 ; -6.185   ; 0.522   ; -0.394              ;
+;  decrementar     ; -17.976  ; 1.058 ; N/A      ; N/A     ; 0.022               ;
+;  menos           ; -17.220  ; 0.564 ; -6.185   ; 0.522   ; -0.394              ;
+; Design-wide TNS  ; -158.341 ; 0.0   ; -36.767  ; 0.0     ; -3.4                ;
+;  decrementar     ; -79.627  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  menos           ; -78.714  ; 0.000 ; -36.767  ; 0.000   ; -3.400              ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -444,11 +444,11 @@ No synchronizer chains to report.
 ; HEX1[4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; HEX1[5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; HEX1[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; inicial[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; inicial[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -472,11 +472,11 @@ No synchronizer chains to report.
 ; HEX1[4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; HEX1[5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; HEX1[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; inicial[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; inicial[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -500,11 +500,11 @@ No synchronizer chains to report.
 ; HEX1[4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; HEX1[5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; HEX1[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; inicial[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; inicial[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -528,11 +528,11 @@ No synchronizer chains to report.
 ; HEX1[4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; HEX1[5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; HEX1[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; inicial[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; inicial[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
-; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; inicial[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; inicial[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; inicial[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; inicial[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -703,7 +703,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue Mar 11 16:15:50 2025
+    Info: Processing started: Tue Mar 11 22:16:07 2025
 Info: Command: quartus_sta p3 -c p3
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -714,27 +714,27 @@ Warning (335093): The Timing Analyzer is analyzing 6 combinational loops as latc
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'p3.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name menos menos
     Info (332105): create_clock -period 1.000 -name decrementar decrementar
+    Info (332105): create_clock -period 1.000 -name menos menos
 Warning (332125): Found combinational loop of 4 nodes File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
     Warning (332126): Node "inicial[5]~22|combout"
-    Warning (332126): Node "Add0~21|datad"
+    Warning (332126): Node "Add0~21|dataf"
     Warning (332126): Node "Add0~21|sumout"
     Warning (332126): Node "inicial[5]~22|dataf"
 Warning (332125): Found combinational loop of 4 nodes File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
     Warning (332126): Node "inicial[4]~18|combout"
-    Warning (332126): Node "Add0~17|datad"
+    Warning (332126): Node "Add0~17|datac"
     Warning (332126): Node "Add0~17|sumout"
     Warning (332126): Node "inicial[4]~18|datac"
 Warning (332125): Found combinational loop of 4 nodes File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
     Warning (332126): Node "inicial[3]~14|combout"
     Warning (332126): Node "Add0~9|dataa"
     Warning (332126): Node "Add0~9|sumout"
-    Warning (332126): Node "inicial[3]~14|datac"
+    Warning (332126): Node "inicial[3]~14|dataa"
 Warning (332125): Found combinational loop of 4 nodes File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 21
     Warning (332126): Node "Add0~5|datac"
     Warning (332126): Node "Add0~5|sumout"
-    Warning (332126): Node "inicial[2]~10|datad"
+    Warning (332126): Node "inicial[2]~10|datae"
     Warning (332126): Node "inicial[2]~10|combout"
 Warning (332125): Found combinational loop of 4 nodes File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/problema_3/p3.sv Line: 24
     Warning (332126): Node "inicial[1]~6|combout"
@@ -750,120 +750,120 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -18.525
+Info (332146): Worst-case setup slack is -17.902
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -18.525             -83.145 decrementar 
-    Info (332119):   -17.826             -82.783 menos 
-Info (332146): Worst-case hold slack is 0.821
+    Info (332119):   -17.902             -79.627 decrementar 
+    Info (332119):   -17.220             -78.714 menos 
+Info (332146): Worst-case hold slack is 1.029
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.821               0.000 menos 
-    Info (332119):     1.887               0.000 decrementar 
-Info (332146): Worst-case recovery slack is -5.882
+    Info (332119):     1.029               0.000 menos 
+    Info (332119):     1.805               0.000 decrementar 
+Info (332146): Worst-case recovery slack is -6.185
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.882             -34.882 menos 
-Info (332146): Worst-case removal slack is 0.844
+    Info (332119):    -6.185             -36.767 menos 
+Info (332146): Worst-case removal slack is 1.099
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.844               0.000 menos 
+    Info (332119):     1.099               0.000 menos 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394              -3.376 menos 
-    Info (332119):     0.252               0.000 decrementar 
+    Info (332119):    -0.394              -3.397 menos 
+    Info (332119):     0.281               0.000 decrementar 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -18.494
+Info (332146): Worst-case setup slack is -17.976
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -18.494             -82.380 decrementar 
-    Info (332119):   -17.525             -80.594 menos 
-Info (332146): Worst-case hold slack is 0.572
+    Info (332119):   -17.976             -79.031 decrementar 
+    Info (332119):   -17.020             -76.456 menos 
+Info (332146): Worst-case hold slack is 0.712
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.572               0.000 menos 
-    Info (332119):     1.796               0.000 decrementar 
-Info (332146): Worst-case recovery slack is -5.474
+    Info (332119):     0.712               0.000 menos 
+    Info (332119):     1.740               0.000 decrementar 
+Info (332146): Worst-case recovery slack is -5.697
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.474             -32.474 menos 
-Info (332146): Worst-case removal slack is 0.526
+    Info (332119):    -5.697             -33.956 menos 
+Info (332146): Worst-case removal slack is 0.738
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.526               0.000 menos 
+    Info (332119):     0.738               0.000 menos 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394              -3.376 menos 
-    Info (332119):     0.194               0.000 decrementar 
+    Info (332119):    -0.394              -3.400 menos 
+    Info (332119):     0.250               0.000 decrementar 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.663
+Info (332146): Worst-case setup slack is -10.169
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.663             -48.909 decrementar 
-    Info (332119):   -10.463             -50.340 menos 
-Info (332146): Worst-case hold slack is 0.722
+    Info (332119):   -10.169             -46.562 decrementar 
+    Info (332119):   -10.087             -48.080 menos 
+Info (332146): Worst-case hold slack is 0.851
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.722               0.000 menos 
-    Info (332119):     1.240               0.000 decrementar 
-Info (332146): Worst-case recovery slack is -3.729
+    Info (332119):     0.851               0.000 menos 
+    Info (332119):     1.183               0.000 decrementar 
+Info (332146): Worst-case recovery slack is -3.927
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.729             -22.062 menos 
-Info (332146): Worst-case removal slack is 0.722
+    Info (332119):    -3.927             -23.379 menos 
+Info (332146): Worst-case removal slack is 0.913
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.722               0.000 menos 
-Info (332146): Worst-case minimum pulse width slack is -0.317
+    Info (332119):     0.913               0.000 menos 
+Info (332146): Worst-case minimum pulse width slack is -0.318
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.317              -2.085 menos 
-    Info (332119):     0.030               0.000 decrementar 
+    Info (332119):    -0.318              -2.102 menos 
+    Info (332119):     0.029               0.000 decrementar 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.951
+Info (332146): Worst-case setup slack is -9.539
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.951             -45.540 decrementar 
-    Info (332119):    -9.354             -44.319 menos 
-Info (332146): Worst-case hold slack is 0.388
+    Info (332119):    -9.539             -43.467 decrementar 
+    Info (332119):    -9.039             -42.225 menos 
+Info (332146): Worst-case hold slack is 0.564
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.388               0.000 menos 
-    Info (332119):     1.089               0.000 decrementar 
-Info (332146): Worst-case recovery slack is -3.069
+    Info (332119):     0.564               0.000 menos 
+    Info (332119):     1.058               0.000 decrementar 
+Info (332146): Worst-case recovery slack is -3.189
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.069             -18.130 menos 
-Info (332146): Worst-case removal slack is 0.367
+    Info (332119):    -3.189             -19.035 menos 
+Info (332146): Worst-case removal slack is 0.522
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.367               0.000 menos 
-Info (332146): Worst-case minimum pulse width slack is -0.310
+    Info (332119):     0.522               0.000 menos 
+Info (332146): Worst-case minimum pulse width slack is -0.311
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.310              -2.032 menos 
-    Info (332119):     0.009               0.000 decrementar 
+    Info (332119):    -0.311              -2.038 menos 
+    Info (332119):     0.022               0.000 decrementar 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 5427 megabytes
-    Info: Processing ended: Tue Mar 11 16:15:53 2025
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 5419 megabytes
+    Info: Processing ended: Tue Mar 11 22:16:11 2025
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 
