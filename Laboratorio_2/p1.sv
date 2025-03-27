@@ -6,10 +6,12 @@ module p1 #(parameter N = 4)(
 );
 
     logic [N:0] sum;            // Bit extra para acarreo
+    logic [2*N-1:0] product;    // Espacio para multiplicación
 
     always_comb begin
         // Inicialización de variables internas
         sum = 0;
+        product = 0;
         result = 0;
         
         // Inicialización de banderas (evita latches)
@@ -44,5 +46,20 @@ module p1 #(parameter N = 4)(
                 overflow = 0;
                 negative = 0;  // Operaciones lógicas no tienen signo
             end
+            
+            2'b11: begin // Multiplicación (operación aritmética)
+                product = A * B;
+                result = product[N-1:0];
+                
+                // Banderas para multiplicación
+                carry = |product[2*N-1:N];  // Carry si hay bits superiores
+                overflow = carry;  // Overflow si resultado no cabe en N bits
+                negative = result[N-1];  // Negativo si MSB es 1
+            end
         endcase
+        
+        // Bandera Zero común a todas las operaciones
+        zero = (result == 0);
+    end
+
 endmodule
