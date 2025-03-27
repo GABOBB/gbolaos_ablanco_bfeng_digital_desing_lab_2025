@@ -36,5 +36,13 @@ module p1 #(parameter N = 4)(
                 overflow = 0;
                 negative = 0;  // Operaciones lógicas no tienen signo
             end
+            
+            2'b10: begin // OR lógico
+                result = A | B;
+                // Banderas para operación lógica
+                carry = 0;
+                overflow = 0;
+                negative = 0;  // Operaciones lógicas no tienen signo
+            end
         endcase
 endmodule
