@@ -1,4 +1,4 @@
-module p1 #(parameter N = 4)(
+module lab2 #(parameter N = 4)(
     input logic [N-1:0] A, B,
     input logic [1:0] op,
     output logic [N-1:0] result,
@@ -6,6 +6,7 @@ module p1 #(parameter N = 4)(
 );
 
     logic [N:0] sum;            // Bit extra para acarreo
+    logic [2*N-1:0] product;    // Espacio para multiplicación
 
     always_comb begin
         // Inicialización de variables internas
@@ -28,13 +29,6 @@ module p1 #(parameter N = 4)(
                 overflow = (A[N-1] == B[N-1]) && (result[N-1] != A[N-1]);  // Overflow con signo
                 negative = result[N-1];  // Negativo si MSB es 1 (complemento a 2)
             end
-            
-            2'b01: begin // AND lógico
-                result = A & B;
-                // Banderas para operación lógica
-                carry = 0;
-                overflow = 0;
-                negative = 0;  // Operaciones lógicas no tienen signo
-            end
-        endcase
+    end
+
 endmodule
