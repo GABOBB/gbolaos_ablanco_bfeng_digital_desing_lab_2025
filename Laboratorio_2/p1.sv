@@ -95,19 +95,18 @@ module p1 #(parameter N = 4)(
             end
 
             4'b0100: begin // Resta sin operadores
-                // Complemento a 2: A + (~B + 1)
-                reg [N-1:0] B_complement;  
-				 
-					 B_complement = B ^ {N{1'b1}}; 
+                    reg [N-1:0] B_complement;  
+        
+                    B_complement = B ^ {N{1'b1}}; 
 
-					 sum = A ^ B_complement;  
-					 
-					 result = sum ^ 1; 
-					 // Banderas para resta
-					 carry = sum[N-1] == 1 ? 1 : 0;
-					 overflow = (A[N-1] == B[N-1]) && (result[N-1] != A[N-1]);
-					 negative = result[N-1];
-					 result_signed = A_signed - B_signed; 
+                    sum = A ^ B_complement;  
+                    
+                    result = sum ^ 1; 
+                    
+                    carry = sum[N-1] == 1 ? 1 : 0;
+                    overflow = (A[N-1] == B[N-1]) && (result[N-1] != A[N-1]);
+                    negative = result[N-1];
+                    result_signed = A_signed - B_signed; 
             end
 
             4'b0101: begin // División
