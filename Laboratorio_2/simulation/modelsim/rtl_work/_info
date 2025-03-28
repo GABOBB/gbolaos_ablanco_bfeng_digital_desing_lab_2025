@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/simulation/modelsim
 vp1
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1743180196
+Z2 !s110 1743143448
 !i10b 1
-!s100 :h<0Z;o[YazM2IfP3Bomm2
+!s100 ^Je;QoHnek:^fDfP=^2h;3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ICI^KWWdVGHXAa`<RHNZ[B1
+I13Zh<1m?SDIQ1G_F7O4<M3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1743179381
+w1743143395
 8C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv
 FC:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv
 !i122 0
-L0 1 232
+L0 1 219
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1743180196.000000
+Z6 !s108 1743143448.000000
 !s107 C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2|C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv|
 !i113 1
@@ -39,13 +39,13 @@ vp1_tb
 R1
 R2
 !i10b 1
-!s100 UlWeA19bTcL:GHVgF9UfU1
+!s100 fI;<a[Xd0IBHgRFHQbGP`1
 R3
-I?aQY^U5`TOoP=C2_7NH;11
+ICLSD1AD?lEITS8VQE0aGb0
 R4
 S1
 R0
-w1743180156
+w1743142729
 8C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv
 FC:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv
 !i122 1

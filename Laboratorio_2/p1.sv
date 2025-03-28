@@ -96,20 +96,11 @@ module p1 #(parameter N = 4)(
 
             4'b0100: begin // Resta sin operadores
                 // Complemento a 2: A + (~B + 1)
-                // Realizar A + (~B + 1) directamente
-					 carry_internal = 1; // Iniciar con 1 para el +1 del complemento a 2
-    
-					 for (int i = 0; i < N; i++) begin
-						  sum[i] = A[i] ^ (~B[i]) ^ carry_internal[i];
-						  carry_internal[i+1] = (A[i] & ~B[i]) | 
-														(A[i] & carry_internal[i]) | 
-														(~B[i] & carry_internal[i]);
-					 end
-    
-					 result = sum;
+                sum = A + (~B + 1);
+                result = sum;
                 
                 // Banderas para resta
-                carry = ~carry_internal[N];
+                carry = sum[N-1] == 1 ? 1 : 0;
                 overflow = (A[N-1] == B[N-1]) && (sum[N-1] != A[N-1]);
                 negative = result[N-1];
                 result_signed = A_signed - B_signed;
