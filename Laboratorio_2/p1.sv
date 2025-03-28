@@ -34,7 +34,7 @@ module p1 #(parameter N = 4)(
         sum = 0;
         product = 0;
         result = 0;
-		  result_signed = 0;
+        result_signed = 0;
         
         // Inicialización de banderas 
         carry = 0;
@@ -80,19 +80,23 @@ module p1 #(parameter N = 4)(
                 result_signed = A_signed | B_signed;
             end
             
-            4'b0011: begin // Multiplicación (operación aritmética)
-                product = A * B;
-                result = product[N-1:0];
-                
+            4'b0011: begin // Multiplicación sin operadores
+                product = 0;  // Inicializar el resultado del producto
+                for (int i = 0; i < B; i++) begin  // Repetir B veces
+                    product = product + A;  // Sumar A a sí mismo B veces
+                end
+                result = product[N-1:0];  // Obtener el resultado truncado a N bits
+
                 // Banderas para multiplicación
-                carry = |product[2*N-1:N]; // Carry si hay bits superiores
-                overflow = carry;  // Overflow si resultado no cabe en N bits
+                carry = |product[2*N-1:N];  // Carry si hay bits superiores
+                overflow = carry;  // Overflow si el resultado no cabe en N bits
                 negative = result[N-1];  
-                result_signed = A_signed * B_signed;
+                result_signed = A_signed * B_signed;  // Suma con signo
             end
 
-            4'b0100: begin // Resta
-                sum = A - B;
+            4'b0100: begin // Resta sin operadores
+                // Complemento a 2: A + (~B + 1)
+                sum = A + (~B + 1);
                 result = sum;
                 
                 // Banderas para resta
@@ -138,19 +142,19 @@ module p1 #(parameter N = 4)(
             end
 
             4'b1000: begin // Shift left
-                result = A << 1;  // Desplazamiento a la izquierda
+                result = A << B;  // Desplazamiento a la izquierda, cantidad B veces
                 carry = A[N-1];   // El bit desplazado se coloca en carry
                 overflow = 0;     // No se genera overflow en un shift normal
                 negative = result[N-1]; // Bandera negativa
-                result_signed = A_signed << 1;
+                result_signed = A_signed << B; // Shift aritmético para mantener signo
             end
 
             4'b1001: begin // Shift right
-                result = A >> 1;  // Desplazamiento a la derecha
+                result = A >> B;  // Desplazamiento a la derecha, cantidad B veces
                 carry = A[0];     // El bit desplazado se coloca en carry
                 overflow = 0;     // No se genera overflow en un shift normal
                 negative = result[N-1]; // Bandera negativa
-                result_signed = A_signed >>> 1; // Shift aritmético para mantener signo
+                result_signed = A_signed >>> B; // Shift aritmético para mantener signo
             end
         endcase
         

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Mar 27 23:05:24 2025
+Fitter Status : Successful - Fri Mar 28 01:17:57 2025
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : p1
 Top-level Entity Name : p1
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 63 / 41,910 ( < 1 % )
+Logic utilization (in ALMs) : 215 / 41,910 ( < 1 % )
 Total registers : 0
 Total pins : 62 / 499 ( 12 % )
 Total virtual pins : 0
