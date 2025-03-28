@@ -89,14 +89,14 @@ module p1_tb;
         KEY = 4'b1000;    // Operación: shift left
         SW = 8'b00010011; // A = 19
         #10;
-        $display("Shift Left: A = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], result, carry, overflow, negative);
+        $display("Shift Left: A = %d, B = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], SW[7:4], result, carry, overflow, negative);
 
         // Verificar operación shift right
         #10;
         KEY = 4'b1001;    // Operación: shift right
         SW = 8'b00010011; // A = 19
         #10;
-        $display("Shift Right: A = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], result, carry, overflow, negative);
+        $display("Shift Right: A = %d, B = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], SW[7:4], result, carry, overflow, negative);
 
         // Finalizar la simulación
         #10;
