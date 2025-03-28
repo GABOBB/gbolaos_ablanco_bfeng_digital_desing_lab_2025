@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:25 on Mar 27,2025
+# Start time: 22:52:11 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 19:13:26 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:11 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:27 on Mar 27,2025
+# Start time: 22:52:11 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 19:13:28 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:12 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:28 on Mar 27,2025
+# Start time: 22:52:12 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 19:13:29 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:12 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:29 on Mar 27,2025
+# Start time: 22:52:12 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 19:13:31 on Mar 27,2025, Elapsed time: 0:00:02
+# End time: 22:52:13 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:32 on Mar 27,2025
+# Start time: 22:52:13 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 19:13:33 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:14 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:33 on Mar 27,2025
+# Start time: 22:52:14 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +483,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 19:13:37 on Mar 27,2025, Elapsed time: 0:00:04
+# End time: 22:52:15 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:37 on Mar 27,2025
+# Start time: 22:52:15 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 19:13:39 on Mar 27,2025, Elapsed time: 0:00:02
+# End time: 22:52:17 on Mar 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:39 on Mar 27,2025
+# Start time: 22:52:17 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 19:13:40 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:17 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +646,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:41 on Mar 27,2025
+# Start time: 22:52:17 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 19:13:44 on Mar 27,2025, Elapsed time: 0:00:03
+# End time: 22:52:19 on Mar 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:44 on Mar 27,2025
+# Start time: 22:52:19 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 19:13:45 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:19 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +765,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:46 on Mar 27,2025
+# Start time: 22:52:19 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 19:13:49 on Mar 27,2025, Elapsed time: 0:00:03
+# End time: 22:52:21 on Mar 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:49 on Mar 27,2025
+# Start time: 22:52:21 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 19:13:50 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:52:21 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,42 +798,34 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2 {C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv}
+# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:50 on Mar 27,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2" C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv 
+# Start time: 22:52:21 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1.sv 
 # -- Compiling module p1
 # 
 # Top level modules:
 # 	p1
-# End time: 19:13:50 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 22:52:21 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2 {C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:50 on Mar 27,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2" C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv 
+# Start time: 22:52:22 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv 
 # -- Compiling module p1_tb
 # 
 # Top level modules:
 # 	p1_tb
-# End time: 19:13:50 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 22:52:22 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  p1_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" p1_tb 
-# Start time: 19:13:50 on Mar 27,2025
+# Start time: 22:52:22 on Mar 27,2025
 # Loading sv_std.std
 # Loading work.p1_tb
 # Loading work.p1
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 13, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /p1_tb/uut File: C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv Line: 14
-# ** Warning: (vsim-3722) C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(14): [TFMPC] - Missing connection for port 'HEX0'.
-# ** Warning: (vsim-3722) C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(14): [TFMPC] - Missing connection for port 'HEX1'.
-# ** Warning: (vsim-3722) C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(14): [TFMPC] - Missing connection for port 'HEX2'.
-# ** Warning: (vsim-3722) C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(14): [TFMPC] - Missing connection for port 'HEX3'.
-# ** Warning: (vsim-3722) C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(14): [TFMPC] - Missing connection for port 'HEX4'.
-# ** Warning: (vsim-3722) C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(14): [TFMPC] - Missing connection for port 'HEX5'.
 # 
 # add wave *
 # view structure
@@ -841,25 +833,19 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# === PRUEBAS DE SUMA ===
-# Suma1: 0010 + 0000 = 0010 | N:0 Z:0 C:0 V:0
-# Suma2: 1111 + 0001 = 0000 | N:0 Z:1 C:1 V:0
-# Suma3: 0111 + 0111 = 1110 | N:1 Z:0 C:0 V:1
-# 
-# === PRUEBAS DE AND ===
-# AND1:  1010 & 1100 = 1000 | N:1 Z:0 C:0 V:0
-# AND2:  1010 & 0101 = 0000 | N:0 Z:1 C:0 V:0
-# 
-# === PRUEBAS DE OR ===
-# OR1:   1010 | 1100 = 1110 | N:1 Z:0 C:0 V:0
-# OR2:   1010 | 0101 = 1111 | N:1 Z:0 C:0 V:0
-# 
-# === PRUEBAS DE MULTIPLICACIÓN ===
-# Mult1: 0011 * 0010 = 0110 | N:0 Z:0 C:0 V:0
-# Mult2: 1111 * 1111 = 0001 | N:0 Z:0 C:1 V:1
-# Mult3: 0000 * 1111 = 0000 | N:0 Z:1 C:0 V:0
-# ** Note: $stop    : C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(69)
-#    Time: 100 ns  Iteration: 0  Instance: /p1_tb
-# Break in Module p1_tb at C:/Users/PC/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv line 69
-# End time: 19:14:16 on Mar 27,2025, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 7
+# Suma: A =  3, B =  0, result =  3, carry = 0, overflow = 0, negative = 0
+# AND: A =  3, B =  0, result =  0, carry = 0, overflow = 0, negative = 0
+# OR: A =  3, B =  0, result =  3, carry = 0, overflow = 0, negative = 0
+# Multiplicación: A =  3, B =  0, result =  0, carry = 0, overflow = 0, negative = 0
+# Resta: A =  3, B =  1, result =  2, carry = 0, overflow = 0, negative = 0
+# División: A =  3, B =  1, result =  3, carry = 0, overflow = 0, negative = 0
+# Módulo: A =  3, B =  1, result =  0, carry = 0, overflow = 0, negative = 0
+# XOR: A =  3, B =  1, result =  2, carry = 0, overflow = 0, negative = 0
+# Shift Left: A =  3, result =  6, carry = 0, overflow = 0, negative = 0
+# Shift Right: A =  3, result =  1, carry = 1, overflow = 0, negative = 0
+# ** Note: $finish    : C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv(103)
+#    Time: 210 ps  Iteration: 0  Instance: /p1_tb
+# 1
+# Break in Module p1_tb at C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_2/p1_tb.sv line 103
+# End time: 22:58:38 on Mar 27,2025, Elapsed time: 0:06:16
+# Errors: 0, Warnings: 0
