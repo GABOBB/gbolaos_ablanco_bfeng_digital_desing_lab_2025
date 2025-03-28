@@ -32,7 +32,7 @@ module p1_tb;
 
         // Verificar operación de suma
         #10;
-        SW = 8'b00000011; // A = 3, B = 3
+        SW = 8'b00110010; // A = 2, B = 3
         KEY = 4'b0000;    // Operación: suma
         #10;
         $display("Suma: A = %d, B = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], SW[7:4], result, carry, overflow, negative);
@@ -59,7 +59,7 @@ module p1_tb;
         // Verificar operación resta
         #10;
         KEY = 4'b0100;    // Operación: resta
-        SW = 8'b00010011; // A = 19, B = 3
+        SW = 8'b00010010; // A = 2, B = 1
         #10;
         $display("Resta: A = %d, B = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], SW[7:4], result, carry, overflow, negative);
 
@@ -89,14 +89,14 @@ module p1_tb;
         KEY = 4'b1000;    // Operación: shift left
         SW = 8'b00010011; // A = 19
         #10;
-        $display("Shift Left: A = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], result, carry, overflow, negative);
+        $display("Shift Left: A = %d, b = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], SW[7:4], result, carry, overflow, negative);
 
         // Verificar operación shift right
         #10;
         KEY = 4'b1001;    // Operación: shift right
         SW = 8'b00010011; // A = 19
         #10;
-        $display("Shift Right: A = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], result, carry, overflow, negative);
+        $display("Shift Right: A = %d, b = %d, result = %d, carry = %d, overflow = %d, negative = %d", SW[3:0], SW[7:4], result, carry, overflow, negative);
 
         // Finalizar la simulación
         #10;
