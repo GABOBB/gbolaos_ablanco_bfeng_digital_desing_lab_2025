@@ -1,0 +1,65 @@
+`timescale 1ns / 1ps
+
+module p1_tb();
+    parameter N = 4;
+    
+    logic [N-1:0] A, B;
+    logic [1:0] op;
+    logic [N-1:0] result;
+    logic carry, overflow, zero, negative;
+    
+    lab2 #(N) uut (
+        .A(A), .B(B), .op(op), 
+        .result(result), .carry(carry), 
+        .overflow(overflow), .zero(zero), 
+        .negative(negative)
+    );
+    
+    initial begin
+        $display("=== PRUEBAS DE SUMA ===");
+        // Suma 1: Normal sin carry/overflow
+        A = 4'b0010; B = 4'b0001; op = 2'b00; #10;
+        $display("Suma1: %b + %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        // Suma 2: Con carry sin overflow (sin signo)
+        A = 4'b1111; B = 4'b0001; op = 2'b00; #10;
+        $display("Suma2: %b + %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        // Suma 3: Con overflow (con signo)
+        A = 4'b0111; B = 4'b0111; op = 2'b00; #10;
+        $display("Suma3: %b + %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        $display("\n=== PRUEBAS DE AND ===");
+        // AND 1: Resultado no cero
+        A = 4'b1010; B = 4'b1100; op = 2'b01; #10;
+        $display("AND1:  %b & %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        // AND 2: Resultado cero
+        A = 4'b1010; B = 4'b0101; op = 2'b01; #10;
+        $display("AND2:  %b & %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        $display("\n=== PRUEBAS DE OR ===");
+        // OR 1: Resultado no cero
+        A = 4'b1010; B = 4'b1100; op = 2'b10; #10;
+        $display("OR1:   %b | %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        // OR 2: Resultado todos unos
+        A = 4'b1010; B = 4'b0101; op = 2'b10; #10;
+        $display("OR2:   %b | %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        $display("\n=== PRUEBAS DE MULTIPLICACIÓN ===");
+        // Mult 1: Normal sin overflow
+        A = 4'b0011; B = 4'b0010; op = 2'b11; #10;
+        $display("Mult1: %b * %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        // Mult 2: Con overflow
+        A = 4'b1111; B = 4'b1111; op = 2'b11; #10;
+        $display("Mult2: %b * %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        // Mult 3: Resultado cero
+        A = 4'b0000; B = 4'b1111; op = 2'b11; #10;
+        $display("Mult3: %b * %b = %b | N:%b Z:%b C:%b V:%b", A, B, result, negative, zero, carry, overflow);
+        
+        $stop;
+    end 
+endmodule
