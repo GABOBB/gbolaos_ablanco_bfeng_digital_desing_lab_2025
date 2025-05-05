@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun May  4 23:52:45 2025
+Analysis & Elaboration Status : Successful - Mon May  5 02:48:28 2025
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : conecta_4
-Top-level Entity Name : conecta_4
+Top-level Entity Name : VGA
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

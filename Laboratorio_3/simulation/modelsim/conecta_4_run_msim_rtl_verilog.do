@@ -45,5 +45,13 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv}
+vlog -sv -work work +incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv}
 
+vlog -sv -work work +incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_VGA
+
+add wave *
+view structure
+view signals
+run -all

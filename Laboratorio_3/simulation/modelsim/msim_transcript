@@ -5,7 +5,6 @@
 # }
 # 
 # vlib verilog_libs/altera_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
 # vmap altera_ver ./verilog_libs/altera_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_ver ./verilog_libs/altera_ver 
@@ -13,7 +12,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:58 on May 04,2025
+# Start time: 02:48:34 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,18 +94,17 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 23:52:59 on May 04,2025, Elapsed time: 0:00:01
+# End time: 02:48:35 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
 # vmap lpm_ver ./verilog_libs/lpm_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:59 on May 04,2025
+# Start time: 02:48:35 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,18 +168,17 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 23:52:59 on May 04,2025, Elapsed time: 0:00:00
+# End time: 02:48:35 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
 # vmap sgate_ver ./verilog_libs/sgate_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:59 on May 04,2025
+# Start time: 02:48:35 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,18 +220,17 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 23:53:00 on May 04,2025, Elapsed time: 0:00:01
+# End time: 02:48:35 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:00 on May 04,2025
+# Start time: 02:48:35 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,18 +360,17 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 23:53:01 on May 04,2025, Elapsed time: 0:00:01
+# End time: 02:48:36 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:02 on May 04,2025
+# Start time: 02:48:36 on May 05,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,18 +453,17 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 23:53:02 on May 04,2025, Elapsed time: 0:00:00
+# End time: 02:48:36 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cyclonev_ver".
 # vmap cyclonev_ver ./verilog_libs/cyclonev_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_ver ./verilog_libs/cyclonev_ver 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:03 on May 04,2025
+# Start time: 02:48:36 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +477,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 23:53:05 on May 04,2025, Elapsed time: 0:00:02
+# End time: 02:48:38 on May 05,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:05 on May 04,2025
+# Start time: 02:48:38 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 23:53:07 on May 04,2025, Elapsed time: 0:00:02
+# End time: 02:48:39 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:07 on May 04,2025
+# Start time: 02:48:39 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,26 +629,25 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 23:53:08 on May 04,2025, Elapsed time: 0:00:01
+# End time: 02:48:39 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cyclonev_hssi_ver".
 # vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:08 on May 04,2025
+# Start time: 02:48:39 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 23:53:10 on May 04,2025, Elapsed time: 0:00:02
+# End time: 02:48:40 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:10 on May 04,2025
+# Start time: 02:48:40 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,18 +747,17 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 23:53:11 on May 04,2025, Elapsed time: 0:00:01
+# End time: 02:48:41 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cyclonev_pcie_hip_ver".
 # vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:11 on May 04,2025
+# Start time: 02:48:41 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +767,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 23:53:13 on May 04,2025, Elapsed time: 0:00:02
+# End time: 02:48:42 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:13 on May 04,2025
+# Start time: 02:48:42 on May 05,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 23:53:14 on May 04,2025, Elapsed time: 0:00:01
+# End time: 02:48:42 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,28 +790,1046 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv}
+# vlog -sv -work work +incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:14 on May 04,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv 
-# -- Compiling module conecta_4
+# Start time: 02:48:43 on May 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv 
+# -- Compiling module VGA
 # 
 # Top level modules:
-# 	conecta_4
-# End time: 23:53:14 on May 04,2025, Elapsed time: 0:00:00
+# 	VGA
+# End time: 02:48:43 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.conecta_4
-# vsim work.conecta_4 
-# Start time: 23:53:24 on May 04,2025
-# Loading sv_std.std
-# Loading work.conecta_4
-vsim work.conecta_4
-# End time: 23:55:44 on May 04,2025, Elapsed time: 0:02:20
+# vlog -sv -work work +incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:48:43 on May 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv 
+# -- Compiling module tb_VGA
+# 
+# Top level modules:
+# 	tb_VGA
+# End time: 02:48:43 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim work.conecta_4 
-# Start time: 23:55:45 on May 04,2025
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_VGA
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_VGA 
+# Start time: 02:48:43 on May 05,2025
 # Loading sv_std.std
-# Loading work.conecta_4
-# End time: 23:57:37 on May 04,2025, Elapsed time: 0:01:52
+# Loading work.tb_VGA
+# Loading work.VGA
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando la simulación...
+# Time: 100 | x: 10 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 105 | x: 11 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 115 | x: 12 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 125 | x: 13 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 135 | x: 14 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 145 | x: 15 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 155 | x: 16 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 165 | x: 17 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 175 | x: 18 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 185 | x: 19 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 195 | x: 20 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 205 | x: 21 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 215 | x: 22 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 225 | x: 23 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 235 | x: 24 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 245 | x: 25 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 255 | x: 26 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 265 | x: 27 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 275 | x: 28 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 285 | x: 29 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 295 | x: 30 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 305 | x: 31 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 315 | x: 32 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 325 | x: 33 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 335 | x: 34 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 345 | x: 35 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 355 | x: 36 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 365 | x: 37 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 375 | x: 38 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 385 | x: 39 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 395 | x: 40 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 405 | x: 41 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 415 | x: 42 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 425 | x: 43 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 435 | x: 44 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 445 | x: 45 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 455 | x: 46 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 465 | x: 47 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 475 | x: 48 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 485 | x: 49 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 495 | x: 50 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 505 | x: 51 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 515 | x: 52 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 525 | x: 53 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 535 | x: 54 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 545 | x: 55 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 555 | x: 56 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 565 | x: 57 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 575 | x: 58 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 585 | x: 59 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 595 | x: 60 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 605 | x: 61 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 615 | x: 62 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 625 | x: 63 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 635 | x: 64 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 645 | x: 65 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 655 | x: 66 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 665 | x: 67 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 675 | x: 68 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 685 | x: 69 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 695 | x: 70 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 705 | x: 71 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 715 | x: 72 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 725 | x: 73 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 735 | x: 74 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 745 | x: 75 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 755 | x: 76 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 765 | x: 77 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 775 | x: 78 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 785 | x: 79 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 795 | x: 80 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 805 | x: 81 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 815 | x: 82 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 825 | x: 83 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 835 | x: 84 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 845 | x: 85 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 855 | x: 86 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 865 | x: 87 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 875 | x: 88 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 885 | x: 89 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 895 | x: 90 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 905 | x: 91 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 915 | x: 92 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 925 | x: 93 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 935 | x: 94 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 945 | x: 95 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 955 | x: 96 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 965 | x: 97 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 975 | x: 98 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 985 | x: 99 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 995 | x: 100 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1005 | x: 101 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1015 | x: 102 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1025 | x: 103 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1035 | x: 104 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1045 | x: 105 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1055 | x: 106 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1065 | x: 107 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1075 | x: 108 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1085 | x: 109 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1095 | x: 110 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1105 | x: 111 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1115 | x: 112 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1125 | x: 113 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1135 | x: 114 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1145 | x: 115 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1155 | x: 116 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1165 | x: 117 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1175 | x: 118 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1185 | x: 119 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1195 | x: 120 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1205 | x: 121 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1215 | x: 122 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1225 | x: 123 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1235 | x: 124 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1245 | x: 125 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1255 | x: 126 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1265 | x: 127 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1275 | x: 128 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1285 | x: 129 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1295 | x: 130 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1305 | x: 131 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1315 | x: 132 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1325 | x: 133 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1335 | x: 134 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1345 | x: 135 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1355 | x: 136 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1365 | x: 137 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1375 | x: 138 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1385 | x: 139 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1395 | x: 140 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1405 | x: 141 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1415 | x: 142 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1425 | x: 143 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1435 | x: 144 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1445 | x: 145 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1455 | x: 146 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1465 | x: 147 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1475 | x: 148 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1485 | x: 149 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1495 | x: 150 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1505 | x: 151 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1515 | x: 152 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1525 | x: 153 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1535 | x: 154 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1545 | x: 155 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1555 | x: 156 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1565 | x: 157 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1575 | x: 158 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1585 | x: 159 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1595 | x: 160 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1605 | x: 161 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1615 | x: 162 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1625 | x: 163 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1635 | x: 164 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1645 | x: 165 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1655 | x: 166 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1665 | x: 167 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1675 | x: 168 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1685 | x: 169 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1695 | x: 170 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1705 | x: 171 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1715 | x: 172 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1725 | x: 173 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1735 | x: 174 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1745 | x: 175 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1755 | x: 176 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1765 | x: 177 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1775 | x: 178 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1785 | x: 179 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1795 | x: 180 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1805 | x: 181 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1815 | x: 182 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1825 | x: 183 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1835 | x: 184 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1845 | x: 185 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1855 | x: 186 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1865 | x: 187 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1875 | x: 188 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1885 | x: 189 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1895 | x: 190 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1905 | x: 191 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1915 | x: 192 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1925 | x: 193 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1935 | x: 194 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1945 | x: 195 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1955 | x: 196 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1965 | x: 197 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1975 | x: 198 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1985 | x: 199 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 1995 | x: 200 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2005 | x: 201 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2015 | x: 202 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2025 | x: 203 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2035 | x: 204 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2045 | x: 205 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2055 | x: 206 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2065 | x: 207 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2075 | x: 208 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2085 | x: 209 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2095 | x: 210 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2105 | x: 211 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2115 | x: 212 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2125 | x: 213 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2135 | x: 214 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2145 | x: 215 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2155 | x: 216 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2165 | x: 217 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2175 | x: 218 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2185 | x: 219 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2195 | x: 220 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2205 | x: 221 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2215 | x: 222 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2225 | x: 223 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2235 | x: 224 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2245 | x: 225 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2255 | x: 226 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2265 | x: 227 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2275 | x: 228 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2285 | x: 229 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2295 | x: 230 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2305 | x: 231 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2315 | x: 232 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2325 | x: 233 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2335 | x: 234 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2345 | x: 235 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2355 | x: 236 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2365 | x: 237 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2375 | x: 238 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2385 | x: 239 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2395 | x: 240 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2405 | x: 241 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2415 | x: 242 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2425 | x: 243 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2435 | x: 244 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2445 | x: 245 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2455 | x: 246 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2465 | x: 247 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2475 | x: 248 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2485 | x: 249 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2495 | x: 250 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2505 | x: 251 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2515 | x: 252 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2525 | x: 253 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2535 | x: 254 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2545 | x: 255 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2555 | x: 256 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2565 | x: 257 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2575 | x: 258 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2585 | x: 259 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2595 | x: 260 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2605 | x: 261 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2615 | x: 262 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2625 | x: 263 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2635 | x: 264 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2645 | x: 265 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2655 | x: 266 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2665 | x: 267 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2675 | x: 268 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2685 | x: 269 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2695 | x: 270 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2705 | x: 271 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2715 | x: 272 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2725 | x: 273 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2735 | x: 274 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2745 | x: 275 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2755 | x: 276 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2765 | x: 277 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2775 | x: 278 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2785 | x: 279 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2795 | x: 280 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2805 | x: 281 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2815 | x: 282 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2825 | x: 283 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2835 | x: 284 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2845 | x: 285 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2855 | x: 286 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2865 | x: 287 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2875 | x: 288 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2885 | x: 289 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2895 | x: 290 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2905 | x: 291 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2915 | x: 292 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2925 | x: 293 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2935 | x: 294 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2945 | x: 295 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2955 | x: 296 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2965 | x: 297 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2975 | x: 298 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2985 | x: 299 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 2995 | x: 300 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3005 | x: 301 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3015 | x: 302 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3025 | x: 303 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3035 | x: 304 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3045 | x: 305 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3055 | x: 306 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3065 | x: 307 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3075 | x: 308 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3085 | x: 309 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3095 | x: 310 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3105 | x: 311 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3115 | x: 312 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3125 | x: 313 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3135 | x: 314 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3145 | x: 315 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3155 | x: 316 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3165 | x: 317 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3175 | x: 318 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3185 | x: 319 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3195 | x: 320 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3205 | x: 321 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3215 | x: 322 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3225 | x: 323 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3235 | x: 324 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3245 | x: 325 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3255 | x: 326 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3265 | x: 327 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3275 | x: 328 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3285 | x: 329 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3295 | x: 330 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3305 | x: 331 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3315 | x: 332 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3325 | x: 333 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3335 | x: 334 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3345 | x: 335 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3355 | x: 336 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3365 | x: 337 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3375 | x: 338 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3385 | x: 339 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3395 | x: 340 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3405 | x: 341 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3415 | x: 342 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3425 | x: 343 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3435 | x: 344 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3445 | x: 345 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3455 | x: 346 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3465 | x: 347 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3475 | x: 348 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3485 | x: 349 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3495 | x: 350 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3505 | x: 351 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3515 | x: 352 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3525 | x: 353 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3535 | x: 354 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3545 | x: 355 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3555 | x: 356 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3565 | x: 357 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3575 | x: 358 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3585 | x: 359 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3595 | x: 360 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3605 | x: 361 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3615 | x: 362 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3625 | x: 363 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3635 | x: 364 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3645 | x: 365 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3655 | x: 366 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3665 | x: 367 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3675 | x: 368 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3685 | x: 369 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3695 | x: 370 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3705 | x: 371 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3715 | x: 372 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3725 | x: 373 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3735 | x: 374 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3745 | x: 375 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3755 | x: 376 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3765 | x: 377 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3775 | x: 378 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3785 | x: 379 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3795 | x: 380 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3805 | x: 381 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3815 | x: 382 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3825 | x: 383 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3835 | x: 384 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3845 | x: 385 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3855 | x: 386 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3865 | x: 387 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3875 | x: 388 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3885 | x: 389 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3895 | x: 390 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3905 | x: 391 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3915 | x: 392 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3925 | x: 393 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3935 | x: 394 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3945 | x: 395 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3955 | x: 396 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3965 | x: 397 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3975 | x: 398 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3985 | x: 399 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 3995 | x: 400 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4005 | x: 401 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4015 | x: 402 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4025 | x: 403 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4035 | x: 404 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4045 | x: 405 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4055 | x: 406 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4065 | x: 407 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4075 | x: 408 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4085 | x: 409 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4095 | x: 410 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4105 | x: 411 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4115 | x: 412 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4125 | x: 413 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4135 | x: 414 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4145 | x: 415 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4155 | x: 416 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4165 | x: 417 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4175 | x: 418 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4185 | x: 419 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4195 | x: 420 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4205 | x: 421 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4215 | x: 422 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4225 | x: 423 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4235 | x: 424 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4245 | x: 425 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4255 | x: 426 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4265 | x: 427 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4275 | x: 428 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4285 | x: 429 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4295 | x: 430 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4305 | x: 431 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4315 | x: 432 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4325 | x: 433 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4335 | x: 434 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4345 | x: 435 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4355 | x: 436 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4365 | x: 437 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4375 | x: 438 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4385 | x: 439 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4395 | x: 440 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4405 | x: 441 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4415 | x: 442 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4425 | x: 443 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4435 | x: 444 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4445 | x: 445 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4455 | x: 446 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4465 | x: 447 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4475 | x: 448 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4485 | x: 449 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4495 | x: 450 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4505 | x: 451 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4515 | x: 452 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4525 | x: 453 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4535 | x: 454 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4545 | x: 455 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4555 | x: 456 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4565 | x: 457 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4575 | x: 458 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4585 | x: 459 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4595 | x: 460 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4605 | x: 461 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4615 | x: 462 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4625 | x: 463 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4635 | x: 464 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4645 | x: 465 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4655 | x: 466 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4665 | x: 467 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4675 | x: 468 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4685 | x: 469 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4695 | x: 470 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4705 | x: 471 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4715 | x: 472 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4725 | x: 473 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4735 | x: 474 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4745 | x: 475 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4755 | x: 476 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4765 | x: 477 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4775 | x: 478 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4785 | x: 479 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4795 | x: 480 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4805 | x: 481 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4815 | x: 482 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4825 | x: 483 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4835 | x: 484 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4845 | x: 485 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4855 | x: 486 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4865 | x: 487 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4875 | x: 488 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4885 | x: 489 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4895 | x: 490 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4905 | x: 491 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4915 | x: 492 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4925 | x: 493 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4935 | x: 494 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4945 | x: 495 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4955 | x: 496 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4965 | x: 497 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4975 | x: 498 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4985 | x: 499 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 4995 | x: 500 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5005 | x: 501 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5015 | x: 502 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5025 | x: 503 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5035 | x: 504 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5045 | x: 505 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5055 | x: 506 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5065 | x: 507 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5075 | x: 508 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5085 | x: 509 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5095 | x: 510 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5105 | x: 511 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5115 | x: 512 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5125 | x: 513 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5135 | x: 514 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5145 | x: 515 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5155 | x: 516 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5165 | x: 517 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5175 | x: 518 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5185 | x: 519 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5195 | x: 520 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5205 | x: 521 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5215 | x: 522 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5225 | x: 523 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5235 | x: 524 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5245 | x: 525 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5255 | x: 526 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5265 | x: 527 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5275 | x: 528 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5285 | x: 529 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5295 | x: 530 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5305 | x: 531 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5315 | x: 532 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5325 | x: 533 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5335 | x: 534 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5345 | x: 535 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5355 | x: 536 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5365 | x: 537 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5375 | x: 538 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5385 | x: 539 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5395 | x: 540 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5405 | x: 541 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5415 | x: 542 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5425 | x: 543 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5435 | x: 544 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5445 | x: 545 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5455 | x: 546 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5465 | x: 547 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5475 | x: 548 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5485 | x: 549 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5495 | x: 550 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5505 | x: 551 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5515 | x: 552 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5525 | x: 553 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5535 | x: 554 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5545 | x: 555 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5555 | x: 556 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5565 | x: 557 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5575 | x: 558 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5585 | x: 559 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5595 | x: 560 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5605 | x: 561 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5615 | x: 562 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5625 | x: 563 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5635 | x: 564 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5645 | x: 565 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5655 | x: 566 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5665 | x: 567 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5675 | x: 568 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5685 | x: 569 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5695 | x: 570 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5705 | x: 571 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5715 | x: 572 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5725 | x: 573 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5735 | x: 574 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5745 | x: 575 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5755 | x: 576 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5765 | x: 577 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5775 | x: 578 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5785 | x: 579 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5795 | x: 580 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5805 | x: 581 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5815 | x: 582 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5825 | x: 583 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5835 | x: 584 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5845 | x: 585 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5855 | x: 586 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5865 | x: 587 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5875 | x: 588 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5885 | x: 589 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5895 | x: 590 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5905 | x: 591 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5915 | x: 592 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5925 | x: 593 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5935 | x: 594 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5945 | x: 595 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5955 | x: 596 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5965 | x: 597 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5975 | x: 598 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5985 | x: 599 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 5995 | x: 600 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6005 | x: 601 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6015 | x: 602 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6025 | x: 603 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6035 | x: 604 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6045 | x: 605 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6055 | x: 606 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6065 | x: 607 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6075 | x: 608 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6085 | x: 609 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6095 | x: 610 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6105 | x: 611 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6115 | x: 612 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6125 | x: 613 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6135 | x: 614 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6145 | x: 615 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6155 | x: 616 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6165 | x: 617 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6175 | x: 618 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6185 | x: 619 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6195 | x: 620 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6205 | x: 621 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6215 | x: 622 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6225 | x: 623 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6235 | x: 624 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6245 | x: 625 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6255 | x: 626 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6265 | x: 627 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6275 | x: 628 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6285 | x: 629 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6295 | x: 630 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6305 | x: 631 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6315 | x: 632 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6325 | x: 633 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6335 | x: 634 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6345 | x: 635 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6355 | x: 636 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6365 | x: 637 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6375 | x: 638 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6385 | x: 639 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 6395 | x: 640 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6405 | x: 641 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6415 | x: 642 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6425 | x: 643 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6435 | x: 644 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6445 | x: 645 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6455 | x: 646 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6465 | x: 647 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6475 | x: 648 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6485 | x: 649 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6495 | x: 650 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6505 | x: 651 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6515 | x: 652 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6525 | x: 653 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6535 | x: 654 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6545 | x: 655 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 6555 | x: 656 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6565 | x: 657 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6575 | x: 658 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6585 | x: 659 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6595 | x: 660 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6605 | x: 661 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6615 | x: 662 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6625 | x: 663 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6635 | x: 664 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6645 | x: 665 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6655 | x: 666 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6665 | x: 667 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6675 | x: 668 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6685 | x: 669 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6695 | x: 670 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6705 | x: 671 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6715 | x: 672 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6725 | x: 673 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6735 | x: 674 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6745 | x: 675 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6755 | x: 676 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6765 | x: 677 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6775 | x: 678 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6785 | x: 679 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6795 | x: 680 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6805 | x: 681 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6815 | x: 682 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6825 | x: 683 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6835 | x: 684 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6845 | x: 685 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6855 | x: 686 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6865 | x: 687 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6875 | x: 688 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6885 | x: 689 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6895 | x: 690 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6905 | x: 691 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6915 | x: 692 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6925 | x: 693 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6935 | x: 694 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6945 | x: 695 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6955 | x: 696 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6965 | x: 697 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6975 | x: 698 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6985 | x: 699 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 6995 | x: 700 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7005 | x: 701 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7015 | x: 702 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7025 | x: 703 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7035 | x: 704 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7045 | x: 705 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7055 | x: 706 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7065 | x: 707 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7075 | x: 708 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7085 | x: 709 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7095 | x: 710 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7105 | x: 711 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7115 | x: 712 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7125 | x: 713 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7135 | x: 714 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7145 | x: 715 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7155 | x: 716 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7165 | x: 717 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7175 | x: 718 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7185 | x: 719 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7195 | x: 720 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7205 | x: 721 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7215 | x: 722 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7225 | x: 723 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7235 | x: 724 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7245 | x: 725 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7255 | x: 726 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7265 | x: 727 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7275 | x: 728 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7285 | x: 729 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7295 | x: 730 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7305 | x: 731 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7315 | x: 732 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7325 | x: 733 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7335 | x: 734 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7345 | x: 735 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7355 | x: 736 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7365 | x: 737 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7375 | x: 738 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7385 | x: 739 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7395 | x: 740 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7405 | x: 741 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7415 | x: 742 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7425 | x: 743 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7435 | x: 744 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7445 | x: 745 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7455 | x: 746 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7465 | x: 747 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7475 | x: 748 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7485 | x: 749 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7495 | x: 750 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7505 | x: 751 | y: 0 | hsync: 0 | vsync: 1 | sync_b: 0 | blank_b: 0
+# Time: 7515 | x: 752 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7525 | x: 753 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7535 | x: 754 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7545 | x: 755 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7555 | x: 756 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7565 | x: 757 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7575 | x: 758 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7585 | x: 759 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7595 | x: 760 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7605 | x: 761 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7615 | x: 762 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7625 | x: 763 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7635 | x: 764 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7645 | x: 765 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7655 | x: 766 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7665 | x: 767 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7675 | x: 768 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7685 | x: 769 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7695 | x: 770 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7705 | x: 771 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7715 | x: 772 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7725 | x: 773 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7735 | x: 774 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7745 | x: 775 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7755 | x: 776 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7765 | x: 777 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7775 | x: 778 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7785 | x: 779 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7795 | x: 780 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7805 | x: 781 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7815 | x: 782 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7825 | x: 783 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7835 | x: 784 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7845 | x: 785 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7855 | x: 786 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7865 | x: 787 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7875 | x: 788 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7885 | x: 789 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7895 | x: 790 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7905 | x: 791 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7915 | x: 792 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7925 | x: 793 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7935 | x: 794 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7945 | x: 795 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7955 | x: 796 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7965 | x: 797 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7975 | x: 798 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7985 | x: 799 | y: 0 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 0
+# Time: 7995 | x: 0 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8005 | x: 1 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8015 | x: 2 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8025 | x: 3 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8035 | x: 4 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8045 | x: 5 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8055 | x: 6 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8065 | x: 7 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8075 | x: 8 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8085 | x: 9 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8095 | x: 10 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8105 | x: 11 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8115 | x: 12 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8125 | x: 13 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8135 | x: 14 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8145 | x: 15 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8155 | x: 16 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8165 | x: 17 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8175 | x: 18 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8185 | x: 19 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8195 | x: 20 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8205 | x: 21 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8215 | x: 22 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8225 | x: 23 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8235 | x: 24 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8245 | x: 25 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8255 | x: 26 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8265 | x: 27 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8275 | x: 28 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8285 | x: 29 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8295 | x: 30 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8305 | x: 31 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8315 | x: 32 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8325 | x: 33 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8335 | x: 34 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8345 | x: 35 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8355 | x: 36 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8365 | x: 37 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8375 | x: 38 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8385 | x: 39 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8395 | x: 40 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8405 | x: 41 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8415 | x: 42 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8425 | x: 43 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8435 | x: 44 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8445 | x: 45 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8455 | x: 46 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8465 | x: 47 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8475 | x: 48 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8485 | x: 49 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8495 | x: 50 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8505 | x: 51 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8515 | x: 52 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8525 | x: 53 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8535 | x: 54 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8545 | x: 55 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8555 | x: 56 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8565 | x: 57 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8575 | x: 58 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8585 | x: 59 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8595 | x: 60 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8605 | x: 61 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8615 | x: 62 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8625 | x: 63 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8635 | x: 64 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8645 | x: 65 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8655 | x: 66 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8665 | x: 67 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8675 | x: 68 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8685 | x: 69 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8695 | x: 70 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8705 | x: 71 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8715 | x: 72 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8725 | x: 73 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8735 | x: 74 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8745 | x: 75 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8755 | x: 76 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8765 | x: 77 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8775 | x: 78 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8785 | x: 79 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8795 | x: 80 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8805 | x: 81 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8815 | x: 82 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8825 | x: 83 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8835 | x: 84 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8845 | x: 85 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8855 | x: 86 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8865 | x: 87 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8875 | x: 88 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8885 | x: 89 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8895 | x: 90 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8905 | x: 91 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8915 | x: 92 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8925 | x: 93 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8935 | x: 94 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8945 | x: 95 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8955 | x: 96 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8965 | x: 97 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8975 | x: 98 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8985 | x: 99 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 8995 | x: 100 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9005 | x: 101 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9015 | x: 102 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9025 | x: 103 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9035 | x: 104 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9045 | x: 105 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9055 | x: 106 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9065 | x: 107 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9075 | x: 108 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9085 | x: 109 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9095 | x: 110 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9105 | x: 111 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9115 | x: 112 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9125 | x: 113 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9135 | x: 114 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9145 | x: 115 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9155 | x: 116 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9165 | x: 117 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9175 | x: 118 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9185 | x: 119 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9195 | x: 120 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9205 | x: 121 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9215 | x: 122 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9225 | x: 123 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9235 | x: 124 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9245 | x: 125 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9255 | x: 126 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9265 | x: 127 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9275 | x: 128 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9285 | x: 129 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9295 | x: 130 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9305 | x: 131 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9315 | x: 132 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9325 | x: 133 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9335 | x: 134 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9345 | x: 135 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9355 | x: 136 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9365 | x: 137 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9375 | x: 138 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9385 | x: 139 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9395 | x: 140 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9405 | x: 141 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9415 | x: 142 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9425 | x: 143 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9435 | x: 144 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9445 | x: 145 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9455 | x: 146 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9465 | x: 147 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9475 | x: 148 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9485 | x: 149 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9495 | x: 150 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9505 | x: 151 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9515 | x: 152 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9525 | x: 153 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9535 | x: 154 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9545 | x: 155 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9555 | x: 156 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9565 | x: 157 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9575 | x: 158 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9585 | x: 159 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9595 | x: 160 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9605 | x: 161 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9615 | x: 162 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9625 | x: 163 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9635 | x: 164 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9645 | x: 165 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9655 | x: 166 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9665 | x: 167 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9675 | x: 168 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9685 | x: 169 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9695 | x: 170 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9705 | x: 171 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9715 | x: 172 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9725 | x: 173 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9735 | x: 174 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9745 | x: 175 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9755 | x: 176 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9765 | x: 177 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9775 | x: 178 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9785 | x: 179 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9795 | x: 180 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9805 | x: 181 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9815 | x: 182 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9825 | x: 183 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9835 | x: 184 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9845 | x: 185 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9855 | x: 186 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9865 | x: 187 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9875 | x: 188 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9885 | x: 189 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9895 | x: 190 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9905 | x: 191 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9915 | x: 192 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9925 | x: 193 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9935 | x: 194 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9945 | x: 195 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9955 | x: 196 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9965 | x: 197 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9975 | x: 198 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9985 | x: 199 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 9995 | x: 200 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10005 | x: 201 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10015 | x: 202 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10025 | x: 203 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10035 | x: 204 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10045 | x: 205 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10055 | x: 206 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10065 | x: 207 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10075 | x: 208 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10085 | x: 209 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# Time: 10095 | x: 210 | y: 1 | hsync: 1 | vsync: 1 | sync_b: 1 | blank_b: 1
+# ** Note: $finish    : C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv(44)
+#    Time: 10100 ps  Iteration: 0  Instance: /tb_VGA
+# 1
+# Break in Module tb_VGA at C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv line 44
+# End time: 02:50:30 on May 05,2025, Elapsed time: 0:01:47
 # Errors: 0, Warnings: 0
