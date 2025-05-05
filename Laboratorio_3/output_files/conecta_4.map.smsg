@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at VGA.sv(4): object "HSync" differs only in case from object "hsync" in the same scope File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv Line: 4
+Info (10281): Verilog HDL Declaration information at VGA.sv(10): object "VSync" differs only in case from object "vsync" in the same scope File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv Line: 10
