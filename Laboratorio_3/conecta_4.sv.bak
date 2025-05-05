@@ -1,0 +1,80 @@
+module conecta_4 (
+    input logic clk,
+    input logic rst,
+    input logic [2:0] column_select, // columna de 0 a 6
+    input logic play,                // señal que indica que el jugador hizo una jugada
+    input logic player,             // 0 = jugador 1, 1 = jugador 2
+    output logic win,
+    output logic [5:0][6:0] board   // 6 filas por 7 columnas
+);
+
+    // Representamos el tablero: 0 = vacío, 1 = jugador 1, 2 = jugador 2
+    logic [1:0] state_board [5:0][6:0]; // 2 bits por celda (0-3)
+
+    // Cargar ficha
+    task automatic drop_piece(input [2:0] col, input logic player);
+        for (int row = 0; row < 6; row++) begin
+            if (state_board[row][col] == 0) begin
+                state_board[row][col] = player + 1; // jugador 0 -> 1, jugador 1 -> 2
+                break;
+            end
+        end
+    endtask
+
+    // Comprobar si hay 4 en línea (horizontal, vertical y diagonales)
+    function automatic logic check_win();
+        logic win_detected = 0;
+
+        for (int row = 0; row < 6; row++) begin
+            for (int col = 0; col < 7; col++) begin
+                logic [1:0] cell = state_board[row][col];
+                if (cell == 0) continue;
+
+                // Horizontal
+                if (col <= 3 &&
+                    cell == state_board[row][col+1] &&
+                    cell == state_board[row][col+2] &&
+                    cell == state_board[row][col+3]) win_detected = 1;
+
+                // Vertical
+                if (row <= 2 &&
+                    cell == state_board[row+1][col] &&
+                    cell == state_board[row+2][col] &&
+                    cell == state_board[row+3][col]) win_detected = 1;
+
+                // Diagonal /
+                if (row <= 2 && col <= 3 &&
+                    cell == state_board[row+1][col+1] &&
+                    cell == state_board[row+2][col+2] &&
+                    cell == state_board[row+3][col+3]) win_detected = 1;
+
+                // Diagonal \
+                if (row <= 2 && col >= 3 &&
+                    cell == state_board[row+1][col-1] &&
+                    cell == state_board[row+2][col-2] &&
+                    cell == state_board[row+3][col-3]) win_detected = 1;
+            end
+        end
+        return win_detected;
+    endfunction
+
+    // Reset
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            for (int i = 0; i < 6; i++)
+                for (int j = 0; j < 7; j++)
+                    state_board[i][j] <= 0;
+            win <= 0;
+        end else if (play) begin
+            drop_piece(column_select, player);
+            win <= check_win();
+        end
+    end
+
+    // Mostrar tablero como salida
+    always_comb begin
+        for (int i = 0; i < 6; i++)
+            for (int j = 0; j < 7; j++)
+                board[i][j] = (state_board[i][j] != 0);
+    end
+endmodule
