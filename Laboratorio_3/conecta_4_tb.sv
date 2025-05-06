@@ -8,57 +8,106 @@ module conecta_4_tb;
     logic play;
     logic player;
     logic win;
-    logic [5:0][6:0] board; // [rows][columns] = [6][7]
+    logic draw;
+    logic [1:0] board [5:0][6:0];
 
     conecta_4 uut (
         .clk(clk),
         .rst(rst),
-        .column_select(column_select),
-        .play(play),
+        .col_sel(column_select),
+        .drop(play),
         .player(player),
         .win(win),
+        .draw(draw),
         .board(board)
     );
 
-    // Clock generation
     always #5 clk = ~clk;
 
-    // Task to simulate a play
-    task play_turn(input logic [2:0] col, input logic p);
+    task play_turn(input logic [2:0] col);
         @(posedge clk);
         column_select = col;
-        player = p;
         play = 1;
         @(posedge clk);
         play = 0;
         @(posedge clk);
     endtask
 
-    initial begin
-        // Dump signals to the wave window automatically
-        $dumpfile("conecta_4_tb.vcd");       // Archivo para guardar señales
-        $dumpvars(0, conecta_4_tb);          // Volcar todas las señales del testbench
-        $display("Inicio de simulación...");
-
-        rst = 1; play = 0; player = 0; column_select = 0;
-        #10;
+    task reset_game();
+        rst = 1;
+        play = 0;
+        column_select = 0;
+        @(posedge clk);
         rst = 0;
+        @(posedge clk);
+    endtask
 
-        // Turnos alternados entre jugador 0 y 1
-        play_turn(0, 0); // Jugador 1
-        play_turn(1, 1); // Jugador 2
-        play_turn(0, 0);
-        play_turn(1, 1);
-        play_turn(0, 0);
-        play_turn(1, 1);
-        play_turn(0, 0); // Jugador 1 gana
-
+    task check_victory(input string label);
+        repeat (2) @(posedge clk);
         if (win)
-            $display("¡Victoria detectada correctamente!");
+            $display("✔ %s: Victoria detectada correctamente.", label);
         else
-            $display("ERROR: No se detectó victoria.");
+            $display("✘ %s: ERROR, no se detectó victoria.", label);
+    endtask
+
+    initial begin
+        $display("=== INICIO DE SIMULACIÓN ===");
+
+        // Caso 1: Victoria vertical
+        reset_game();
+        play_turn(0); // J1
+        play_turn(1); // J2
+        play_turn(0); // J1
+        play_turn(1); // J2
+        play_turn(0); // J1
+        play_turn(1); // J2
+        play_turn(0); // J1
+        check_victory("Vertical");
+
+        // Caso 2: Victoria horizontal
+        reset_game();
+        play_turn(0); // J1
+        play_turn(0); // J2 (basura)
+        play_turn(1); // J1
+        play_turn(1); // J2 (basura)
+        play_turn(2); // J1
+        play_turn(2); // J2 (basura)
+        play_turn(3); // J1
+        check_victory("Horizontal");
+
+        // Caso 3: Diagonal descendente (\)
+        reset_game();
+        play_turn(0); // J1
+        play_turn(1); // J2
+        play_turn(1); // J1
+        play_turn(2); // J2
+        play_turn(2); // J1
+        play_turn(3); // J2
+        play_turn(2); // J1
+        play_turn(3); // J2
+        play_turn(3); // J1
+        play_turn(4); // J2
+        play_turn(3); // J1
+        check_victory("Diagonal descendente");
+
+        // Caso 4: Diagonal ascendente (/)
+        reset_game();
+        play_turn(3); // J1
+        play_turn(2); // J2
+        play_turn(2); // J1
+        play_turn(1); // J2
+        play_turn(1); // J1
+        play_turn(0); // J2
+        play_turn(1); // J1
+        play_turn(0); // J2
+        play_turn(0); // J1
+        play_turn(4); // J2
+        play_turn(0); // J1
+        check_victory("Diagonal ascendente");
 
         #20;
+        $display("=== FIN DE SIMULACIÓN ===");
         $finish;
     end
+
 endmodule

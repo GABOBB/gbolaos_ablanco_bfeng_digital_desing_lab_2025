@@ -8,58 +8,56 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/simulation/modelsim
-vtb_VGA
+Z0 dC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/simulation/modelsim
+vconecta_4
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1746434923
+!s110 1746517043
 !i10b 1
-!s100 1Ql6mQjcJoZ0]zmE6KzgD3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IKge]@kJAD;3W`Y>C9YA?C1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 1ceEAUVZ=0j`?WW3=NobB2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IiYXf[Vzd=Mi>REkVOOMYn3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1746434871
-8C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv
-FC:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv
-!i122 1
-L0 1 47
-Z5 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z6 !s108 1746434923.000000
-!s107 C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3|C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_VGA.sv|
-!i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3
-Z9 tCvgOpt 0
-ntb_@v@g@a
-vVGA
-R1
-R2
-!i10b 1
-!s100 flUQl]d1J0:WO;eEYCPL?3
-R3
-IIGB5Z:]:mZW?9866@QdiF2
-R4
-S1
-R0
-w1746434855
-8C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv
-FC:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv
+w1746516845
+8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv
+FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv
 !i122 0
-L0 1 38
-R5
+L0 1 165
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3|C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv|
+Z5 !s108 1746517043.000000
+!s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv|
 !i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3
+Z8 tCvgOpt 0
+vconecta_4_tb
+R1
+!s110 1746517044
+!i10b 1
+!s100 Oh^d_e14ULz9T?0KMOmL33
+R2
+I`XCeIcSJ7<Ti`];9GdGJl3
+R3
+S1
+R0
+w1746517016
+8C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv
+FC:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv
+!i122 1
+L0 3 111
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3|C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv|
+!i113 1
+R6
 R7
 R8
-R9
-n@v@g@a
