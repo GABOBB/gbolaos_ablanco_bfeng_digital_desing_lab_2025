@@ -63,3 +63,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE connect4_fsm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE gameOverScreen.sv
 set_global_assignment -name SYSTEMVERILOG_FILE matrixTablero.sv
 set_global_assignment -name SYSTEMVERILOG_FILE matrixTableroControl.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pll.sv
+set_global_assignment -name SYSTEMVERILOG_FILE random_selector.sv
