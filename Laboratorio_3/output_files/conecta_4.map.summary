@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue May  6 20:20:57 2025
+Analysis & Synthesis Status : Successful - Wed May  7 00:10:05 2025
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : conecta_4
 Top-level Entity Name : Connect4_Top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
+Total registers : 55
 Total pins : 50
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 0
+Total DSP Blocks : 8
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

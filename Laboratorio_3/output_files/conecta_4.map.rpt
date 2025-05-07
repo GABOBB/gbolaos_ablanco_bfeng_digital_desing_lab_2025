@@ -1,5 +1,5 @@
 Analysis & Synthesis report for conecta_4
-Tue May  6 20:20:57 2025
+Wed May  7 00:10:05 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -13,13 +13,21 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: VGA:vgaCont
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
- 14. Analysis & Synthesis Suppressed Messages
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |Connect4_Top|estado_reg
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: VGA:vgaCont
+ 14. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div1
+ 15. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div0
+ 16. Port Connectivity Checks: "videoGen:gameBoardDrawer"
+ 17. Port Connectivity Checks: "conecta_4:game_inst"
+ 18. Port Connectivity Checks: "vga_pll:pll_inst"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,17 +54,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May  6 20:20:57 2025          ;
+; Analysis & Synthesis Status     ; Successful - Wed May  7 00:10:05 2025          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; conecta_4                                      ;
 ; Top-level Entity Name           ; Connect4_Top                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
+; Total registers                 ; 55                                             ;
 ; Total pins                      ; 50                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
+; Total DSP Blocks                ; 8                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
 ; Total HSSI TX PCSs              ; 0                                              ;
@@ -159,73 +167,214 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 16          ;
-; Maximum allowed            ; 10          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
-; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv     ;         ;
-; VGA.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv          ;         ;
-; Connect4_Top.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; conecta_4.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv               ;         ;
+; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv                ;         ;
+; VGA.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv                     ;         ;
+; Connect4_Top.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv            ;         ;
+; startScreen.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv             ;         ;
+; vga_pll.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv                 ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                             ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                            ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                        ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                             ;         ;
+; db/lpm_divide_hbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_hbm.tdf      ;         ;
+; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_nlh.tdf ;         ;
+; db/alt_u_div_kve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_kve.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 50    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 50    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 409       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 763       ;
+;     -- 7 input functions                    ; 1         ;
+;     -- 6 input functions                    ; 52        ;
+;     -- 5 input functions                    ; 113       ;
+;     -- 4 input functions                    ; 70        ;
+;     -- <=3 input functions                  ; 527       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 55        ;
+;                                             ;           ;
+; I/O pins                                    ; 50        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 8         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 35        ;
+; Total fan-out                               ; 2685      ;
+; Average fan-out                             ; 2.90      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; |Connect4_Top              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 50   ; 0            ; |Connect4_Top       ; Connect4_Top ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                              ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |Connect4_Top                             ; 763 (24)            ; 55 (4)                    ; 0                 ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
+;    |VGA:vgaCont|                          ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|VGA:vgaCont                                                                                                              ; VGA                 ; work         ;
+;    |conecta_4:game_inst|                  ; 59 (59)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|conecta_4:game_inst                                                                                                      ; conecta_4           ; work         ;
+;    |startScreen:start|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|startScreen:start                                                                                                        ; startScreen         ; work         ;
+;    |vga_pll:pll_inst|                     ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|vga_pll:pll_inst                                                                                                         ; vga_pll             ; work         ;
+;    |videoGen:gameBoardDrawer|             ; 644 (482)           ; 0 (0)                     ; 0                 ; 8          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer                                                                                                 ; videoGen            ; work         ;
+;       |lpm_divide:Div0|                   ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_hbm:auto_generated|  ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
+;             |sign_div_unsign_nlh:divider| ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
+;                |alt_u_div_kve:divider|    ; 81 (81)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
+;       |lpm_divide:Div1|                   ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_hbm:auto_generated|  ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
+;             |sign_div_unsign_nlh:divider| ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
+;                |alt_u_div_kve:divider|    ; 81 (81)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+----------------------------------------+--------------------------------------+
-; Register name                          ; Reason for Removal                   ;
-+----------------------------------------+--------------------------------------+
-; VGA:vgaCont|y[0..9]                    ; Stuck at GND due to stuck port clock ;
-; VGA:vgaCont|x[0..9]                    ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 20 ;                                      ;
-+----------------------------------------+--------------------------------------+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 9x9                 ; 3           ;
+; Two Independent 18x18           ; 5           ;
+; Total number of DSP blocks      ; 8           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 8           ;
++---------------------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------+
+; State Machine - |Connect4_Top|estado_reg                                                                        ;
++----------------------+---------------------+----------------------+----------------------+----------------------+
+; Name                 ; estado_reg.P_INICIO ; estado_reg.GAME_OVER ; estado_reg.JUGADA_P2 ; estado_reg.JUGADA_P1 ;
++----------------------+---------------------+----------------------+----------------------+----------------------+
+; estado_reg.P_INICIO  ; 0                   ; 0                    ; 0                    ; 0                    ;
+; estado_reg.JUGADA_P1 ; 1                   ; 0                    ; 0                    ; 1                    ;
+; estado_reg.JUGADA_P2 ; 1                   ; 0                    ; 1                    ; 0                    ;
+; estado_reg.GAME_OVER ; 1                   ; 1                    ; 0                    ; 0                    ;
++----------------------+---------------------+----------------------+----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++------------------------------------------+------------------------------------------------------+
+; Register name                            ; Reason for Removal                                   ;
++------------------------------------------+------------------------------------------------------+
+; conecta_4:game_inst|height_counter[6][2] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[6][1] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[6][0] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[5][2] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[5][1] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[5][0] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[4][2] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[4][1] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[4][0] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[3][2] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[3][1] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[3][0] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[2][2] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[2][1] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[2][0] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[1][2] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[1][1] ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[1][0] ; Lost fanout                                          ;
+; conecta_4:game_inst|last_col[0..2]       ; Stuck at GND due to stuck port data_in               ;
+; conecta_4:game_inst|state_board[0][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[1][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[2][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[3][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[4][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[5][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
+; conecta_4:game_inst|state_board[0][1][0] ; Stuck at GND due to stuck port data_in               ;
+; estado_reg~6                             ; Lost fanout                                          ;
+; conecta_4:game_inst|height_counter[0][0] ; Merged with conecta_4:game_inst|filled_cells[0]      ;
+; Total Number of Removed Registers = 95   ;                                                      ;
++------------------------------------------+------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -233,14 +382,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 55    ;
+; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 29    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 27    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux16     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux16     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux26     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux19     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux22     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|count     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|b                             ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|r                             ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux23     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux18     ;
+; 64:1               ; 2 bits    ; 84 LEs        ; 30 LEs               ; 54 LEs                 ; No         ; |Connect4_Top|videoGen:gameBoardDrawer|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
 +----------------------------------------------------------+
@@ -262,18 +430,122 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div1 ;
++------------------------+----------------+-------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                            ;
++------------------------+----------------+-------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                         ;
+; LPM_WIDTHD             ; 6              ; Untyped                                         ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
+; LPM_PIPELINE           ; 0              ; Untyped                                         ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                         ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
++------------------------+----------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                            ;
++------------------------+----------------+-------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                         ;
+; LPM_WIDTHD             ; 6              ; Untyped                                         ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
+; LPM_PIPELINE           ; 0              ; Untyped                                         ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                         ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
++------------------------+----------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:gameBoardDrawer" ;
++------------------+-------+----------+----------------+
+; Port             ; Type  ; Severity ; Details        ;
++------------------+-------+----------+----------------+
+; current_state[2] ; Input ; Info     ; Stuck at GND   ;
++------------------+-------+----------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "conecta_4:game_inst"                                                                   ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; col_sel ; Input  ; Info     ; Stuck at GND                                                                        ;
+; player  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; draw    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_pll:pll_inst"                                                                                                                                                                     ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; locked  ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
+; arriav_ff             ; 55                          ;
+;     CLR               ; 15                          ;
+;     ENA               ; 3                           ;
+;     ENA CLR           ; 14                          ;
+;     ENA SCLR          ; 10                          ;
+;     SCLR              ; 10                          ;
+;     plain             ; 3                           ;
+; arriav_lcell_comb     ; 766                         ;
+;     arith             ; 360                         ;
+;         0 data inputs ; 24                          ;
+;         1 data inputs ; 260                         ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 25                          ;
+;         5 data inputs ; 1                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 309                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 59                          ;
+;         3 data inputs ; 30                          ;
+;         4 data inputs ; 45                          ;
+;         5 data inputs ; 112                         ;
+;         6 data inputs ; 52                          ;
+;     shared            ; 96                          ;
 ;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 90                          ;
+; arriav_mac            ; 8                           ;
 ; boundary_port         ; 50                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 21.80                       ;
+; Average LUT depth     ; 11.52                       ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +554,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -292,116 +564,104 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue May  6 20:20:51 2025
+    Info: Processing started: Wed May  7 00:09:58 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off conecta_4 -c conecta_4
+Warning (125092): Tcl Script File vga_pll.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE vga_pll.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file conecta_4.sv
-    Info (12023): Found entity 1: conecta_4 File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 1
+    Info (12023): Found entity 1: conecta_4 File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file conecta_4_tb.sv
-    Info (12023): Found entity 1: conecta_4_tb File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv Line: 3
+    Info (12023): Found entity 1: conecta_4_tb File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file videogen.sv
-    Info (12023): Found entity 1: videoGen File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 1
+    Info (12023): Found entity 1: videoGen File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
-    Info (12023): Found entity 1: VGA File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv Line: 1
+    Info (12023): Found entity 1: VGA File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file connect4_top.sv
-    Info (12023): Found entity 1: Connect4_Top File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 1
+    Info (12023): Found entity 1: Connect4_Top File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file startscreen.sv
+    Info (12023): Found entity 1: startScreen File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_connect4_top.sv
+    Info (12023): Found entity 1: tb_Connect4_Top File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_Connect4_Top.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file vga_pll.sv
+    Info (12023): Found entity 1: vga_pll File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at Connect4_Top.sv(151): created implicit net for "board_full" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 151
 Info (12127): Elaborating entity "Connect4_Top" for the top level hierarchy
-Warning (10858): Verilog HDL warning at Connect4_Top.sv(41): object winner_found used but never assigned File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 41
-Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(42): object "board_full" assigned a value but never read File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 42
-Warning (10858): Verilog HDL warning at Connect4_Top.sv(54): object start_r used but never assigned File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 54
-Warning (10858): Verilog HDL warning at Connect4_Top.sv(54): object start_g used but never assigned File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 54
-Warning (10858): Verilog HDL warning at Connect4_Top.sv(54): object start_b used but never assigned File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 54
-Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(57): object "is_game_over_state_active" assigned a value but never read File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 57
-Warning (10030): Net "start_r" at Connect4_Top.sv(54) has no driver or initial value, using a default initial value '0' File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 54
-Warning (10030): Net "start_g" at Connect4_Top.sv(54) has no driver or initial value, using a default initial value '0' File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 54
-Warning (10030): Net "start_b" at Connect4_Top.sv(54) has no driver or initial value, using a default initial value '0' File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 54
-Warning (10034): Output port "segments" at Connect4_Top.sv(22) has no driver File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-Warning (10034): Output port "p1_led" at Connect4_Top.sv(23) has no driver File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 23
-Warning (10034): Output port "p2_led" at Connect4_Top.sv(24) has no driver File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 24
-Warning (10034): Output port "game_over_led" at Connect4_Top.sv(25) has no driver File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 25
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vgaCont" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 65
-Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:gameBoardDrawer" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 90
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(15): truncated value with size 32 to match size of target (11) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(16): truncated value with size 32 to match size of target (11) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 16
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(67): object "player1_chip" assigned a value but never read File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 67
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(67): object "player2_chip" assigned a value but never read File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 67
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(91): truncated value with size 11 to match size of target (3) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 91
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(93): truncated value with size 11 to match size of target (3) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 93
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(95): truncated value with size 32 to match size of target (3) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 95
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(115): truncated value with size 32 to match size of target (16) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 115
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(122): truncated value with size 32 to match size of target (16) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 122
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(129): truncated value with size 32 to match size of target (16) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 129
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(136): truncated value with size 32 to match size of target (16) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 136
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(160): truncated value with size 32 to match size of target (16) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 160
+Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(151): object "board_full" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 151
+Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(46): object "is_game_over_state_active" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 46
+Warning (10034): Output port "p1_led" at Connect4_Top.sv(20) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
+Warning (10034): Output port "p2_led" at Connect4_Top.sv(21) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
+Warning (10034): Output port "game_over_led" at Connect4_Top.sv(22) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:pll_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at vga_pll.sv(28): truncated value with size 32 to match size of target (2) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv Line: 28
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vgaCont" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 91
+Info (12128): Elaborating entity "conecta_4" for hierarchy "conecta_4:game_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 102
+Warning (10230): Verilog HDL assignment warning at conecta_4.sv(129): truncated value with size 32 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 129
+Warning (10230): Verilog HDL assignment warning at conecta_4.sv(130): truncated value with size 32 to match size of target (6) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 130
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state_board" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:gameBoardDrawer" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 133
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(15): truncated value with size 32 to match size of target (11) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(16): truncated value with size 32 to match size of target (11) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 16
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(67): object "player1_chip" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 67
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(67): object "player2_chip" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 67
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(91): truncated value with size 11 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 91
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(93): truncated value with size 11 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 93
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(95): truncated value with size 32 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 95
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(115): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 115
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(122): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 122
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(129): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 129
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(136): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 136
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(160): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 160
+Info (12128): Elaborating entity "startScreen" for hierarchy "startScreen:start" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 142
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:gameBoardDrawer|Div1" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 94
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:gameBoardDrawer|Div0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 92
+Info (12130): Elaborated megafunction instantiation "videoGen:gameBoardDrawer|lpm_divide:Div1" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 94
+Info (12133): Instantiated megafunction "videoGen:gameBoardDrawer|lpm_divide:Div1" with the following parameter: File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 94
+    Info (12134): Parameter "LPM_WIDTHN" = "11"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hbm.tdf
+    Info (12023): Found entity 1: lpm_divide_hbm File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_hbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_nlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_nlh File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_nlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kve.tdf
+    Info (12023): Found entity 1: alt_u_div_kve File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_kve.tdf Line: 23
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vgaclk" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 14
-    Warning (13410): Pin "hsync" is stuck at VCC File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 15
-    Warning (13410): Pin "vsync" is stuck at VCC File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 16
-    Warning (13410): Pin "sync_b" is stuck at VCC File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 17
-    Warning (13410): Pin "blank_b" is stuck at VCC File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 18
-    Warning (13410): Pin "r[0]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[1]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[2]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[3]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[4]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[5]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[6]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "r[7]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
-    Warning (13410): Pin "g[0]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[1]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[2]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[3]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[4]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[5]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[6]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "g[7]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
-    Warning (13410): Pin "b[0]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[1]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[2]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[3]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[4]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[5]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[6]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "b[7]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
-    Warning (13410): Pin "segments[0]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "segments[1]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "segments[2]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "segments[3]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "segments[4]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "segments[5]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "segments[6]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
-    Warning (13410): Pin "p1_led" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 23
-    Warning (13410): Pin "p2_led" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 24
-    Warning (13410): Pin "game_over_led" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 25
-    Warning (13410): Pin "estado[0]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 27
-    Warning (13410): Pin "estado[1]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 27
-    Warning (13410): Pin "estado[2]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 27
-    Warning (13410): Pin "estado[3]" is stuck at GND File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 27
-Info (144001): Generated suppressed messages file C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/conecta_4.map.smsg
+    Warning (13410): Pin "segments[1]" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 19
+    Warning (13410): Pin "p1_led" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
+    Warning (13410): Pin "p2_led" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
+    Warning (13410): Pin "game_over_led" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
+    Warning (13410): Pin "estado[2]" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 24
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 19 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/conecta_4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 2
-    Warning (15610): No output dependent on input pin "rst" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 3
-    Warning (15610): No output dependent on input pin "col_left_raw" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 6
-    Warning (15610): No output dependent on input pin "col_right_raw" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 7
-    Warning (15610): No output dependent on input pin "confirm_raw" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 8
-    Warning (15610): No output dependent on input pin "p1_start_raw" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 10
-    Warning (15610): No output dependent on input pin "p2_start_raw" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 11
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "col_left_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 5
+    Warning (15610): No output dependent on input pin "col_right_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 6
+Info (21057): Implemented 852 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 43 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Tue May  6 20:20:57 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info (21061): Implemented 794 logic cells
+    Info (21062): Implemented 8 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4893 megabytes
+    Info: Processing ended: Wed May  7 00:10:05 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/conecta_4.map.smsg.
+The suppressed messages can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/conecta_4.map.smsg.
 
 

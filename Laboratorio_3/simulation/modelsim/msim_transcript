@@ -1,7 +1,15 @@
 # Reading pref.tcl
-# do conecta_4_run_msim_rtl_verilog.do
+# do conecta_4_run_msim_rtl_systemverilog.do
+# if ![file isdirectory conecta_4_iputf_libs] {
+# 	file mkdir conecta_4_iputf_libs
+# }
+# 
 # if ![file isdirectory verilog_libs] {
 # 	file mkdir verilog_libs
+# }
+# 
+# if ![file isdirectory vhdl_libs] {
+# 	file mkdir vhdl_libs
 # }
 # 
 # vlib verilog_libs/altera_ver
@@ -13,7 +21,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:10 on May 06,2025
+# Start time: 23:35:40 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +103,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 01:37:10 on May 06,2025, Elapsed time: 0:00:00
+# End time: 23:35:41 on May 06,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +114,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:11 on May 06,2025
+# Start time: 23:35:41 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +178,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 01:37:11 on May 06,2025, Elapsed time: 0:00:00
+# End time: 23:35:42 on May 06,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +189,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:11 on May 06,2025
+# Start time: 23:35:42 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +231,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 01:37:12 on May 06,2025, Elapsed time: 0:00:01
+# End time: 23:35:42 on May 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +242,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:12 on May 06,2025
+# Start time: 23:35:42 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +372,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 01:37:13 on May 06,2025, Elapsed time: 0:00:01
+# End time: 23:35:43 on May 06,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +383,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:13 on May 06,2025
+# Start time: 23:35:43 on May 06,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +466,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 01:37:14 on May 06,2025, Elapsed time: 0:00:01
+# End time: 23:35:44 on May 06,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +477,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:14 on May 06,2025
+# Start time: 23:35:44 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +491,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 01:37:16 on May 06,2025, Elapsed time: 0:00:02
+# End time: 23:35:46 on May 06,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:16 on May 06,2025
+# Start time: 23:35:46 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 01:37:17 on May 06,2025, Elapsed time: 0:00:01
+# End time: 23:35:47 on May 06,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:17 on May 06,2025
+# Start time: 23:35:47 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +643,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 01:37:18 on May 06,2025, Elapsed time: 0:00:01
+# End time: 23:35:48 on May 06,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +654,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:19 on May 06,2025
+# Start time: 23:35:48 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 01:37:20 on May 06,2025, Elapsed time: 0:00:01
+# End time: 23:35:50 on May 06,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:20 on May 06,2025
+# Start time: 23:35:50 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +762,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 01:37:20 on May 06,2025, Elapsed time: 0:00:00
+# End time: 23:35:50 on May 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +773,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:21 on May 06,2025
+# Start time: 23:35:50 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +783,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 01:37:23 on May 06,2025, Elapsed time: 0:00:02
+# End time: 23:35:52 on May 06,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:23 on May 06,2025
+# Start time: 23:35:52 on May 06,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 01:37:23 on May 06,2025, Elapsed time: 0:00:00
+# End time: 23:35:52 on May 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,225 +806,66 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll_sim/vga_pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:35:52 on May 06,2025
+# vlog -reportprogress 300 C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll_sim/vga_pll.vo 
+# -- Compiling module vga_pll
+# 
+# Top level modules:
+# 	vga_pll
+# End time: 23:35:53 on May 06,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
 # vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:23 on May 06,2025
+# Start time: 23:35:53 on May 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv 
 # -- Compiling module conecta_4
 # 
 # Top level modules:
 # 	conecta_4
-# End time: 01:37:23 on May 06,2025, Elapsed time: 0:00:00
+# End time: 23:35:53 on May 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:37:23 on May 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv 
-# -- Compiling module conecta_4_tb
+# Start time: 23:35:53 on May 06,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv 
+# -- Compiling module videoGen
 # 
 # Top level modules:
-# 	conecta_4_tb
-# End time: 01:37:24 on May 06,2025, Elapsed time: 0:00:01
+# 	videoGen
+# End time: 23:35:53 on May 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:35:53 on May 06,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/VGA.sv 
+# -- Compiling module VGA
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  conecta_4_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" conecta_4_tb 
-# Start time: 01:37:24 on May 06,2025
-# Loading sv_std.std
-# Loading work.conecta_4_tb
-# Loading work.conecta_4
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# === INICIO DE SIMULACIÓN ===
-# Jugador 0 colocó en fila=0, columna=0
-# Evaluando victoria para jugador=1 en [0][0]
-#   Valor en celda: 1
-#   filled_cells: 1
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=1
-# Evaluando victoria para jugador=2 en [0][1]
-#   Valor en celda: 10
-#   filled_cells: 2
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=1, columna=0
-# Evaluando victoria para jugador=1 en [1][0]
-#   Valor en celda: 1
-#   filled_cells: 3
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=1, columna=1
-# Evaluando victoria para jugador=2 en [1][1]
-#   Valor en celda: 10
-#   filled_cells: 4
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=2, columna=0
-# Evaluando victoria para jugador=1 en [2][0]
-#   Valor en celda: 1
-#   filled_cells: 5
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=2, columna=1
-# Evaluando victoria para jugador=2 en [2][1]
-#   Valor en celda: 10
-#   filled_cells: 6
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=3, columna=0
-# Evaluando victoria para jugador=1 en [3][0]
-#   Valor en celda: 1
-#   filled_cells: 7
-# ¡Victoria detectada para jugador=1!
-# ✔ Vertical: Victoria detectada correctamente.
-# Jugador 0 colocó en fila=0, columna=0
-# Evaluando victoria para jugador=1 en [0][0]
-#   Valor en celda: 1
-#   filled_cells: 1
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=1, columna=0
-# Evaluando victoria para jugador=2 en [1][0]
-#   Valor en celda: 10
-#   filled_cells: 2
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=0, columna=1
-# Evaluando victoria para jugador=1 en [0][1]
-#   Valor en celda: 1
-#   filled_cells: 3
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=1, columna=1
-# Evaluando victoria para jugador=2 en [1][1]
-#   Valor en celda: 10
-#   filled_cells: 4
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=0, columna=2
-# Evaluando victoria para jugador=1 en [0][2]
-#   Valor en celda: 1
-#   filled_cells: 5
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=1, columna=2
-# Evaluando victoria para jugador=2 en [1][2]
-#   Valor en celda: 10
-#   filled_cells: 6
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=0, columna=3
-# Evaluando victoria para jugador=1 en [0][3]
-#   Valor en celda: 1
-#   filled_cells: 7
-# ¡Victoria detectada para jugador=1!
-# ✔ Horizontal: Victoria detectada correctamente.
-# Jugador 0 colocó en fila=0, columna=0
-# Evaluando victoria para jugador=1 en [0][0]
-#   Valor en celda: 1
-#   filled_cells: 1
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=1
-# Evaluando victoria para jugador=2 en [0][1]
-#   Valor en celda: 10
-#   filled_cells: 2
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=1, columna=1
-# Evaluando victoria para jugador=1 en [1][1]
-#   Valor en celda: 1
-#   filled_cells: 3
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=2
-# Evaluando victoria para jugador=2 en [0][2]
-#   Valor en celda: 10
-#   filled_cells: 4
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=1, columna=2
-# Evaluando victoria para jugador=1 en [1][2]
-#   Valor en celda: 1
-#   filled_cells: 5
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=3
-# Evaluando victoria para jugador=2 en [0][3]
-#   Valor en celda: 10
-#   filled_cells: 6
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=2, columna=2
-# Evaluando victoria para jugador=1 en [2][2]
-#   Valor en celda: 1
-#   filled_cells: 7
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=1, columna=3
-# Evaluando victoria para jugador=2 en [1][3]
-#   Valor en celda: 10
-#   filled_cells: 8
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=2, columna=3
-# Evaluando victoria para jugador=1 en [2][3]
-#   Valor en celda: 1
-#   filled_cells: 9
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=4
-# Evaluando victoria para jugador=2 en [0][4]
-#   Valor en celda: 10
-#   filled_cells: 10
-# ¡Victoria detectada para jugador=2!
-# ✔ Diagonal descendente: Victoria detectada correctamente.
-# Jugador 0 colocó en fila=0, columna=3
-# Evaluando victoria para jugador=1 en [0][3]
-#   Valor en celda: 1
-#   filled_cells: 1
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=2
-# Evaluando victoria para jugador=2 en [0][2]
-#   Valor en celda: 10
-#   filled_cells: 2
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=1, columna=2
-# Evaluando victoria para jugador=1 en [1][2]
-#   Valor en celda: 1
-#   filled_cells: 3
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=1
-# Evaluando victoria para jugador=2 en [0][1]
-#   Valor en celda: 10
-#   filled_cells: 4
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=1, columna=1
-# Evaluando victoria para jugador=1 en [1][1]
-#   Valor en celda: 1
-#   filled_cells: 5
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=0
-# Evaluando victoria para jugador=2 en [0][0]
-#   Valor en celda: 10
-#   filled_cells: 6
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=2, columna=1
-# Evaluando victoria para jugador=1 en [2][1]
-#   Valor en celda: 1
-#   filled_cells: 7
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=1, columna=0
-# Evaluando victoria para jugador=2 en [1][0]
-#   Valor en celda: 10
-#   filled_cells: 8
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=2, columna=0
-# Evaluando victoria para jugador=1 en [2][0]
-#   Valor en celda: 1
-#   filled_cells: 9
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 1 colocó en fila=0, columna=4
-# Evaluando victoria para jugador=2 en [0][4]
-#   Valor en celda: 10
-#   filled_cells: 10
-# No hay victoria. Turno del siguiente jugador.
-# Jugador 0 colocó en fila=3, columna=0
-# Evaluando victoria para jugador=1 en [3][0]
-#   Valor en celda: 1
-#   filled_cells: 11
-# ¡Victoria detectada para jugador=1!
-# ✔ Diagonal ascendente: Victoria detectada correctamente.
-# === FIN DE SIMULACIÓN ===
-# ** Note: $finish    : C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv(110)
-#    Time: 1255 ns  Iteration: 0  Instance: /conecta_4_tb
-# 1
-# Break in Module conecta_4_tb at C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4_tb.sv line 110
-# End time: 01:38:38 on May 06,2025, Elapsed time: 0:01:14
+# Top level modules:
+# 	VGA
+# End time: 23:35:53 on May 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:35:53 on May 06,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3" C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv 
+# -- Compiling module Connect4_Top
+# ** Error: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv(187): (vlog-2110) Illegal reference to net "segments".
+# ** Error: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv(188): (vlog-2110) Illegal reference to net "segments".
+# ** Error: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv(189): (vlog-2110) Illegal reference to net "segments".
+# ** Error: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv(190): (vlog-2110) Illegal reference to net "segments".
+# ** Error: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv(191): (vlog-2110) Illegal reference to net "segments".
+# End time: 23:35:53 on May 06,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./conecta_4_run_msim_rtl_systemverilog.do line 66
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3 {C:/Users/Xpc/Documents/GitHub/g..."
