@@ -65,3 +65,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE matrixTablero.sv
 set_global_assignment -name SYSTEMVERILOG_FILE matrixTableroControl.sv
 set_global_assignment -name SYSTEMVERILOG_FILE pll.sv
 set_global_assignment -name SYSTEMVERILOG_FILE random_selector.sv
+set_global_assignment -name SYSTEMVERILOG_FILE startScreen.sv
