@@ -1,12 +1,9 @@
 module Connect4_Top (
     input clk,
     input rst,
-
     input col_left_raw,
     input col_right_raw,
     input confirm_raw,
-    input p1_start_raw,
-    input p2_start_raw,
 
     output vgaclk,
     output hsync,
@@ -23,31 +20,28 @@ module Connect4_Top (
     output [3:0] estado
 );
 
-    // Señales debounced
-    wire col_left_clean;
-    wire col_right_clean;
-    wire confirm_clean;
+    // Señales debounce internas
+    logic col_left_clean, col_right_clean, confirm_clean;
 
-    debounce db_left (
-    .clk(clk), .rst(rst),
-    .noisy_in(col_left_raw),
-    .debounced_out(col_left_clean)
-);
+    debounce db_col_left (
+        .clk(clk), .rst(rst),
+        .noisy_in(col_left_raw),
+        .debounced_out(col_left_clean)
+    );
 
-debounce db_right (
-    .clk(clk), .rst(rst),
-    .noisy_in(col_right_raw),
-    .debounced_out(col_right_clean)
-);
+    debounce db_col_right (
+        .clk(clk), .rst(rst),
+        .noisy_in(col_right_raw),
+        .debounced_out(col_right_clean)
+    );
 
-debounce db_confirm (
-    .clk(clk), .rst(rst),
-    .noisy_in(confirm_raw),
-    .debounced_out(confirm_clean)
-);
+    debounce db_confirm (
+        .clk(clk), .rst(rst),
+        .noisy_in(confirm_raw),
+        .debounced_out(confirm_clean)
+    );
 
-
-    // Clock PLL para VGA
+    // PLL VGA
     wire clk_25MHz;
     vga_pll pll_inst (
         .refclk(clk),
@@ -65,9 +59,7 @@ debounce db_confirm (
     wire [23:0] winning_line;
     wire [7:0] game_r, game_g, game_b;
     wire [7:0] start_r, start_g, start_b;
-
-    logic is_initial_state_active;
-    logic is_game_over_state_active;
+    wire [7:0] gameover_r, gameover_g, gameover_b;
 
     logic [3:0] estado_internal;
     assign estado = estado_internal;
@@ -87,7 +79,7 @@ debounce db_confirm (
     estado_t estado_reg, estado_sig;
 
     always_ff @(posedge clk or posedge rst) begin
-        if (rst) estado_reg <= P_INICIO;
+        if (rst) estado_reg <= JUGADA_P1;
         else     estado_reg <= estado_sig;
     end
 
@@ -142,7 +134,6 @@ debounce db_confirm (
     assign valid_columns[1] = (matrix[(5*7 + 1)*2 +: 2] == 2'b00);
     assign valid_columns[0] = (matrix[(5*7 + 0)*2 +: 2] == 2'b00);
 
-    // Control del selector de columna
     logic [2:0] selected_col_reg;
     assign selected_col = selected_col_reg;
 
@@ -158,18 +149,20 @@ debounce db_confirm (
     end
 
     videoGen gameBoardDrawer ( 
-        .clk(clk),       
-        .rst_n(~rst),
-        .x_pos(x),
-        .y_pos(y),
-        .grid_state(matrix),
-        .current_state(estado),
-        .selected_col(selected_col),
-        .winning_line(winning_line),
-        .red(game_r),
-        .green(game_g),
-        .blue(game_b)
-    );
+    .clk(clk),       
+    .rst_n(~rst),
+    .x_pos(x),
+    .y_pos(y),
+    .grid_state(matrix),
+    .current_state(estado),
+    .selected_col(selected_col),
+    .current_player(player),
+    .winning_line(winning_line),
+    .red(game_r),
+    .green(game_g),
+    .blue(game_b)
+);
+
 
     startScreen start (
         .clk(clk),
@@ -180,23 +173,32 @@ debounce db_confirm (
         .blue(start_b)
     );
 
-    assign is_initial_state_active = (estado == 4'b0000);
-    assign is_game_over_state_active = (estado == 4'b1000);
+    gameOverScreen gameover (
+        .clk(clk),
+        .x_pos(x),
+        .y_pos(y),
+        .red(gameover_r),
+        .green(gameover_g),
+        .blue(gameover_b)
+    );
 
-    assign r = is_initial_state_active ? start_r : game_r;
-    assign g = is_initial_state_active ? start_g : game_g;
-    assign b = is_initial_state_active ? start_b : game_b;
+    assign r = (estado == P_INICIO) ? start_r :
+               (estado == GAME_OVER) ? gameover_r : game_r;
+    assign g = (estado == P_INICIO) ? start_g :
+               (estado == GAME_OVER) ? gameover_g : game_g;
+    assign b = (estado == P_INICIO) ? start_b :
+               (estado == GAME_OVER) ? gameover_b : game_b;
 
     assign board_full = (valid_columns == 7'b0) && !win;
 
     always_comb begin
         case (estado)
-            4'b0000: segments = 7'b1000000;
-            4'b0001: segments = 7'b1111001;
-            4'b0010: segments = 7'b0100100;
-            4'b1000: segments = 7'b0000001;
+            4'b0000: segments = 7'b1000000; // 0
+            4'b0001: segments = 7'b1111001; // 1
+            4'b0010: segments = 7'b0100100; // 2
+            4'b1000: segments = 7'b0000001; // 8
             default: segments = 7'b1111111;
         endcase
     end
-
+	 
 endmodule

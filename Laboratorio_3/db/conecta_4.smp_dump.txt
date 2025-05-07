@@ -1,7 +1,7 @@
 
 State Machine - |Connect4_Top|estado_reg
 Name estado_reg.P_INICIO estado_reg.GAME_OVER estado_reg.JUGADA_P2 estado_reg.JUGADA_P1 
-estado_reg.P_INICIO 0 0 0 0 
-estado_reg.JUGADA_P1 1 0 0 1 
-estado_reg.JUGADA_P2 1 0 1 0 
-estado_reg.GAME_OVER 1 1 0 0 
+estado_reg.JUGADA_P1 0 0 0 0 
+estado_reg.P_INICIO 1 0 0 1 
+estado_reg.JUGADA_P2 0 0 1 1 
+estado_reg.GAME_OVER 0 1 0 1 

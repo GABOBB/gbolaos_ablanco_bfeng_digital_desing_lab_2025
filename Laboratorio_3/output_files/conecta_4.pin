@@ -154,7 +154,7 @@ GND*                         : AB13      :        :                   :         
 VCCIO3B                      : AB14      : power  :                   : 2.5V    : 3B        :                
 GND*                         : AB15      :        :                   :         : 3B        :                
 VCC_AUX                      : AB16      : power  :                   : 2.5V    :           :                
-GND*                         : AB17      :        :                   :         : 4A        :                
+estado[0]                    : AB17      : output : 2.5 V             :         : 4A        : N              
 VCCPD3B4A                    : AB18      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AB19      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AB20      : power  :                   : 2.5V    : 3B, 4A    :                
@@ -181,7 +181,7 @@ VCCPD3A                      : AC10      : power  :                   : 2.5V    
 VCCIO3A                      : AC11      : power  :                   : 2.5V    : 3A        :                
 GND*                         : AC12      :        :                   :         : 3A        :                
 VCCPD3B4A                    : AC13      : power  :                   : 2.5V    : 3B, 4A    :                
-sync_b                       : AC14      : output : 2.5 V             :         : 3B        : N              
+GND*                         : AC14      :        :                   :         : 3B        :                
 VCCPD3B4A                    : AC15      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AC16      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AC17      : power  :                   : 2.5V    : 3B, 4A    :                
@@ -194,7 +194,7 @@ game_over_led                : AC23      : output : 2.5 V             :         
 VREFB5AN0                    : AC24      : power  :                   :         : 5A        :                
 GND*                         : AC25      :        :                   :         : 5A        :                
 GND                          : AC26      : gnd    :                   :         :           :                
-estado[2]                    : AC27      : output : 2.5 V             :         : 5A        : N              
+GND*                         : AC27      :        :                   :         : 5A        :                
 GND*                         : AC28      :        :                   :         : 5B        :                
 GND*                         : AC29      :        :                   :         : 5B        :                
 GND*                         : AC30      :        :                   :         : 5B        :                
@@ -308,7 +308,7 @@ segments[2]                  : AG17      : output : 2.5 V             :         
 segments[5]                  : AG18      : output : 2.5 V             :         : 4A        : Y              
 VCCIO4A                      : AG19      : power  :                   : 2.5V    : 4A        :                
 GND*                         : AG20      :        :                   :         : 4A        :                
-GND*                         : AG21      :        :                   :         : 4A        :                
+estado[3]                    : AG21      : output : 2.5 V             :         : 4A        : N              
 GND*                         : AG22      :        :                   :         : 4A        :                
 GND*                         : AG23      :        :                   :         : 4A        :                
 GND                          : AG24      : gnd    :                   :         :           :                
@@ -322,7 +322,7 @@ GND                          : AH1       : gnd    :                   :         
 GND*                         : AH2       :        :                   :         : 3A        :                
 GND*                         : AH3       :        :                   :         : 3A        :                
 GND*                         : AH4       :        :                   :         : 3A        :                
-GND*                         : AH5       :        :                   :         : 3A        :                
+estado[2]                    : AH5       : output : 2.5 V             :         : 3A        : N              
 GND                          : AH6       : gnd    :                   :         :           :                
 GND*                         : AH7       :        :                   :         : 3B        :                
 GND*                         : AH8       :        :                   :         : 3B        :                
@@ -901,8 +901,8 @@ GND                          : V12       : gnd    :                   :         
 VCC                          : V13       : power  :                   : 1.1V    :           :                
 GND                          : V14       : gnd    :                   :         :           :                
 VCC                          : V15       : power  :                   : 1.1V    :           :                
-GND*                         : V16       :        :                   :         : 4A        :                
-GND*                         : V17       :        :                   :         : 4A        :                
+estado[1]                    : V16       : output : 2.5 V             :         : 4A        : N              
+sync_b                       : V17       : output : 2.5 V             :         : 4A        : N              
 segments[1]                  : V18       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V19       : gnd    :                   :         :           :                
 GND*                         : V20       :        :                   :         : 6B        :                
@@ -930,8 +930,8 @@ GND                          : W11       : gnd    :                   :         
 VCC                          : W12       : power  :                   : 1.1V    :           :                
 GND                          : W13       : gnd    :                   :         :           :                
 VCC                          : W14       : power  :                   : 1.1V    :           :                
-estado[3]                    : W15       : output : 2.5 V             :         : 3B        : N              
-estado[0]                    : W16       : output : 2.5 V             :         : 4A        : N              
+GND*                         : W15       :        :                   :         : 3B        :                
+GND*                         : W16       :        :                   :         : 4A        :                
 segments[0]                  : W17       : output : 2.5 V             :         : 4A        : Y              
 GND                          : W18       : gnd    :                   :         :           :                
 GND*                         : W19       :        :                   :         : 4A        :                
@@ -961,7 +961,7 @@ GND                          : Y12       : gnd    :                   :         
 VCC                          : Y13       : power  :                   : 1.1V    :           :                
 GND                          : Y14       : gnd    :                   :         :           :                
 GND                          : Y15       : gnd    :                   :         :           :                
-estado[1]                    : Y16       : output : 2.5 V             :         : 3B        : N              
+GND*                         : Y16       :        :                   :         : 3B        :                
 GND*                         : Y17       :        :                   :         : 4A        :                
 GND*                         : Y18       :        :                   :         : 4A        :                
 GND*                         : Y19       :        :                   :         : 4A        :                

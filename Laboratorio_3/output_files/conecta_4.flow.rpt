@@ -1,5 +1,5 @@
 Flow report for conecta_4
-Wed May  7 02:11:59 2025
+Wed May  7 14:13:01 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Wed May  7 02:11:59 2025          ;
+; Flow Status                     ; Successful - Wed May  7 14:13:01 2025          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; conecta_4                                      ;
 ; Top-level Entity Name           ; Connect4_Top                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSXFC6D6F31C6                                 ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 774 / 41,910 ( 2 % )                           ;
-; Total registers                 ; 336                                            ;
-; Total pins                      ; 50 / 499 ( 10 % )                              ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 255                                            ;
+; Total pins                      ; 48                                             ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
-; Total DSP Blocks                ; 8 / 112 ( 7 % )                                ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                  ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                                 ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 12                                             ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
 +---------------------------------+------------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/07/2025 02:08:44 ;
+; Start date & time ; 05/07/2025 14:12:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; conecta_4           ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 66504332970042.174660532441764         ; --            ; --           ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 66504332970042.174664877334292         ; --            ; --           ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; conecta_4_tb                      ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --           ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --           ; eda_board_design_boundary_scan    ;
@@ -116,12 +116,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4944 MB             ; 00:00:18                           ;
-; Fitter               ; 00:02:51     ; 1.0                     ; 8007 MB             ; 00:16:58                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 5253 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:05     ; 2.1                     ; 5451 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4775 MB             ; 00:00:01                           ;
-; Total                ; 00:03:11     ; --                      ; --                  ; 00:17:30                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4946 MB             ; 00:00:16                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -131,10 +127,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; BOLT-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; BOLT-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; BOLT-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; BOLT-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; BOLT-PC          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -142,10 +134,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off conecta_4 -c conecta_4
-quartus_fit --read_settings_files=off --write_settings_files=off conecta_4 -c conecta_4
-quartus_asm --read_settings_files=off --write_settings_files=off conecta_4 -c conecta_4
-quartus_sta conecta_4 -c conecta_4
-quartus_eda --read_settings_files=off --write_settings_files=off conecta_4 -c conecta_4
 
 
 

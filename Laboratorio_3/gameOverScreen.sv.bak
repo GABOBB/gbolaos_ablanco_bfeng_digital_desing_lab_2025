@@ -1,0 +1,24 @@
+module gameOverScreen (
+    input logic clk,
+    input logic [9:0] x_pos,
+    input logic [9:0] y_pos,
+    output logic [7:0] red,
+    output logic [7:0] green,
+    output logic [7:0] blue
+);
+
+    always_comb begin
+        // Fondo rojo
+        red   = 8'hFF;
+        green = 8'h00;
+        blue  = 8'h00;
+
+        // Texto visual central (cuadro blanco con letras negras representadas como rectángulos)
+        if ((x_pos >= 270 && x_pos <= 370) && (y_pos >= 210 && y_pos <= 270)) begin
+            red   = 8'hFF;
+            green = 8'hFF;
+            blue  = 8'hFF;
+        end
+    end
+
+endmodule
