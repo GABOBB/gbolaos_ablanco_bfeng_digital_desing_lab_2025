@@ -55,3 +55,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name SYSTEMVERILOG_FILE vgaController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE BCD_Visualizer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Button_debounce.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Full_Timer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SPI_main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Timer.sv
