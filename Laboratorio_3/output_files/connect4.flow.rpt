@@ -1,5 +1,5 @@
 Flow report for connect4
-Wed May  7 00:25:08 2025
+Wed May  7 01:30:36 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -38,29 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Wed May  7 00:25:08 2025          ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                   ; connect4                                       ;
-; Top-level Entity Name           ; toplevel_connect4                              ;
-; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CSXFC6D6F31C6                                 ;
-; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 1,122 / 41,910 ( 3 % )                         ;
-; Total registers                 ; 380                                            ;
-; Total pins                      ; 50 / 499 ( 10 % )                              ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
-; Total DSP Blocks                ; 8 / 112 ( 7 % )                                ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                  ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                                 ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
-+---------------------------------+------------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-----------------------------+------------------------------------------------+
+; Flow Status                 ; Successful - Wed May  7 01:30:36 2025          ;
+; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name               ; connect4                                       ;
+; Top-level Entity Name       ; toplevel_connect4                              ;
+; Family                      ; Cyclone V                                      ;
+; Device                      ; 5CSXFC6D6F31C6                                 ;
+; Timing Models               ; Final                                          ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/07/2025 00:21:45 ;
+; Start date & time ; 05/07/2025 01:30:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; connect4            ;
 +-------------------+---------------------+
@@ -79,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name       ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 171983377794564.174659890533340        ; --            ; --                ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 171983377794564.174660303106016        ; --            ; --                ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; tb_toplevel_connect4              ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                ; eda_board_design_boundary_scan    ;
@@ -105,41 +100,29 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4944 MB             ; 00:00:23                           ;
-; Fitter               ; 00:02:55     ; 1.0                     ; 7245 MB             ; 00:13:19                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 5253 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:05     ; 2.0                     ; 5427 MB             ; 00:00:08                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4775 MB             ; 00:00:01                           ;
-; Total                ; 00:03:19     ; --                      ; --                  ; 00:13:55                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4807 MB             ; 00:00:15                           ;
+; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:15                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-JSB4NCB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-JSB4NCB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-JSB4NCB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-JSB4NCB  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-JSB4NCB  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-JSB4NCB  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off connect4 -c connect4
-quartus_fit --read_settings_files=off --write_settings_files=off connect4 -c connect4
-quartus_asm --read_settings_files=off --write_settings_files=off connect4 -c connect4
-quartus_sta connect4 -c connect4
-quartus_eda --read_settings_files=off --write_settings_files=off connect4 -c connect4
+quartus_map --read_settings_files=on --write_settings_files=off connect4 -c connect4 --analysis_and_elaboration
 
 
 

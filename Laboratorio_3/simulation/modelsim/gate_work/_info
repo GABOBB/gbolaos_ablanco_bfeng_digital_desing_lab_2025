@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/simulation/modelsim
+vtb_toplevel_connect4
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1746602317
+!i10b 1
+!s100 d=WFOPBf>gFIROE^UP7bN0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+INnG]?zI_=Z<@?g_h[@1ko1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1746600114
+8C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_toplevel_connect4.sv
+FC:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_toplevel_connect4.sv
+!i122 1
+L0 3 252
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1746602317.000000
+!s107 C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_toplevel_connect4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3|C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_toplevel_connect4.sv|
+!i113 1
+Z8 o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3
+Z9 tCvgOpt 0
+vtoplevel_connect4
+R1
+R2
+!i10b 1
+!s100 :WIk@22907_LHi7Heg@<`0
+R3
+I5iP@7`Rd2FJkRQjjcKNOo2
+R4
+S1
+R0
+R5
+8connect4.svo
+Fconnect4.svo
+!i122 0
+L0 32 60097
+R6
+r1
+!s85 0
+31
+R7
+!s107 connect4.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|connect4.svo|
+!i113 1
+R8
+!s92 -sv -work work +incdir+.
+R9

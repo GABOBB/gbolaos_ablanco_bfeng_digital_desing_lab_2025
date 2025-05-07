@@ -1,5 +1,5 @@
-Analysis & Synthesis report for connect4
-Wed May  7 00:21:59 2025
+Analysis & Elaboration report for connect4
+Wed May  7 01:30:36 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -7,39 +7,19 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. State Machine - |toplevel_connect4|connect4_fsm:fsm|current_state
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_left
- 15. Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_right
- 16. Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_confirm
- 17. Parameter Settings for User Entity Instance: Button_debounce:debounce_p1_start
- 18. Parameter Settings for User Entity Instance: Button_debounce:debounce_p2_start
- 19. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 20. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div1
- 21. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div0
- 22. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod1
- 23. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod0
- 24. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod2
- 25. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod4
- 26. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod3
- 27. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod6
- 28. Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod5
- 29. Port Connectivity Checks: "winner_detection:winnerDetect"
- 30. Port Connectivity Checks: "connect4_fsm:fsm"
- 31. Post-Synthesis Netlist Statistics for Top Partition
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
- 34. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_left
+  5. Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_right
+  6. Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_confirm
+  7. Parameter Settings for User Entity Instance: Button_debounce:debounce_p1_start
+  8. Parameter Settings for User Entity Instance: Button_debounce:debounce_p2_start
+  9. Parameter Settings for User Entity Instance: vgaController:vgaCont
+ 10. Analysis & Elaboration Settings
+ 11. Port Connectivity Checks: "winner_detection:winnerDetect"
+ 12. Port Connectivity Checks: "connect4_fsm:fsm"
+ 13. Analysis & Elaboration Messages
+ 14. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -63,31 +43,116 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May  7 00:21:59 2025          ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                   ; connect4                                       ;
-; Top-level Entity Name           ; toplevel_connect4                              ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 283                                            ;
-; Total pins                      ; 50                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 8                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed May  7 01:30:36 2025          ;
+; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                 ; connect4                                       ;
+; Top-level Entity Name         ; toplevel_connect4                              ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_left ;
++----------------+----------+-------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                  ;
++----------------+----------+-------------------------------------------------------+
+; CLK_FREQ       ; 50000000 ; Signed Integer                                        ;
+; STABLE_TIME_MS ; 10       ; Signed Integer                                        ;
++----------------+----------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_right ;
++----------------+----------+--------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                   ;
++----------------+----------+--------------------------------------------------------+
+; CLK_FREQ       ; 50000000 ; Signed Integer                                         ;
+; STABLE_TIME_MS ; 10       ; Signed Integer                                         ;
++----------------+----------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_confirm ;
++----------------+----------+----------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                     ;
++----------------+----------+----------------------------------------------------------+
+; CLK_FREQ       ; 50000000 ; Signed Integer                                           ;
+; STABLE_TIME_MS ; 10       ; Signed Integer                                           ;
++----------------+----------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_debounce:debounce_p1_start ;
++----------------+----------+----------------------------------------------------+
+; Parameter Name ; Value    ; Type                                               ;
++----------------+----------+----------------------------------------------------+
+; CLK_FREQ       ; 50000000 ; Signed Integer                                     ;
+; STABLE_TIME_MS ; 10       ; Signed Integer                                     ;
++----------------+----------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_debounce:debounce_p2_start ;
++----------------+----------+----------------------------------------------------+
+; Parameter Name ; Value    ; Type                                               ;
++----------------+----------+----------------------------------------------------+
+; CLK_FREQ       ; 50000000 ; Signed Integer                                     ;
+; STABLE_TIME_MS ; 10       ; Signed Integer                                     ;
++----------------+----------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vgaController:vgaCont ;
++----------------+------------+--------------------------------------+
+; Parameter Name ; Value      ; Type                                 ;
++----------------+------------+--------------------------------------+
+; HACTIVE        ; 1010000000 ; Unsigned Binary                      ;
+; HFP            ; 0000010000 ; Unsigned Binary                      ;
+; HSYN           ; 0001100000 ; Unsigned Binary                      ;
+; HBP            ; 0000110000 ; Unsigned Binary                      ;
+; HMAX           ; 1100100000 ; Unsigned Binary                      ;
+; VBP            ; 0000100001 ; Unsigned Binary                      ;
+; VACTIVE        ; 0111100000 ; Unsigned Binary                      ;
+; VFP            ; 0000001010 ; Unsigned Binary                      ;
+; VSYN           ; 0000000010 ; Unsigned Binary                      ;
+; VMAX           ; 1000001101 ; Unsigned Binary                      ;
++----------------+------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -173,539 +238,6 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 10          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-10        ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-; vgaController.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vgaController.sv           ;         ;
-; BCD_Visualizer.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/BCD_Visualizer.sv          ;         ;
-; Button_debounce.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Button_debounce.sv         ;         ;
-; Full_Timer.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Full_Timer.sv              ;         ;
-; connect4_fsm.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/connect4_fsm.sv            ;         ;
-; matrixTablero.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/matrixTablero.sv           ;         ;
-; matrixTableroControl.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/matrixTableroControl.sv    ;         ;
-; pll.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/pll.sv                     ;         ;
-; random_selector.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv         ;         ;
-; startScreen.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv             ;         ;
-; toplevel_connect4.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/toplevel_connect4.sv       ;         ;
-; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv                ;         ;
-; winner_detection.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/winner_detection.sv        ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                                 ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                                ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                            ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                                 ;         ;
-; db/lpm_divide_hbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_hbm.tdf      ;         ;
-; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_nlh.tdf ;         ;
-; db/alt_u_div_kve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_kve.tdf       ;         ;
-; db/lpm_divide_32m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_32m.tdf      ;         ;
-; db/sign_div_unsign_6kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_6kh.tdf ;         ;
-; db/alt_u_div_ise.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_ise.tdf       ;         ;
-; db/lpm_divide_22m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_22m.tdf      ;         ;
-; db/sign_div_unsign_5kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_5kh.tdf ;         ;
-; db/alt_u_div_gse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_gse.tdf       ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1160      ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1889      ;
-;     -- 7 input functions                    ; 13        ;
-;     -- 6 input functions                    ; 410       ;
-;     -- 5 input functions                    ; 255       ;
-;     -- 4 input functions                    ; 238       ;
-;     -- <=3 input functions                  ; 973       ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 283       ;
-;                                             ;           ;
-; I/O pins                                    ; 50        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 8         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 263       ;
-; Total fan-out                               ; 8159      ;
-; Average fan-out                             ; 3.58      ;
-+---------------------------------------------+-----------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                        ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                          ; Entity Name          ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |toplevel_connect4                           ; 1889 (30)           ; 283 (0)                   ; 0                 ; 8          ; 50   ; 0            ; |toplevel_connect4                                                                                                                           ; toplevel_connect4    ; work         ;
-;    |BCD_Visualizer:segDisplay|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|BCD_Visualizer:segDisplay                                                                                                 ; BCD_Visualizer       ; work         ;
-;    |Button_debounce:debounce_p1_start|       ; 25 (25)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|Button_debounce:debounce_p1_start                                                                                         ; Button_debounce      ; work         ;
-;    |Button_debounce:debounce_p2_start|       ; 25 (25)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|Button_debounce:debounce_p2_start                                                                                         ; Button_debounce      ; work         ;
-;    |Button_debounce:debounce_shared_confirm| ; 25 (25)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|Button_debounce:debounce_shared_confirm                                                                                   ; Button_debounce      ; work         ;
-;    |Button_debounce:debounce_shared_left|    ; 25 (25)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|Button_debounce:debounce_shared_left                                                                                      ; Button_debounce      ; work         ;
-;    |Button_debounce:debounce_shared_right|   ; 25 (25)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|Button_debounce:debounce_shared_right                                                                                     ; Button_debounce      ; work         ;
-;    |Full_Timer:timer|                        ; 39 (39)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|Full_Timer:timer                                                                                                          ; Full_Timer           ; work         ;
-;    |connect4_fsm:fsm|                        ; 22 (22)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|connect4_fsm:fsm                                                                                                          ; connect4_fsm         ; work         ;
-;    |matrixTablero:matrixReg|                 ; 183 (183)           ; 84 (84)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|matrixTablero:matrixReg                                                                                                   ; matrixTablero        ; work         ;
-;    |matrixTableroControl:matrixCtrl|         ; 12 (12)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|matrixTableroControl:matrixCtrl                                                                                           ; matrixTableroControl ; work         ;
-;    |pll:vgapll|                              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|pll:vgapll                                                                                                                ; pll                  ; work         ;
-;    |random_selector:randomSel|               ; 124 (45)            ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel                                                                                                 ; random_selector      ; work         ;
-;       |lpm_divide:Mod0|                      ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod0                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_22m:auto_generated|     ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod0|lpm_divide_22m:auto_generated                                                   ; lpm_divide_22m       ; work         ;
-;             |sign_div_unsign_5kh:divider|    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod0|lpm_divide_22m:auto_generated|sign_div_unsign_5kh:divider                       ; sign_div_unsign_5kh  ; work         ;
-;                |alt_u_div_gse:divider|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod0|lpm_divide_22m:auto_generated|sign_div_unsign_5kh:divider|alt_u_div_gse:divider ; alt_u_div_gse        ; work         ;
-;       |lpm_divide:Mod1|                      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod1                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_32m:auto_generated|     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod1|lpm_divide_32m:auto_generated                                                   ; lpm_divide_32m       ; work         ;
-;             |sign_div_unsign_6kh:divider|    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod1|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider                       ; sign_div_unsign_6kh  ; work         ;
-;                |alt_u_div_ise:divider|       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod1|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider|alt_u_div_ise:divider ; alt_u_div_ise        ; work         ;
-;       |lpm_divide:Mod2|                      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod2                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_32m:auto_generated|     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod2|lpm_divide_32m:auto_generated                                                   ; lpm_divide_32m       ; work         ;
-;             |sign_div_unsign_6kh:divider|    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod2|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider                       ; sign_div_unsign_6kh  ; work         ;
-;                |alt_u_div_ise:divider|       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod2|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider|alt_u_div_ise:divider ; alt_u_div_ise        ; work         ;
-;       |lpm_divide:Mod3|                      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod3                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_32m:auto_generated|     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod3|lpm_divide_32m:auto_generated                                                   ; lpm_divide_32m       ; work         ;
-;             |sign_div_unsign_6kh:divider|    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod3|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider                       ; sign_div_unsign_6kh  ; work         ;
-;                |alt_u_div_ise:divider|       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod3|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider|alt_u_div_ise:divider ; alt_u_div_ise        ; work         ;
-;       |lpm_divide:Mod4|                      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod4                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_32m:auto_generated|     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod4|lpm_divide_32m:auto_generated                                                   ; lpm_divide_32m       ; work         ;
-;             |sign_div_unsign_6kh:divider|    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod4|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider                       ; sign_div_unsign_6kh  ; work         ;
-;                |alt_u_div_ise:divider|       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod4|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider|alt_u_div_ise:divider ; alt_u_div_ise        ; work         ;
-;       |lpm_divide:Mod5|                      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod5                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_32m:auto_generated|     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod5|lpm_divide_32m:auto_generated                                                   ; lpm_divide_32m       ; work         ;
-;             |sign_div_unsign_6kh:divider|    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod5|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider                       ; sign_div_unsign_6kh  ; work         ;
-;                |alt_u_div_ise:divider|       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod5|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider|alt_u_div_ise:divider ; alt_u_div_ise        ; work         ;
-;       |lpm_divide:Mod6|                      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod6                                                                                 ; lpm_divide           ; work         ;
-;          |lpm_divide_32m:auto_generated|     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod6|lpm_divide_32m:auto_generated                                                   ; lpm_divide_32m       ; work         ;
-;             |sign_div_unsign_6kh:divider|    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod6|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider                       ; sign_div_unsign_6kh  ; work         ;
-;                |alt_u_div_ise:divider|       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|random_selector:randomSel|lpm_divide:Mod6|lpm_divide_32m:auto_generated|sign_div_unsign_6kh:divider|alt_u_div_ise:divider ; alt_u_div_ise        ; work         ;
-;    |startScreen:initialScreenDrawer|         ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|startScreen:initialScreenDrawer                                                                                           ; startScreen          ; work         ;
-;    |vgaController:vgaCont|                   ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|vgaController:vgaCont                                                                                                     ; vgaController        ; work         ;
-;    |videoGen:gameBoardDrawer|                ; 674 (512)           ; 0 (0)                     ; 0                 ; 8          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer                                                                                                  ; videoGen             ; work         ;
-;       |lpm_divide:Div0|                      ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div0                                                                                  ; lpm_divide           ; work         ;
-;          |lpm_divide_hbm:auto_generated|     ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                    ; lpm_divide_hbm       ; work         ;
-;             |sign_div_unsign_nlh:divider|    ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                        ; sign_div_unsign_nlh  ; work         ;
-;                |alt_u_div_kve:divider|       ; 81 (81)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider  ; alt_u_div_kve        ; work         ;
-;       |lpm_divide:Div1|                      ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div1                                                                                  ; lpm_divide           ; work         ;
-;          |lpm_divide_hbm:auto_generated|     ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                    ; lpm_divide_hbm       ; work         ;
-;             |sign_div_unsign_nlh:divider|    ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                        ; sign_div_unsign_nlh  ; work         ;
-;                |alt_u_div_kve:divider|       ; 81 (81)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider  ; alt_u_div_kve        ; work         ;
-;    |winner_detection:winnerDetect|           ; 608 (608)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel_connect4|winner_detection:winnerDetect                                                                                             ; winner_detection     ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Independent 9x9                 ; 3           ;
-; Two Independent 18x18           ; 5           ;
-; Total number of DSP blocks      ; 8           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 8           ;
-+---------------------------------+-------------+
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |toplevel_connect4|connect4_fsm:fsm|current_state                                                                                                                                                                                                  ;
-+---------------------------------+---------------------------------+----------------------------+------------------------+----------------------------+------------------------+---------------------------------+------------------------+-------------------------+
-; Name                            ; current_state.VERIFICAR_GANADOR ; current_state.ESPERANDO_P2 ; current_state.TURNO_P2 ; current_state.ESPERANDO_P1 ; current_state.TURNO_P1 ; current_state.SELECCION_JUGADOR ; current_state.P_INICIO ; current_state.GAME_OVER ;
-+---------------------------------+---------------------------------+----------------------------+------------------------+----------------------------+------------------------+---------------------------------+------------------------+-------------------------+
-; current_state.P_INICIO          ; 0                               ; 0                          ; 0                      ; 0                          ; 0                      ; 0                               ; 0                      ; 0                       ;
-; current_state.SELECCION_JUGADOR ; 0                               ; 0                          ; 0                      ; 0                          ; 0                      ; 1                               ; 1                      ; 0                       ;
-; current_state.TURNO_P1          ; 0                               ; 0                          ; 0                      ; 0                          ; 1                      ; 0                               ; 1                      ; 0                       ;
-; current_state.ESPERANDO_P1      ; 0                               ; 0                          ; 0                      ; 1                          ; 0                      ; 0                               ; 1                      ; 0                       ;
-; current_state.TURNO_P2          ; 0                               ; 0                          ; 1                      ; 0                          ; 0                      ; 0                               ; 1                      ; 0                       ;
-; current_state.ESPERANDO_P2      ; 0                               ; 1                          ; 0                      ; 0                          ; 0                      ; 0                               ; 1                      ; 0                       ;
-; current_state.VERIFICAR_GANADOR ; 1                               ; 0                          ; 0                      ; 0                          ; 0                      ; 0                               ; 1                      ; 0                       ;
-; current_state.GAME_OVER         ; 0                               ; 0                          ; 0                      ; 0                          ; 0                      ; 0                               ; 1                      ; 1                       ;
-+---------------------------------+---------------------------------+----------------------------+------------------------+----------------------------+------------------------+---------------------------------+------------------------+-------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                    ;
-+------------------------------------------+------------------------------------------------------------+
-; Register name                            ; Reason for Removal                                         ;
-+------------------------------------------+------------------------------------------------------------+
-; matrixTableroControl:matrixCtrl|load_reg ; Merged with matrixTableroControl:matrixCtrl|move_valid_reg ;
-; connect4_fsm:fsm|current_state~4         ; Lost fanout                                                ;
-; connect4_fsm:fsm|current_state~5         ; Lost fanout                                                ;
-; connect4_fsm:fsm|current_state~6         ; Lost fanout                                                ;
-; Total Number of Removed Registers = 4    ;                                                            ;
-+------------------------------------------+------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 283   ;
-; Number of registers using Synchronous Clear  ; 142   ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 262   ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 100   ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------+
-; Inverted Register Statistics                                  ;
-+-----------------------------------------------------+---------+
-; Inverted Register                                   ; Fan out ;
-+-----------------------------------------------------+---------+
-; matrixTableroControl:matrixCtrl|selected_col_reg[0] ; 37      ;
-; matrixTableroControl:matrixCtrl|selected_col_reg[1] ; 34      ;
-; random_selector:randomSel|lfsr[0]                   ; 30      ;
-; random_selector:randomSel|lfsr[15]                  ; 1       ;
-; random_selector:randomSel|lfsr[13]                  ; 2       ;
-; random_selector:randomSel|lfsr[10]                  ; 2       ;
-; random_selector:randomSel|lfsr[11]                  ; 1       ;
-; random_selector:randomSel|lfsr[7]                   ; 1       ;
-; random_selector:randomSel|lfsr[6]                   ; 1       ;
-; random_selector:randomSel|lfsr[5]                   ; 1       ;
-; Total number of inverted registers = 10             ;         ;
-+-----------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |toplevel_connect4|Button_debounce:debounce_p1_start|count[6]          ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |toplevel_connect4|Button_debounce:debounce_p2_start|count[18]         ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |toplevel_connect4|Button_debounce:debounce_shared_confirm|count[13]   ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |toplevel_connect4|Button_debounce:debounce_shared_left|count[7]       ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |toplevel_connect4|Button_debounce:debounce_shared_right|count[18]     ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |toplevel_connect4|random_selector:randomSel|random_col[0]             ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |toplevel_connect4|matrixTableroControl:matrixCtrl|selected_col_reg[0] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |toplevel_connect4|b                                                   ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |toplevel_connect4|r                                                   ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |toplevel_connect4|g                                                   ;
-; 64:1               ; 2 bits    ; 84 LEs        ; 60 LEs               ; 24 LEs                 ; No         ; |toplevel_connect4|videoGen:gameBoardDrawer|Mux1                       ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |toplevel_connect4|matrixTablero:matrixReg|Mux0                        ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |toplevel_connect4|connect4_fsm:fsm|Selector0                          ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |toplevel_connect4|matrixTablero:matrixReg|Mux10                       ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |toplevel_connect4|matrixTablero:matrixReg|Mux4                        ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |toplevel_connect4|connect4_fsm:fsm|Selector2                          ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |toplevel_connect4|matrixTablero:matrixReg|Mux2                        ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |toplevel_connect4|matrixTablero:matrixReg|Mux6                        ;
-; 75:1               ; 2 bits    ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |toplevel_connect4|winner_detection:winnerDetect|winning_line[1]       ;
-; 87:1               ; 2 bits    ; 116 LEs       ; 116 LEs              ; 0 LEs                  ; No         ; |toplevel_connect4|winner_detection:winnerDetect|winning_line[2]       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_left ;
-+----------------+----------+-------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                  ;
-+----------------+----------+-------------------------------------------------------+
-; CLK_FREQ       ; 50000000 ; Signed Integer                                        ;
-; STABLE_TIME_MS ; 10       ; Signed Integer                                        ;
-+----------------+----------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_right ;
-+----------------+----------+--------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                   ;
-+----------------+----------+--------------------------------------------------------+
-; CLK_FREQ       ; 50000000 ; Signed Integer                                         ;
-; STABLE_TIME_MS ; 10       ; Signed Integer                                         ;
-+----------------+----------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Button_debounce:debounce_shared_confirm ;
-+----------------+----------+----------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                     ;
-+----------------+----------+----------------------------------------------------------+
-; CLK_FREQ       ; 50000000 ; Signed Integer                                           ;
-; STABLE_TIME_MS ; 10       ; Signed Integer                                           ;
-+----------------+----------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Button_debounce:debounce_p1_start ;
-+----------------+----------+----------------------------------------------------+
-; Parameter Name ; Value    ; Type                                               ;
-+----------------+----------+----------------------------------------------------+
-; CLK_FREQ       ; 50000000 ; Signed Integer                                     ;
-; STABLE_TIME_MS ; 10       ; Signed Integer                                     ;
-+----------------+----------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Button_debounce:debounce_p2_start ;
-+----------------+----------+----------------------------------------------------+
-; Parameter Name ; Value    ; Type                                               ;
-+----------------+----------+----------------------------------------------------+
-; CLK_FREQ       ; 50000000 ; Signed Integer                                     ;
-; STABLE_TIME_MS ; 10       ; Signed Integer                                     ;
-+----------------+----------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vgaController:vgaCont ;
-+----------------+------------+--------------------------------------+
-; Parameter Name ; Value      ; Type                                 ;
-+----------------+------------+--------------------------------------+
-; HACTIVE        ; 1010000000 ; Unsigned Binary                      ;
-; HFP            ; 0000010000 ; Unsigned Binary                      ;
-; HSYN           ; 0001100000 ; Unsigned Binary                      ;
-; HBP            ; 0000110000 ; Unsigned Binary                      ;
-; HMAX           ; 1100100000 ; Unsigned Binary                      ;
-; VBP            ; 0000100001 ; Unsigned Binary                      ;
-; VACTIVE        ; 0111100000 ; Unsigned Binary                      ;
-; VFP            ; 0000001010 ; Unsigned Binary                      ;
-; VSYN           ; 0000000010 ; Unsigned Binary                      ;
-; VMAX           ; 1000001101 ; Unsigned Binary                      ;
-+----------------+------------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div1 ;
-+------------------------+----------------+-------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                            ;
-+------------------------+----------------+-------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                         ;
-; LPM_WIDTHD             ; 6              ; Untyped                                         ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_PIPELINE           ; 0              ; Untyped                                         ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
-; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                         ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
-+------------------------+----------------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div0 ;
-+------------------------+----------------+-------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                            ;
-+------------------------+----------------+-------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                         ;
-; LPM_WIDTHD             ; 6              ; Untyped                                         ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_PIPELINE           ; 0              ; Untyped                                         ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
-; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                         ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
-+------------------------+----------------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod1 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_32m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod0 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 3              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_22m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod2 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_32m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod4 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_32m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod3 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_32m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod6 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_32m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: random_selector:randomSel|lpm_divide:Mod5 ;
-+------------------------+----------------+--------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                             ;
-+------------------------+----------------+--------------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                          ;
-; LPM_WIDTHD             ; 3              ; Untyped                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
-; CBXI_PARAMETER         ; lpm_divide_32m ; Untyped                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
-+------------------------+----------------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "winner_detection:winnerDetect"                                                                                 ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -724,64 +256,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 283                         ;
-;     CLR               ; 50                          ;
-;     CLR SCLR          ; 122                         ;
-;     ENA CLR           ; 90                          ;
-;     ENA SCLR          ; 10                          ;
-;     SCLR              ; 10                          ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 1894                        ;
-;     arith             ; 547                         ;
-;         0 data inputs ; 38                          ;
-;         1 data inputs ; 396                         ;
-;         2 data inputs ; 41                          ;
-;         3 data inputs ; 27                          ;
-;         4 data inputs ; 41                          ;
-;         5 data inputs ; 4                           ;
-;     extend            ; 13                          ;
-;         7 data inputs ; 13                          ;
-;     normal            ; 1238                        ;
-;         1 data inputs ; 56                          ;
-;         2 data inputs ; 187                         ;
-;         3 data inputs ; 137                         ;
-;         4 data inputs ; 197                         ;
-;         5 data inputs ; 251                         ;
-;         6 data inputs ; 410                         ;
-;     shared            ; 96                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 90                          ;
-; arriav_mac            ; 8                           ;
-; boundary_port         ; 50                          ;
-;                       ;                             ;
-; Max LUT depth         ; 36.00                       ;
-; Average LUT depth     ; 15.12                       ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:08     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed May  7 00:21:45 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off connect4 -c connect4
+    Info: Processing started: Wed May  7 01:30:30 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off connect4 -c connect4 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vgacontroller.sv
@@ -888,73 +370,18 @@ Warning (10230): Verilog HDL assignment warning at startScreen.sv(21): truncated
 Warning (10230): Verilog HDL assignment warning at startScreen.sv(22): truncated value with size 32 to match size of target (11) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at startScreen.sv(23): truncated value with size 32 to match size of target (11) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv Line: 23
 Warning (10230): Verilog HDL assignment warning at startScreen.sv(24): truncated value with size 32 to match size of target (11) File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv Line: 24
-Info (278001): Inferred 9 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:gameBoardDrawer|Div1" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 92
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:gameBoardDrawer|Div0" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 91
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod1" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod0" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod2" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod4" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod3" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod6" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "random_selector:randomSel|Mod5" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-Info (12130): Elaborated megafunction instantiation "videoGen:gameBoardDrawer|lpm_divide:Div1" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 92
-Info (12133): Instantiated megafunction "videoGen:gameBoardDrawer|lpm_divide:Div1" with the following parameter: File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 92
-    Info (12134): Parameter "LPM_WIDTHN" = "11"
-    Info (12134): Parameter "LPM_WIDTHD" = "6"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hbm.tdf
-    Info (12023): Found entity 1: lpm_divide_hbm File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_hbm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_nlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_nlh File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_nlh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kve.tdf
-    Info (12023): Found entity 1: alt_u_div_kve File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_kve.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "random_selector:randomSel|lpm_divide:Mod1" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-Info (12133): Instantiated megafunction "random_selector:randomSel|lpm_divide:Mod1" with the following parameter: File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "3"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_32m.tdf
-    Info (12023): Found entity 1: lpm_divide_32m File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_32m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_6kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_6kh File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_6kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ise.tdf
-    Info (12023): Found entity 1: alt_u_div_ise File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_ise.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "random_selector:randomSel|lpm_divide:Mod0" File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-Info (12133): Instantiated megafunction "random_selector:randomSel|lpm_divide:Mod0" with the following parameter: File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/random_selector.sv Line: 29
-    Info (12134): Parameter "LPM_WIDTHN" = "3"
-    Info (12134): Parameter "LPM_WIDTHD" = "3"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_22m.tdf
-    Info (12023): Found entity 1: lpm_divide_22m File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/lpm_divide_22m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_5kh File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/sign_div_unsign_5kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_gse.tdf
-    Info (12023): Found entity 1: alt_u_div_gse File: C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/db/alt_u_div_gse.tdf Line: 23
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/connect4.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2029 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 1971 logic cells
-    Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 4944 megabytes
-    Info: Processing ended: Wed May  7 00:21:59 2025
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Wed May  7 01:30:36 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
 The suppressed messages can be found in C:/Users/AlePene/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/connect4.map.smsg.
 
 
