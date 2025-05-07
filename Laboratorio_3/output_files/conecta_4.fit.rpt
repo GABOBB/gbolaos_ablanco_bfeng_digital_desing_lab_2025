@@ -1,5 +1,5 @@
 Fitter report for conecta_4
-Wed May  7 00:12:26 2025
+Wed May  7 00:23:29 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Wed May  7 00:12:25 2025          ;
+; Fitter Status                   ; Successful - Wed May  7 00:23:29 2025          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; conecta_4                                      ;
 ; Top-level Entity Name           ; Connect4_Top                                   ;
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSXFC6D6F31C6                                 ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; 416 / 41,910 ( < 1 % )                         ;
-; Total registers                 ; 66                                             ;
+; Total registers                 ; 61                                             ;
 ; Total pins                      ; 50 / 499 ( 10 % )                              ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
@@ -161,20 +161,20 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
-;     Processor 9            ;   0.1%      ;
-;     Processor 10           ;   0.1%      ;
-;     Processor 11           ;   0.1%      ;
-;     Processor 12           ;   0.1%      ;
-;     Processor 13           ;   0.1%      ;
-;     Processor 14           ;   0.1%      ;
-;     Processor 15           ;   0.1%      ;
-;     Processor 16           ;   0.1%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
+;     Processor 5            ;   0.2%      ;
+;     Processor 6            ;   0.2%      ;
+;     Processor 7            ;   0.2%      ;
+;     Processor 8            ;   0.2%      ;
+;     Processor 9            ;   0.2%      ;
+;     Processor 10           ;   0.2%      ;
+;     Processor 11           ;   0.2%      ;
+;     Processor 12           ;   0.2%      ;
+;     Processor 13           ;   0.2%      ;
+;     Processor 14           ;   0.2%      ;
+;     Processor 15           ;   0.2%      ;
+;     Processor 16           ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -184,17 +184,14 @@ https://fpgasoftware.intel.com/eula.
 ; Node                       ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                     ; Destination Port ; Destination Port Name ;
 +----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
 ; clk~inputCLKENA0           ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                      ;                  ;                       ;
-; VGA:vgaCont|x[1]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|x[1]~DUPLICATE           ;                  ;                       ;
-; VGA:vgaCont|x[4]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|x[4]~DUPLICATE           ;                  ;                       ;
+; VGA:vgaCont|x[2]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|x[2]~DUPLICATE           ;                  ;                       ;
 ; VGA:vgaCont|x[5]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|x[5]~DUPLICATE           ;                  ;                       ;
 ; VGA:vgaCont|y[0]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[0]~DUPLICATE           ;                  ;                       ;
+; VGA:vgaCont|y[1]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[1]~DUPLICATE           ;                  ;                       ;
+; VGA:vgaCont|y[2]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[2]~DUPLICATE           ;                  ;                       ;
 ; VGA:vgaCont|y[3]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[3]~DUPLICATE           ;                  ;                       ;
-; VGA:vgaCont|y[4]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[4]~DUPLICATE           ;                  ;                       ;
-; VGA:vgaCont|y[5]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[5]~DUPLICATE           ;                  ;                       ;
-; VGA:vgaCont|y[8]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[8]~DUPLICATE           ;                  ;                       ;
-; conecta_4:game_inst|draw   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; conecta_4:game_inst|draw~DUPLICATE   ;                  ;                       ;
+; VGA:vgaCont|y[6]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA:vgaCont|y[6]~DUPLICATE           ;                  ;                       ;
 ; conecta_4:game_inst|player ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; conecta_4:game_inst|player~DUPLICATE ;                  ;                       ;
-; conecta_4:game_inst|win    ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; conecta_4:game_inst|win~DUPLICATE    ;                  ;                       ;
 +----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
 
 
@@ -204,8 +201,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 928 ) ; 0.00 % ( 0 / 928 )         ; 0.00 % ( 0 / 928 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 928 ) ; 0.00 % ( 0 / 928 )         ; 0.00 % ( 0 / 928 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 924 ) ; 0.00 % ( 0 / 924 )         ; 0.00 % ( 0 / 924 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 924 ) ; 0.00 % ( 0 / 924 )         ; 0.00 % ( 0 / 924 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -228,7 +225,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 928 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 924 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -246,43 +243,43 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 416 / 41,910       ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 416                ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 444 / 41,910       ; 1 %   ;
-;         [a] ALMs used for LUT logic and registers           ; 16                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 416                ;       ;
-;         [c] ALMs used for registers                         ; 12                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 436 / 41,910       ; 1 %   ;
+;         [a] ALMs used for LUT logic and registers           ; 17                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 409                ;       ;
+;         [c] ALMs used for registers                         ; 10                 ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 31 / 41,910        ; < 1 % ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 3 / 41,910         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 22 / 41,910        ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 2 / 41,910         ; < 1 % ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
-;         [c] Due to LAB input limits                         ; 3                  ;       ;
+;         [c] Due to LAB input limits                         ; 2                  ;       ;
 ;         [d] Due to virtual I/Os                             ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 66 / 4,191         ; 2 %   ;
-;     -- Logic LABs                                           ; 66                 ;       ;
+; Total LABs:  partially or completely used                   ; 59 / 4,191         ; 1 %   ;
+;     -- Logic LABs                                           ; 59                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 764                ;       ;
+; Combinational ALUT usage for logic                          ; 762                ;       ;
 ;     -- 7 input functions                                    ; 1                  ;       ;
 ;     -- 6 input functions                                    ; 52                 ;       ;
 ;     -- 5 input functions                                    ; 113                ;       ;
 ;     -- 4 input functions                                    ; 70                 ;       ;
-;     -- <=3 input functions                                  ; 528                ;       ;
-; Combinational ALUT usage for route-throughs                 ; 3                  ;       ;
+;     -- <=3 input functions                                  ; 526                ;       ;
+; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 66                 ;       ;
+; Dedicated logic registers                                   ; 61                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 55 / 83,820        ; < 1 % ;
-;         -- Secondary logic registers                        ; 11 / 83,820        ; < 1 % ;
+;         -- Primary logic registers                          ; 53 / 83,820        ; < 1 % ;
+;         -- Secondary logic registers                        ; 8 / 83,820         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 55                 ;       ;
-;         -- Routing optimization registers                   ; 11                 ;       ;
+;         -- Design implementation registers                  ; 53                 ;       ;
+;         -- Routing optimization registers                   ; 8                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 50 / 499           ; 10 %  ;
-;     -- Clock pins                                           ; 3 / 11             ; 27 %  ;
+;     -- Clock pins                                           ; 4 / 11             ; 36 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 39             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Hard processor system peripheral utilization                ;                    ;       ;
@@ -340,11 +337,11 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.3% / 0.3% / 0.2% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 7.9% / 8.7% / 5.5% ;       ;
-; Maximum fan-out                                             ; 37                 ;       ;
-; Highest non-global fan-out                                  ; 33                 ;       ;
-; Total fan-out                                               ; 2727               ;       ;
-; Average fan-out                                             ; 2.89               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 6.4% / 6.8% / 5.2% ;       ;
+; Maximum fan-out                                             ; 33                 ;       ;
+; Highest non-global fan-out                                  ; 31                 ;       ;
+; Total fan-out                                               ; 2707               ;       ;
+; Average fan-out                                             ; 2.90               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -355,42 +352,42 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 416 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 416                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 444 / 41910 ( 1 % )   ; 0 / 41910 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 16                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 416                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 12                    ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 436 / 41910 ( 1 % )   ; 0 / 41910 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 17                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 409                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 10                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 31 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 3 / 41910 ( < 1 % )   ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 22 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 2 / 41910 ( < 1 % )   ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
-;         [c] Due to LAB input limits                         ; 3                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 2                     ; 0                              ;
 ;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 66 / 4191 ( 2 % )     ; 0 / 4191 ( 0 % )               ;
-;     -- Logic LABs                                           ; 66                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 59 / 4191 ( 1 % )     ; 0 / 4191 ( 0 % )               ;
+;     -- Logic LABs                                           ; 59                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 764                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 762                   ; 0                              ;
 ;     -- 7 input functions                                    ; 1                     ; 0                              ;
 ;     -- 6 input functions                                    ; 52                    ; 0                              ;
 ;     -- 5 input functions                                    ; 113                   ; 0                              ;
 ;     -- 4 input functions                                    ; 70                    ; 0                              ;
-;     -- <=3 input functions                                  ; 528                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 3                     ; 0                              ;
+;     -- <=3 input functions                                  ; 526                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 1                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 55 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 11 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
+;         -- Primary logic registers                          ; 53 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 8 / 83820 ( < 1 % )   ; 0 / 83820 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
-;         -- Design implementation registers                  ; 55                    ; 0                              ;
-;         -- Routing optimization registers                   ; 11                    ; 0                              ;
+;         -- Design implementation registers                  ; 53                    ; 0                              ;
+;         -- Routing optimization registers                   ; 8                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -408,8 +405,8 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 2855                  ; 0                              ;
-;     -- Registered Connections                               ; 616                   ; 0                              ;
+;     -- Total Connections                                    ; 2835                  ; 0                              ;
+;     -- Registered Connections                               ; 610                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
@@ -441,13 +438,13 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clk           ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 38                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clk           ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 34                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; col_left_raw  ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; col_right_raw ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; confirm_raw   ; AK4   ; 3B       ; 22           ; 0            ; 51           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; p1_start_raw  ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; p2_start_raw  ; Y27   ; 5B       ; 89           ; 25           ; 20           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; rst           ; AJ14  ; 3B       ; 40           ; 0            ; 34           ; 33                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; rst           ; AJ14  ; 3B       ; 40           ; 0            ; 34           ; 31                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -465,10 +462,10 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; b[6]          ; AJ16  ; 4A       ; 54           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; b[7]          ; AK16  ; 4A       ; 54           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; blank_b       ; AK22  ; 4A       ; 68           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; estado[0]     ; AH15  ; 3B       ; 38           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; estado[1]     ; AH12  ; 3B       ; 38           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; estado[2]     ; G10   ; 8A       ; 6            ; 81           ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; estado[3]     ; AH13  ; 3B       ; 30           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; estado[0]     ; AB17  ; 4A       ; 56           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; estado[1]     ; AE17  ; 4A       ; 50           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; estado[2]     ; AF30  ; 5A       ; 89           ; 15           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; estado[3]     ; W15   ; 3B       ; 40           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; g[0]          ; AK26  ; 4A       ; 76           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; g[1]          ; AJ25  ; 4A       ; 74           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; g[2]          ; AH25  ; 4A       ; 78           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
@@ -511,9 +508,9 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; B1L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
 ; B0L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
 ; 3A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 9 / 48 ( 19 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 36 / 80 ( 45 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 2 / 32 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 7 / 48 ( 15 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 38 / 80 ( 48 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 3 / 32 ( 9 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 2 / 16 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 6B       ; 0 / 44 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 6A       ; 0 / 56 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -521,7 +518,7 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; 7B       ; 0 / 22 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 7C       ; 0 / 12 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 7D       ; 0 / 14 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 1 / 80 ( 1 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 +----------+------------------+---------------+--------------+---------------+
 
 
@@ -604,7 +601,7 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; AB14     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AB15     ; 106        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AB17     ; 144        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB17     ; 144        ; 4A             ; estado[0]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB18     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AB19     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB20     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -694,7 +691,7 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; AE14     ; 96         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE15     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AE16     ; 139        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AE17     ; 135        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AE17     ; 135        ; 4A             ; estado[1]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AE18     ; 167        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE19     ; 165        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE20     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -737,7 +734,7 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; AF27     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AF28     ; 235        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AF29     ; 237        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AF30     ; 239        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AF30     ; 239        ; 5A             ; estado[2]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AG1      ; 71         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG2      ; 83         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG3      ; 63         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -779,10 +776,10 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; AH9      ; 84         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH10     ; 118        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH11     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AH12     ; 126        ; 3B             ; estado[1]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AH13     ; 111        ; 3B             ; estado[3]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AH12     ; 126        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AH13     ; 111        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH14     ; 109        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AH15     ; 125        ; 3B             ; estado[0]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AH15     ; 125        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH16     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AH17     ; 147        ; 4A             ; segments[4]                     ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AH18     ; 145        ; 4A             ; segments[6]                     ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
@@ -1015,7 +1012,7 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; G7       ; 535        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G8       ; 492        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G9       ;            ; 8A             ; VCCIO8A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; G10      ; 526        ; 8A             ; estado[2]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; G10      ; 526        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G11      ; 520        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G12      ; 518        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G13      ; 484        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -1380,7 +1377,7 @@ The pin-out file can be found in C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_b
 ; W12      ;            ; --             ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; W13      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W14      ;            ; --             ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; W15      ; 130        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; W15      ; 130        ; 3B             ; estado[3]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; W16      ; 136        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; W17      ; 152        ; 4A             ; segments[0]                     ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; W18      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -1498,20 +1495,20 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Connect4_Top                             ; 416.0 (16.0)         ; 443.5 (16.8)                     ; 30.5 (0.8)                                        ; 3.0 (0.0)                        ; 0.0 (0.0)            ; 764 (25)            ; 66 (4)                    ; 0 (0)         ; 0                 ; 0     ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
-;    |VGA:vgaCont|                          ; 23.5 (23.5)          ; 24.0 (24.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 28 (28)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|VGA:vgaCont                                                                                                              ; VGA                 ; work         ;
-;    |conecta_4:game_inst|                  ; 38.8 (38.8)          ; 40.5 (40.5)                      ; 1.7 (1.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 59 (59)             ; 31 (31)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|conecta_4:game_inst                                                                                                      ; conecta_4           ; work         ;
-;    |startScreen:start|                    ; 2.2 (2.2)            ; 3.5 (3.5)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|startScreen:start                                                                                                        ; startScreen         ; work         ;
-;    |vga_pll:pll_inst|                     ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 3 (3)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|vga_pll:pll_inst                                                                                                         ; vga_pll             ; work         ;
-;    |videoGen:gameBoardDrawer|             ; 334.0 (262.2)        ; 357.1 (275.6)                    ; 26.2 (14.7)                                       ; 3.0 (1.4)                        ; 0.0 (0.0)            ; 644 (482)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 8          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer                                                                                                 ; videoGen            ; work         ;
-;       |lpm_divide:Div0|                   ; 31.9 (0.0)           ; 40.3 (0.0)                       ; 9.8 (0.0)                                         ; 1.4 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_hbm:auto_generated|  ; 31.9 (0.0)           ; 40.3 (0.0)                       ; 9.8 (0.0)                                         ; 1.4 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
-;             |sign_div_unsign_nlh:divider| ; 31.9 (0.0)           ; 40.3 (0.0)                       ; 9.8 (0.0)                                         ; 1.4 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
-;                |alt_u_div_kve:divider|    ; 31.9 (31.9)          ; 40.3 (40.3)                      ; 9.8 (9.8)                                         ; 1.4 (1.4)                        ; 0.0 (0.0)            ; 81 (81)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
-;       |lpm_divide:Div1|                   ; 39.9 (0.0)           ; 41.3 (0.0)                       ; 1.7 (0.0)                                         ; 0.3 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_hbm:auto_generated|  ; 39.9 (0.0)           ; 41.3 (0.0)                       ; 1.7 (0.0)                                         ; 0.3 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
-;             |sign_div_unsign_nlh:divider| ; 39.9 (0.0)           ; 41.3 (0.0)                       ; 1.7 (0.0)                                         ; 0.3 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
-;                |alt_u_div_kve:divider|    ; 39.9 (39.9)          ; 41.3 (41.3)                      ; 1.7 (1.7)                                         ; 0.3 (0.3)                        ; 0.0 (0.0)            ; 81 (81)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
+; |Connect4_Top                             ; 415.5 (15.3)         ; 435.5 (17.8)                     ; 22.0 (2.5)                                        ; 2.0 (0.0)                        ; 0.0 (0.0)            ; 762 (25)            ; 61 (4)                    ; 0 (0)         ; 0                 ; 0     ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
+;    |VGA:vgaCont|                          ; 21.2 (21.2)          ; 21.2 (21.2)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 27 (27)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|VGA:vgaCont                                                                                                              ; VGA                 ; work         ;
+;    |conecta_4:game_inst|                  ; 38.6 (38.6)          ; 39.6 (39.6)                      ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 59 (59)             ; 29 (29)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|conecta_4:game_inst                                                                                                      ; conecta_4           ; work         ;
+;    |startScreen:start|                    ; 2.0 (2.0)            ; 3.0 (3.0)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|startScreen:start                                                                                                        ; startScreen         ; work         ;
+;    |vga_pll:pll_inst|                     ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|vga_pll:pll_inst                                                                                                         ; vga_pll             ; work         ;
+;    |videoGen:gameBoardDrawer|             ; 335.2 (263.2)        ; 353.6 (274.1)                    ; 20.5 (13.0)                                       ; 2.0 (2.0)                        ; 0.0 (0.0)            ; 644 (482)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 8          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer                                                                                                 ; videoGen            ; work         ;
+;       |lpm_divide:Div0|                   ; 31.5 (0.0)           ; 38.5 (0.0)                       ; 7.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_hbm:auto_generated|  ; 31.5 (0.0)           ; 38.5 (0.0)                       ; 7.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
+;             |sign_div_unsign_nlh:divider| ; 31.5 (0.0)           ; 38.5 (0.0)                       ; 7.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
+;                |alt_u_div_kve:divider|    ; 31.5 (31.5)          ; 38.5 (38.5)                      ; 7.0 (7.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (81)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
+;       |lpm_divide:Div1|                   ; 40.5 (0.0)           ; 41.0 (0.0)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_hbm:auto_generated|  ; 40.5 (0.0)           ; 41.0 (0.0)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
+;             |sign_div_unsign_nlh:divider| ; 40.5 (0.0)           ; 41.0 (0.0)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
+;                |alt_u_div_kve:divider|    ; 40.5 (40.5)          ; 41.0 (41.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 81 (81)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1567,7 +1564,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; estado[2]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; estado[3]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; clk           ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; rst           ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; rst           ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; confirm_raw   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; p1_start_raw  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; p2_start_raw  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1582,41 +1579,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; col_left_raw                                      ;                   ;         ;
 ; col_right_raw                                     ;                   ;         ;
 ; clk                                               ;                   ;         ;
-;      - vga_pll:pll_inst|outclk_0                  ; 1                 ; 0       ;
+;      - vga_pll:pll_inst|div[0]                    ; 1                 ; 0       ;
 ; rst                                               ;                   ;         ;
-;      - conecta_4:game_inst|state_board[0][0][0]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[0][0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[1][0][0]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[1][0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[2][0][0]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[2][0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[3][0][0]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[3][0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[4][0][0]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[4][0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[5][0][0]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|state_board[5][0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|player                 ; 1                 ; 0       ;
-;      - estado_reg.JUGADA_P1                       ; 1                 ; 0       ;
-;      - estado_reg.JUGADA_P2                       ; 1                 ; 0       ;
-;      - estado_reg.GAME_OVER                       ; 1                 ; 0       ;
-;      - estado_reg.P_INICIO                        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|filled_cells[0]        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|height_counter[0][2]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|height_counter[0][1]   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|win                    ; 1                 ; 0       ;
-;      - conecta_4:game_inst|draw                   ; 1                 ; 0       ;
-;      - conecta_4:game_inst|drop_pending           ; 1                 ; 0       ;
-;      - conecta_4:game_inst|last_player            ; 1                 ; 0       ;
-;      - conecta_4:game_inst|filled_cells[5]        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|filled_cells[4]        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|filled_cells[3]        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|filled_cells[2]        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|filled_cells[1]        ; 1                 ; 0       ;
-;      - conecta_4:game_inst|last_row[0]~0          ; 1                 ; 0       ;
-;      - conecta_4:game_inst|player~DUPLICATE       ; 1                 ; 0       ;
-;      - conecta_4:game_inst|win~DUPLICATE          ; 1                 ; 0       ;
-;      - conecta_4:game_inst|draw~DUPLICATE         ; 1                 ; 0       ;
+;      - conecta_4:game_inst|state_board[0][0][0]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[0][0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[1][0][0]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[1][0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[2][0][0]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[2][0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[3][0][0]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[3][0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[4][0][0]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[4][0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[5][0][0]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|state_board[5][0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|player                 ; 0                 ; 0       ;
+;      - estado_reg.JUGADA_P1                       ; 0                 ; 0       ;
+;      - estado_reg.JUGADA_P2                       ; 0                 ; 0       ;
+;      - estado_reg.GAME_OVER                       ; 0                 ; 0       ;
+;      - estado_reg.P_INICIO                        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|filled_cells[0]        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|height_counter[0][2]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|height_counter[0][1]   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|win                    ; 0                 ; 0       ;
+;      - conecta_4:game_inst|draw                   ; 0                 ; 0       ;
+;      - conecta_4:game_inst|drop_pending           ; 0                 ; 0       ;
+;      - conecta_4:game_inst|last_player            ; 0                 ; 0       ;
+;      - conecta_4:game_inst|filled_cells[5]        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|filled_cells[4]        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|filled_cells[3]        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|filled_cells[2]        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|filled_cells[1]        ; 0                 ; 0       ;
+;      - conecta_4:game_inst|last_row[0]~0          ; 0                 ; 0       ;
+;      - conecta_4:game_inst|player~DUPLICATE       ; 0                 ; 0       ;
 ; confirm_raw                                       ;                   ;         ;
 ;      - conecta_4:game_inst|always0~0              ; 0                 ; 0       ;
 ;      - conecta_4:game_inst|drop_pending~0         ; 0                 ; 0       ;
@@ -1633,26 +1628,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                               ;
-+------------------------------------+---------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Name                               ; Location            ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------------------+---------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; VGA:vgaCont|Equal0~1               ; LABCELL_X30_Y2_N9   ; 28      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; VGA:vgaCont|Equal1~1               ; LABCELL_X30_Y4_N21  ; 15      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; clk                                ; PIN_AF14            ; 2       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; clk                                ; PIN_AF14            ; 37      ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; conecta_4:game_inst|Decoder0~0     ; MLABCELL_X28_Y1_N42 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|Decoder0~1     ; LABCELL_X27_Y1_N51  ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|Decoder0~2     ; MLABCELL_X28_Y1_N6  ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|Decoder0~3     ; LABCELL_X30_Y1_N3   ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|Decoder0~4     ; MLABCELL_X28_Y1_N27 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|Decoder0~5     ; LABCELL_X30_Y1_N54  ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|drop_pending~0 ; LABCELL_X27_Y1_N42  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; conecta_4:game_inst|last_row[0]~0  ; LABCELL_X27_Y1_N54  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; rst                                ; PIN_AJ14            ; 33      ; Async. clear              ; no     ; --                   ; --               ; --                        ;
-; vga_pll:pll_inst|outclk_0          ; FF_X30_Y3_N35       ; 30      ; Clock                     ; no     ; --                   ; --               ; --                        ;
-+------------------------------------+---------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                              ;
++------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name                               ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; VGA:vgaCont|Equal0~1               ; LABCELL_X30_Y4_N24 ; 27      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; VGA:vgaCont|Equal1~1               ; LABCELL_X30_Y5_N15 ; 15      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; clk                                ; PIN_AF14           ; 2       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; clk                                ; PIN_AF14           ; 33      ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; conecta_4:game_inst|Decoder0~0     ; LABCELL_X37_Y2_N51 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|Decoder0~1     ; LABCELL_X37_Y2_N27 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|Decoder0~2     ; LABCELL_X37_Y2_N24 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|Decoder0~3     ; LABCELL_X35_Y2_N54 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|Decoder0~4     ; LABCELL_X35_Y2_N36 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|Decoder0~5     ; LABCELL_X37_Y2_N42 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|drop_pending~0 ; LABCELL_X37_Y2_N54 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; conecta_4:game_inst|last_row[0]~0  ; LABCELL_X37_Y2_N3  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; rst                                ; PIN_AJ14           ; 31      ; Async. clear              ; no     ; --                   ; --               ; --                        ;
+; vga_pll:pll_inst|div[0]            ; FF_X30_Y4_N38      ; 29      ; Clock                     ; no     ; --                   ; --               ; --                        ;
++------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1660,7 +1655,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_AF14 ; 37      ; Global Clock         ; GCLK6            ; --                        ;
+; clk  ; PIN_AF14 ; 33      ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1682,14 +1677,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------+-----------------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
 ; Name                             ; Mode                  ; Location      ; Sign Representation ; Data AX Input Register ; Data AY Input Register ; Data AZ Input Register ; Data BX Input Register ; Data BY Input Register ; Data BZ Input Register ; Output Register ; Dedicated Shift Register Chain ; Dedicated Pre-Adder ; Dedicated Coefficient Storage ; Dedicated Output Adder Chain ; Dedicated Output Accumulator ;
 +----------------------------------+-----------------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
-; videoGen:gameBoardDrawer|Mult2~8 ; Independent 9x9       ; DSP_X20_Y4_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult1~8 ; Independent 9x9       ; DSP_X20_Y2_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult0~8 ; Independent 9x9       ; DSP_X32_Y2_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult7~8 ; Two Independent 18x18 ; DSP_X32_Y4_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult4~8 ; Two Independent 18x18 ; DSP_X32_Y6_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult5~8 ; Two Independent 18x18 ; DSP_X32_Y8_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult6~8 ; Two Independent 18x18 ; DSP_X20_Y6_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; videoGen:gameBoardDrawer|Mult3~8 ; Two Independent 18x18 ; DSP_X54_Y4_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult2~8 ; Independent 9x9       ; DSP_X32_Y2_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult1~8 ; Independent 9x9       ; DSP_X32_Y8_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult0~8 ; Independent 9x9       ; DSP_X32_Y4_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult7~8 ; Two Independent 18x18 ; DSP_X32_Y6_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult4~8 ; Two Independent 18x18 ; DSP_X20_Y4_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult5~8 ; Two Independent 18x18 ; DSP_X20_Y6_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult6~8 ; Two Independent 18x18 ; DSP_X20_Y2_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; videoGen:gameBoardDrawer|Mult3~8 ; Two Independent 18x18 ; DSP_X20_Y8_N0 ; Unsigned            ; no                     ; no                     ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
 +----------------------------------+-----------------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
 
 
@@ -1698,14 +1693,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+---------------------------+
 ; Routing Resource Type                       ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Block interconnects                         ; 1,186 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 1,113 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 5 / 13,420 ( < 1 % )      ;
-; C2 interconnects                            ; 331 / 119,108 ( < 1 % )   ;
-; C4 interconnects                            ; 124 / 56,300 ( < 1 % )    ;
+; C2 interconnects                            ; 298 / 119,108 ( < 1 % )   ;
+; C4 interconnects                            ; 117 / 56,300 ( < 1 % )    ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )            ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )            ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )            ;
-; Direct links                                ; 163 / 289,320 ( < 1 % )   ;
+; Direct links                                ; 230 / 289,320 ( < 1 % )   ;
 ; Global clocks                               ; 1 / 16 ( 6 % )            ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )             ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )             ;
@@ -1761,12 +1756,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )             ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )            ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )            ;
-; Local interconnects                         ; 299 / 84,580 ( < 1 % )    ;
+; Local interconnects                         ; 306 / 84,580 ( < 1 % )    ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )            ;
-; R14 interconnects                           ; 44 / 12,676 ( < 1 % )     ;
-; R14/C12 interconnect drivers                ; 46 / 20,720 ( < 1 % )     ;
-; R3 interconnects                            ; 540 / 130,992 ( < 1 % )   ;
-; R6 interconnects                            ; 615 / 266,960 ( < 1 % )   ;
+; R14 interconnects                           ; 31 / 12,676 ( < 1 % )     ;
+; R14/C12 interconnect drivers                ; 34 / 20,720 ( < 1 % )     ;
+; R3 interconnects                            ; 413 / 130,992 ( < 1 % )   ;
+; R6 interconnects                            ; 544 / 266,960 ( < 1 % )   ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )         ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )        ;
 +---------------------------------------------+---------------------------+
@@ -1927,14 +1922,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                             ;
-+---------------------------+---------------------------+-------------------+
-; Source Clock(s)           ; Destination Clock(s)      ; Delay Added in ns ;
-+---------------------------+---------------------------+-------------------+
-; clk                       ; clk                       ; 12.6              ;
-; vga_pll:pll_inst|outclk_0 ; vga_pll:pll_inst|outclk_0 ; 4.8               ;
-+---------------------------+---------------------------+-------------------+
++-----------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                         ;
++-------------------------+-------------------------+-------------------+
+; Source Clock(s)         ; Destination Clock(s)    ; Delay Added in ns ;
++-------------------------+-------------------------+-------------------+
+; clk                     ; clk                     ; 11.7              ;
+; vga_pll:pll_inst|div[0] ; vga_pll:pll_inst|div[0] ; 6.7               ;
++-------------------------+-------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
@@ -1944,62 +1939,57 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------------+------------------------------------------+-------------------+
 ; Source Register                          ; Destination Register                     ; Delay Added in ns ;
 +------------------------------------------+------------------------------------------+-------------------+
-; vga_pll:pll_inst|outclk_0                ; vga_pll:pll_inst|outclk_0                ; 5.022             ;
-; vga_pll:pll_inst|clk_divider[1]          ; vga_pll:pll_inst|outclk_0                ; 1.814             ;
-; vga_pll:pll_inst|clk_divider[0]          ; vga_pll:pll_inst|outclk_0                ; 1.814             ;
-; VGA:vgaCont|x[7]                         ; VGA:vgaCont|y[4]                         ; 0.499             ;
-; VGA:vgaCont|x[5]                         ; VGA:vgaCont|y[4]                         ; 0.470             ;
-; VGA:vgaCont|x[8]                         ; VGA:vgaCont|y[4]                         ; 0.453             ;
-; conecta_4:game_inst|filled_cells[2]      ; conecta_4:game_inst|filled_cells[5]      ; 0.378             ;
-; conecta_4:game_inst|filled_cells[3]      ; conecta_4:game_inst|filled_cells[5]      ; 0.375             ;
-; VGA:vgaCont|x[3]                         ; VGA:vgaCont|y[4]                         ; 0.374             ;
-; VGA:vgaCont|x[6]                         ; VGA:vgaCont|y[4]                         ; 0.362             ;
-; VGA:vgaCont|x[9]                         ; VGA:vgaCont|y[4]                         ; 0.359             ;
-; conecta_4:game_inst|filled_cells[0]      ; conecta_4:game_inst|filled_cells[4]      ; 0.356             ;
-; VGA:vgaCont|x[4]                         ; VGA:vgaCont|y[4]                         ; 0.355             ;
-; VGA:vgaCont|x[2]                         ; VGA:vgaCont|y[4]                         ; 0.355             ;
-; VGA:vgaCont|x[1]                         ; VGA:vgaCont|y[4]                         ; 0.355             ;
-; VGA:vgaCont|x[0]                         ; VGA:vgaCont|y[4]                         ; 0.355             ;
-; VGA:vgaCont|y[3]                         ; VGA:vgaCont|y[3]                         ; 0.343             ;
-; estado_reg.P_INICIO                      ; estado_reg.JUGADA_P1                     ; 0.335             ;
-; estado_reg.JUGADA_P1                     ; estado_reg.JUGADA_P2                     ; 0.335             ;
-; conecta_4:game_inst|filled_cells[4]      ; conecta_4:game_inst|filled_cells[5]      ; 0.333             ;
-; VGA:vgaCont|y[1]                         ; VGA:vgaCont|y[1]                         ; 0.318             ;
-; VGA:vgaCont|y[8]                         ; VGA:vgaCont|y[9]                         ; 0.316             ;
-; conecta_4:game_inst|filled_cells[1]      ; conecta_4:game_inst|filled_cells[2]      ; 0.313             ;
+; vga_pll:pll_inst|div[0]                  ; vga_pll:pll_inst|div[0]                  ; 4.832             ;
+; VGA:vgaCont|x[7]                         ; VGA:vgaCont|y[9]                         ; 0.494             ;
+; VGA:vgaCont|x[6]                         ; VGA:vgaCont|y[9]                         ; 0.485             ;
+; VGA:vgaCont|x[9]                         ; VGA:vgaCont|x[9]                         ; 0.440             ;
+; VGA:vgaCont|x[5]                         ; VGA:vgaCont|y[9]                         ; 0.415             ;
+; VGA:vgaCont|x[3]                         ; VGA:vgaCont|x[3]                         ; 0.385             ;
+; VGA:vgaCont|y[3]                         ; VGA:vgaCont|y[3]                         ; 0.353             ;
+; VGA:vgaCont|y[5]                         ; VGA:vgaCont|y[5]                         ; 0.345             ;
+; VGA:vgaCont|y[6]                         ; VGA:vgaCont|y[6]                         ; 0.341             ;
+; VGA:vgaCont|y[7]                         ; VGA:vgaCont|y[9]                         ; 0.340             ;
+; VGA:vgaCont|x[4]                         ; VGA:vgaCont|y[9]                         ; 0.317             ;
+; VGA:vgaCont|x[1]                         ; VGA:vgaCont|x[3]                         ; 0.315             ;
+; conecta_4:game_inst|filled_cells[2]      ; conecta_4:game_inst|filled_cells[5]      ; 0.315             ;
+; conecta_4:game_inst|filled_cells[3]      ; conecta_4:game_inst|filled_cells[5]      ; 0.312             ;
 ; VGA:vgaCont|y[0]                         ; VGA:vgaCont|y[1]                         ; 0.308             ;
-; VGA:vgaCont|y[2]                         ; VGA:vgaCont|y[3]                         ; 0.289             ;
-; conecta_4:game_inst|height_counter[0][1] ; conecta_4:game_inst|height_counter[0][2] ; 0.286             ;
-; estado_reg.JUGADA_P2                     ; estado_reg.JUGADA_P1                     ; 0.283             ;
-; VGA:vgaCont|y[9]                         ; VGA:vgaCont|y[9]                         ; 0.273             ;
-; conecta_4:game_inst|player               ; conecta_4:game_inst|state_board[0][0][0] ; 0.249             ;
-; conecta_4:game_inst|drop_pending         ; conecta_4:game_inst|height_counter[0][1] ; 0.188             ;
-; VGA:vgaCont|y[7]                         ; VGA:vgaCont|y[9]                         ; 0.185             ;
-; VGA:vgaCont|y[6]                         ; VGA:vgaCont|y[9]                         ; 0.172             ;
-; VGA:vgaCont|y[5]                         ; VGA:vgaCont|y[9]                         ; 0.172             ;
-; VGA:vgaCont|y[4]                         ; VGA:vgaCont|y[9]                         ; 0.172             ;
-; confirm_raw                              ; conecta_4:game_inst|height_counter[0][2] ; 0.145             ;
-; conecta_4:game_inst|win                  ; conecta_4:game_inst|height_counter[0][2] ; 0.145             ;
-; conecta_4:game_inst|draw                 ; conecta_4:game_inst|height_counter[0][2] ; 0.145             ;
-; conecta_4:game_inst|height_counter[0][2] ; conecta_4:game_inst|height_counter[0][1] ; 0.134             ;
-; conecta_4:game_inst|last_row[2]          ; conecta_4:game_inst|player               ; 0.127             ;
-; conecta_4:game_inst|state_board[5][0][1] ; conecta_4:game_inst|player               ; 0.113             ;
-; conecta_4:game_inst|last_row[1]          ; conecta_4:game_inst|player               ; 0.074             ;
-; conecta_4:game_inst|last_row[0]          ; conecta_4:game_inst|player               ; 0.074             ;
-; conecta_4:game_inst|state_board[2][0][0] ; conecta_4:game_inst|player               ; 0.069             ;
-; conecta_4:game_inst|state_board[3][0][0] ; conecta_4:game_inst|player               ; 0.059             ;
-; conecta_4:game_inst|state_board[5][0][0] ; conecta_4:game_inst|player               ; 0.058             ;
-; conecta_4:game_inst|state_board[1][0][1] ; conecta_4:game_inst|player               ; 0.050             ;
-; conecta_4:game_inst|last_player          ; conecta_4:game_inst|player               ; 0.047             ;
-; conecta_4:game_inst|state_board[4][0][0] ; conecta_4:game_inst|player               ; 0.047             ;
-; conecta_4:game_inst|state_board[4][0][1] ; conecta_4:game_inst|player               ; 0.047             ;
-; conecta_4:game_inst|state_board[2][0][1] ; conecta_4:game_inst|player               ; 0.047             ;
-; conecta_4:game_inst|state_board[3][0][1] ; conecta_4:game_inst|player               ; 0.047             ;
-; conecta_4:game_inst|state_board[0][0][0] ; conecta_4:game_inst|player               ; 0.025             ;
-; conecta_4:game_inst|state_board[1][0][0] ; conecta_4:game_inst|player               ; 0.025             ;
-; conecta_4:game_inst|state_board[0][0][1] ; conecta_4:game_inst|player               ; 0.025             ;
+; VGA:vgaCont|y[1]                         ; VGA:vgaCont|y[1]                         ; 0.308             ;
+; conecta_4:game_inst|filled_cells[0]      ; conecta_4:game_inst|filled_cells[4]      ; 0.294             ;
+; VGA:vgaCont|y[9]                         ; VGA:vgaCont|y[9]                         ; 0.293             ;
+; VGA:vgaCont|y[2]                         ; VGA:vgaCont|y[3]                         ; 0.290             ;
+; estado_reg.GAME_OVER                     ; estado_reg.P_INICIO                      ; 0.287             ;
+; VGA:vgaCont|y[8]                         ; VGA:vgaCont|y[9]                         ; 0.276             ;
+; VGA:vgaCont|x[8]                         ; VGA:vgaCont|x[9]                         ; 0.273             ;
+; VGA:vgaCont|x[2]                         ; VGA:vgaCont|x[3]                         ; 0.273             ;
+; VGA:vgaCont|x[0]                         ; VGA:vgaCont|x[3]                         ; 0.273             ;
+; estado_reg.JUGADA_P2                     ; estado_reg.GAME_OVER                     ; 0.273             ;
+; estado_reg.P_INICIO                      ; estado_reg.JUGADA_P1                     ; 0.271             ;
+; conecta_4:game_inst|filled_cells[4]      ; conecta_4:game_inst|filled_cells[5]      ; 0.270             ;
+; VGA:vgaCont|y[4]                         ; VGA:vgaCont|y[5]                         ; 0.265             ;
+; conecta_4:game_inst|filled_cells[1]      ; conecta_4:game_inst|filled_cells[2]      ; 0.250             ;
+; conecta_4:game_inst|height_counter[0][2] ; conecta_4:game_inst|last_player          ; 0.243             ;
+; conecta_4:game_inst|height_counter[0][1] ; conecta_4:game_inst|height_counter[0][2] ; 0.233             ;
+; conecta_4:game_inst|draw                 ; conecta_4:game_inst|last_player          ; 0.232             ;
+; estado_reg.JUGADA_P1                     ; estado_reg.JUGADA_P2                     ; 0.228             ;
+; conecta_4:game_inst|win                  ; conecta_4:game_inst|last_player          ; 0.204             ;
+; conecta_4:game_inst|drop_pending         ; conecta_4:game_inst|player               ; 0.132             ;
+; confirm_raw                              ; conecta_4:game_inst|height_counter[0][2] ; 0.123             ;
+; conecta_4:game_inst|last_row[2]          ; conecta_4:game_inst|player               ; 0.079             ;
+; conecta_4:game_inst|state_board[2][0][0] ; conecta_4:game_inst|player               ; 0.061             ;
+; conecta_4:game_inst|last_player          ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[4][0][0] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[3][0][0] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[5][0][1] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[4][0][1] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|last_row[1]          ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|last_row[0]          ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[2][0][1] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[3][0][1] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|state_board[5][0][0] ; conecta_4:game_inst|player               ; 0.039             ;
+; conecta_4:game_inst|player               ; conecta_4:game_inst|state_board[4][0][0] ; 0.015             ;
 +------------------------------------------+------------------------------------------+-------------------+
-Note: This table only shows the top 54 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 49 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2016,7 +2006,7 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 50 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clk~inputCLKENA0 with 34 fanout uses global clock CLKCTRL_G6
+    Info (11162): clk~inputCLKENA0 with 32 fanout uses global clock CLKCTRL_G6
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'conecta_4.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -2029,17 +2019,17 @@ Info (176235): Finished register packing
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:40
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:36
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 6% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
+    Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.73 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.66 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2047,10 +2037,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/conecta_4.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 8007 megabytes
-    Info: Processing ended: Wed May  7 00:12:26 2025
-    Info: Elapsed time: 00:02:20
-    Info: Total CPU time (on all processors): 00:14:00
+    Info: Peak virtual memory: 7977 megabytes
+    Info: Processing ended: Wed May  7 00:23:29 2025
+    Info: Elapsed time: 00:01:59
+    Info: Total CPU time (on all processors): 00:11:33
 
 
 +----------------------------+

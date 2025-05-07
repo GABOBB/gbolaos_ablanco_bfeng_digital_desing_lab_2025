@@ -1,5 +1,5 @@
 Analysis & Synthesis report for conecta_4
-Wed May  7 00:10:05 2025
+Wed May  7 00:21:29 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -54,13 +54,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May  7 00:10:05 2025          ;
+; Analysis & Synthesis Status     ; Successful - Wed May  7 00:21:29 2025          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; conecta_4                                      ;
 ; Top-level Entity Name           ; Connect4_Top                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 55                                             ;
+; Total registers                 ; 53                                             ;
 ; Total pins                      ; 50                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -204,24 +204,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 409       ;
+; Estimate of Logic utilization (ALMs needed) ; 408       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 763       ;
+; Combinational ALUT usage for logic          ; 761       ;
 ;     -- 7 input functions                    ; 1         ;
 ;     -- 6 input functions                    ; 52        ;
 ;     -- 5 input functions                    ; 113       ;
 ;     -- 4 input functions                    ; 70        ;
-;     -- <=3 input functions                  ; 527       ;
+;     -- <=3 input functions                  ; 525       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 55        ;
+; Dedicated logic registers                   ; 53        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 50        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 8         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 35        ;
-; Total fan-out                               ; 2685      ;
+; Maximum fan-out                             ; 33        ;
+; Total fan-out                               ; 2676      ;
 ; Average fan-out                             ; 2.90      ;
 +---------------------------------------------+-----------+
 
@@ -231,11 +231,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Connect4_Top                             ; 763 (24)            ; 55 (4)                    ; 0                 ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
+; |Connect4_Top                             ; 761 (24)            ; 53 (4)                    ; 0                 ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
 ;    |VGA:vgaCont|                          ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|VGA:vgaCont                                                                                                              ; VGA                 ; work         ;
 ;    |conecta_4:game_inst|                  ; 59 (59)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|conecta_4:game_inst                                                                                                      ; conecta_4           ; work         ;
 ;    |startScreen:start|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|startScreen:start                                                                                                        ; startScreen         ; work         ;
-;    |vga_pll:pll_inst|                     ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|vga_pll:pll_inst                                                                                                         ; vga_pll             ; work         ;
+;    |vga_pll:pll_inst|                     ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|vga_pll:pll_inst                                                                                                         ; vga_pll             ; work         ;
 ;    |videoGen:gameBoardDrawer|             ; 644 (482)           ; 0 (0)                     ; 0                 ; 8          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer                                                                                                 ; videoGen            ; work         ;
 ;       |lpm_divide:Div0|                   ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_hbm:auto_generated|  ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
@@ -382,7 +382,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 55    ;
+; Total registers                              ; 53    ;
 ; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 29    ;
@@ -512,14 +512,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 55                          ;
+; arriav_ff             ; 53                          ;
 ;     CLR               ; 15                          ;
 ;     ENA               ; 3                           ;
 ;     ENA CLR           ; 14                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 766                         ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 764                         ;
 ;     arith             ; 360                         ;
 ;         0 data inputs ; 24                          ;
 ;         1 data inputs ; 260                         ;
@@ -529,11 +529,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 1                           ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 309                         ;
+;     normal            ; 307                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 59                          ;
-;         3 data inputs ; 30                          ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 29                          ;
 ;         4 data inputs ; 45                          ;
 ;         5 data inputs ; 112                         ;
 ;         6 data inputs ; 52                          ;
@@ -545,7 +545,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 50                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.80                       ;
-; Average LUT depth     ; 11.52                       ;
+; Average LUT depth     ; 11.55                       ;
 +-----------------------+-----------------------------+
 
 
@@ -564,7 +564,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed May  7 00:09:58 2025
+    Info: Processing started: Wed May  7 00:21:22 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off conecta_4 -c conecta_4
 Warning (125092): Tcl Script File vga_pll.qip not found
     Info (125063): set_global_assignment -name QIP_FILE vga_pll.qip
@@ -585,7 +585,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file startsc
 Info (12021): Found 1 design units, including 1 entities, in source file tb_connect4_top.sv
     Info (12023): Found entity 1: tb_Connect4_Top File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_Connect4_Top.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll.sv
-    Info (12023): Found entity 1: vga_pll File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv Line: 2
+    Info (12023): Found entity 1: vga_pll File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Connect4_Top.sv(151): created implicit net for "board_full" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 151
 Info (12127): Elaborating entity "Connect4_Top" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(151): object "board_full" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 151
@@ -595,7 +595,6 @@ Warning (10034): Output port "p2_led" at Connect4_Top.sv(21) has no driver File:
 Warning (10034): Output port "game_over_led" at Connect4_Top.sv(22) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
 Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:pll_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 33
-Warning (10230): Verilog HDL assignment warning at vga_pll.sv(28): truncated value with size 32 to match size of target (2) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv Line: 28
 Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vgaCont" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 91
 Info (12128): Elaborating entity "conecta_4" for hierarchy "conecta_4:game_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 102
 Warning (10230): Verilog HDL assignment warning at conecta_4.sv(129): truncated value with size 32 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 129
@@ -647,16 +646,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "col_left_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 5
     Warning (15610): No output dependent on input pin "col_right_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 6
-Info (21057): Implemented 852 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 850 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 794 logic cells
+    Info (21061): Implemented 792 logic cells
     Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 4893 megabytes
-    Info: Processing ended: Wed May  7 00:10:05 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4908 megabytes
+    Info: Processing ended: Wed May  7 00:21:29 2025
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
