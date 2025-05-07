@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY connect4
+set_global_assignment -name TOP_LEVEL_ENTITY toplevel_connect4
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:57:09  MAY 06, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
@@ -66,3 +66,17 @@ set_global_assignment -name SYSTEMVERILOG_FILE matrixTableroControl.sv
 set_global_assignment -name SYSTEMVERILOG_FILE pll.sv
 set_global_assignment -name SYSTEMVERILOG_FILE random_selector.sv
 set_global_assignment -name SYSTEMVERILOG_FILE startScreen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE toplevel_connect4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE videoGen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE winner_detection.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_toplevel_connect4.sv
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_toplevel_connect4 -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_toplevel_connect4 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_toplevel_connect4
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_toplevel_connect4 -section_id tb_toplevel_connect4
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_toplevel_connect4.sv -section_id tb_toplevel_connect4
