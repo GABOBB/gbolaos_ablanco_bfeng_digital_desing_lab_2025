@@ -59,3 +59,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE Full_Timer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SPI_main.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Timer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE arduino_interface.sv
+set_global_assignment -name SYSTEMVERILOG_FILE connect4_fsm.sv
