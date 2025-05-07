@@ -1,5 +1,5 @@
 Analysis & Synthesis report for conecta_4
-Wed May  7 00:21:29 2025
+Wed May  7 02:08:52 2025
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -18,16 +18,19 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: VGA:vgaCont
- 14. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div1
- 15. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div0
- 16. Port Connectivity Checks: "videoGen:gameBoardDrawer"
- 17. Port Connectivity Checks: "conecta_4:game_inst"
- 18. Port Connectivity Checks: "vga_pll:pll_inst"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 13. Parameter Settings for User Entity Instance: debounce:db_left
+ 14. Parameter Settings for User Entity Instance: debounce:db_right
+ 15. Parameter Settings for User Entity Instance: debounce:db_confirm
+ 16. Parameter Settings for User Entity Instance: VGA:vgaCont
+ 17. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div1
+ 18. Parameter Settings for Inferred Entity Instance: videoGen:gameBoardDrawer|lpm_divide:Div0
+ 19. Port Connectivity Checks: "videoGen:gameBoardDrawer"
+ 20. Port Connectivity Checks: "conecta_4:game_inst"
+ 21. Port Connectivity Checks: "vga_pll:pll_inst"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -54,13 +57,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May  7 00:21:29 2025          ;
+; Analysis & Synthesis Status     ; Successful - Wed May  7 02:08:52 2025          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; conecta_4                                      ;
 ; Top-level Entity Name           ; Connect4_Top                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 53                                             ;
+; Total registers                 ; 255                                            ;
 ; Total pins                      ; 50                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -174,7 +177,14 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -189,6 +199,7 @@ https://fpgasoftware.intel.com/eula.
 ; Connect4_Top.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv            ;         ;
 ; startScreen.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/startScreen.sv             ;         ;
 ; vga_pll.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv                 ;         ;
+; debounce.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/debounce.sv                ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                             ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                            ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                        ;         ;
@@ -204,25 +215,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 408       ;
+; Estimate of Logic utilization (ALMs needed) ; 767       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 761       ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 52        ;
-;     -- 5 input functions                    ; 113       ;
-;     -- 4 input functions                    ; 70        ;
-;     -- <=3 input functions                  ; 525       ;
+; Combinational ALUT usage for logic          ; 1297      ;
+;     -- 7 input functions                    ; 20        ;
+;     -- 6 input functions                    ; 210       ;
+;     -- 5 input functions                    ; 181       ;
+;     -- 4 input functions                    ; 128       ;
+;     -- <=3 input functions                  ; 758       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 53        ;
+; Dedicated logic registers                   ; 255       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 50        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 8         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 33        ;
-; Total fan-out                               ; 2676      ;
-; Average fan-out                             ; 2.90      ;
+; Maximum fan-out                             ; 235       ;
+; Total fan-out                               ; 5622      ;
+; Average fan-out                             ; 3.39      ;
 +---------------------------------------------+-----------+
 
 
@@ -231,12 +242,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Connect4_Top                             ; 761 (24)            ; 53 (4)                    ; 0                 ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
+; |Connect4_Top                             ; 1297 (34)           ; 255 (7)                   ; 0                 ; 8          ; 50   ; 0            ; |Connect4_Top                                                                                                                          ; Connect4_Top        ; work         ;
 ;    |VGA:vgaCont|                          ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|VGA:vgaCont                                                                                                              ; VGA                 ; work         ;
-;    |conecta_4:game_inst|                  ; 59 (59)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|conecta_4:game_inst                                                                                                      ; conecta_4           ; work         ;
+;    |conecta_4:game_inst|                  ; 453 (453)           ; 122 (122)                 ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|conecta_4:game_inst                                                                                                      ; conecta_4           ; work         ;
+;    |debounce:db_confirm|                  ; 41 (41)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|debounce:db_confirm                                                                                                      ; debounce            ; work         ;
+;    |debounce:db_left|                     ; 41 (41)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|debounce:db_left                                                                                                         ; debounce            ; work         ;
+;    |debounce:db_right|                    ; 41 (41)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|debounce:db_right                                                                                                        ; debounce            ; work         ;
 ;    |startScreen:start|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|startScreen:start                                                                                                        ; startScreen         ; work         ;
 ;    |vga_pll:pll_inst|                     ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|vga_pll:pll_inst                                                                                                         ; vga_pll             ; work         ;
-;    |videoGen:gameBoardDrawer|             ; 644 (482)           ; 0 (0)                     ; 0                 ; 8          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer                                                                                                 ; videoGen            ; work         ;
+;    |videoGen:gameBoardDrawer|             ; 653 (491)           ; 0 (0)                     ; 0                 ; 8          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer                                                                                                 ; videoGen            ; work         ;
 ;       |lpm_divide:Div0|                   ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_hbm:auto_generated|  ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
 ;             |sign_div_unsign_nlh:divider| ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Connect4_Top|videoGen:gameBoardDrawer|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
@@ -275,106 +289,14 @@ Encoding Type:  One-Hot
 +----------------------+---------------------+----------------------+----------------------+----------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                              ;
-+------------------------------------------+------------------------------------------------------+
-; Register name                            ; Reason for Removal                                   ;
-+------------------------------------------+------------------------------------------------------+
-; conecta_4:game_inst|height_counter[6][2] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[6][1] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[6][0] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[5][2] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[5][1] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[5][0] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[4][2] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[4][1] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[4][0] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[3][2] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[3][1] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[3][0] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[2][2] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[2][1] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[2][0] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[1][2] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[1][1] ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[1][0] ; Lost fanout                                          ;
-; conecta_4:game_inst|last_col[0..2]       ; Stuck at GND due to stuck port data_in               ;
-; conecta_4:game_inst|state_board[0][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[1][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[2][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[3][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[4][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][1][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][1][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][2][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][2][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][3][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][3][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][4][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][4][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][5][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][5][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][6][0] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[5][6][1] ; Merged with conecta_4:game_inst|state_board[0][1][0] ;
-; conecta_4:game_inst|state_board[0][1][0] ; Stuck at GND due to stuck port data_in               ;
-; estado_reg~6                             ; Lost fanout                                          ;
-; conecta_4:game_inst|height_counter[0][0] ; Merged with conecta_4:game_inst|filled_cells[0]      ;
-; Total Number of Removed Registers = 95   ;                                                      ;
-+------------------------------------------+------------------------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; estado_reg~6                          ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -382,33 +304,95 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 53    ;
-; Number of registers using Synchronous Clear  ; 20    ;
+; Total registers                              ; 255   ;
+; Number of registers using Synchronous Clear  ; 116   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Clear ; 228   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 27    ;
+; Number of registers using Clock Enable       ; 120   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux16     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux16     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux26     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux19     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux22     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|count     ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|b                             ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|r                             ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux23     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux18     ;
-; 64:1               ; 2 bits    ; 84 LEs        ; 30 LEs               ; 54 LEs                 ; No         ; |Connect4_Top|videoGen:gameBoardDrawer|Mux0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Connect4_Top|selected_col_reg[2]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Connect4_Top|debounce:db_confirm|counter[10] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Connect4_Top|debounce:db_right|counter[0]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Connect4_Top|debounce:db_left|counter[23]    ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux53       ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux14       ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux71       ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux70       ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux73       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux16       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux16       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux25       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux19       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux21       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|count       ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux109      ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux39       ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux82       ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux67       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|b                               ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux1        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|count       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|count       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|count       ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux113      ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux126      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux111      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux127      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux115      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux117      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|g                               ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux23       ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux18       ;
+; 64:1               ; 2 bits    ; 84 LEs        ; 60 LEs               ; 24 LEs                 ; No         ; |Connect4_Top|videoGen:gameBoardDrawer|Mux0   ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux109      ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux39       ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux82       ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux68       ;
+; 10:1               ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux96       ;
+; 10:1               ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |Connect4_Top|conecta_4:game_inst|Mux53       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce:db_left ;
++----------------+----------+-----------------------------------+
+; Parameter Name ; Value    ; Type                              ;
++----------------+----------+-----------------------------------+
+; CLK_FREQ_HZ    ; 50000000 ; Signed Integer                    ;
+; DEBOUNCE_MS    ; 20       ; Signed Integer                    ;
++----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce:db_right ;
++----------------+----------+------------------------------------+
+; Parameter Name ; Value    ; Type                               ;
++----------------+----------+------------------------------------+
+; CLK_FREQ_HZ    ; 50000000 ; Signed Integer                     ;
+; DEBOUNCE_MS    ; 20       ; Signed Integer                     ;
++----------------+----------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce:db_confirm ;
++----------------+----------+--------------------------------------+
+; Parameter Name ; Value    ; Type                                 ;
++----------------+----------+--------------------------------------+
+; CLK_FREQ_HZ    ; 50000000 ; Signed Integer                       ;
+; DEBOUNCE_MS    ; 20       ; Signed Integer                       ;
++----------------+----------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------+
@@ -485,15 +469,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+-------+----------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "conecta_4:game_inst"                                                                   ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; col_sel ; Input  ; Info     ; Stuck at GND                                                                        ;
-; player  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; draw    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "conecta_4:game_inst"                                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; player ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; draw   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -512,31 +495,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 53                          ;
-;     CLR               ; 15                          ;
-;     ENA               ; 3                           ;
-;     ENA CLR           ; 14                          ;
+; arriav_ff             ; 255                         ;
+;     CLR               ; 28                          ;
+;     CLR SCLR          ; 96                          ;
+;     ENA               ; 6                           ;
+;     ENA CLR           ; 104                         ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 764                         ;
-;     arith             ; 360                         ;
+; arriav_lcell_comb     ; 1300                        ;
+;     arith             ; 456                         ;
 ;         0 data inputs ; 24                          ;
-;         1 data inputs ; 260                         ;
+;         1 data inputs ; 356                         ;
 ;         2 data inputs ; 34                          ;
 ;         3 data inputs ; 16                          ;
 ;         4 data inputs ; 25                          ;
 ;         5 data inputs ; 1                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 307                         ;
+;     extend            ; 20                          ;
+;         7 data inputs ; 20                          ;
+;     normal            ; 728                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 29                          ;
-;         4 data inputs ; 45                          ;
-;         5 data inputs ; 112                         ;
-;         6 data inputs ; 52                          ;
+;         1 data inputs ; 52                          ;
+;         2 data inputs ; 76                          ;
+;         3 data inputs ; 106                         ;
+;         4 data inputs ; 103                         ;
+;         5 data inputs ; 180                         ;
+;         6 data inputs ; 210                         ;
 ;     shared            ; 96                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
@@ -545,7 +529,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 50                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.80                       ;
-; Average LUT depth     ; 11.55                       ;
+; Average LUT depth     ; 9.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -554,7 +538,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -564,7 +548,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed May  7 00:21:22 2025
+    Info: Processing started: Wed May  7 02:08:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off conecta_4 -c conecta_4
 Warning (125092): Tcl Script File vga_pll.qip not found
     Info (125063): set_global_assignment -name QIP_FILE vga_pll.qip
@@ -586,23 +570,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_conn
     Info (12023): Found entity 1: tb_Connect4_Top File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/tb_Connect4_Top.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll.sv
     Info (12023): Found entity 1: vga_pll File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/vga_pll.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at Connect4_Top.sv(151): created implicit net for "board_full" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 151
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
+    Info (12023): Found entity 1: debounce File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/debounce.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at Connect4_Top.sv(190): created implicit net for "board_full" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 190
 Info (12127): Elaborating entity "Connect4_Top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(151): object "board_full" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 151
-Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(46): object "is_game_over_state_active" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 46
+Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(190): object "board_full" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 190
+Warning (10036): Verilog HDL or VHDL warning at Connect4_Top.sv(70): object "is_game_over_state_active" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 70
+Warning (10230): Verilog HDL assignment warning at Connect4_Top.sv(154): truncated value with size 32 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 154
+Warning (10230): Verilog HDL assignment warning at Connect4_Top.sv(156): truncated value with size 32 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 156
 Warning (10034): Output port "p1_led" at Connect4_Top.sv(20) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 20
 Warning (10034): Output port "p2_led" at Connect4_Top.sv(21) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 21
 Warning (10034): Output port "game_over_led" at Connect4_Top.sv(22) has no driver File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
-Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:pll_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 33
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vgaCont" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 91
-Info (12128): Elaborating entity "conecta_4" for hierarchy "conecta_4:game_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 102
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:db_left" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 35
+Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:pll_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 57
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vgaCont" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 115
+Info (12128): Elaborating entity "conecta_4" for hierarchy "conecta_4:game_inst" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 126
 Warning (10230): Verilog HDL assignment warning at conecta_4.sv(129): truncated value with size 32 to match size of target (3) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 129
 Warning (10230): Verilog HDL assignment warning at conecta_4.sv(130): truncated value with size 32 to match size of target (6) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/conecta_4.sv Line: 130
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state_board" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
-Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:gameBoardDrawer" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 133
+Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:gameBoardDrawer" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 172
 Warning (10230): Verilog HDL assignment warning at videoGen.sv(15): truncated value with size 32 to match size of target (11) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 15
 Warning (10230): Verilog HDL assignment warning at videoGen.sv(16): truncated value with size 32 to match size of target (11) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 16
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(67): object "player1_chip" assigned a value but never read File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 67
@@ -615,7 +604,7 @@ Warning (10230): Verilog HDL assignment warning at videoGen.sv(122): truncated v
 Warning (10230): Verilog HDL assignment warning at videoGen.sv(129): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 129
 Warning (10230): Verilog HDL assignment warning at videoGen.sv(136): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 136
 Warning (10230): Verilog HDL assignment warning at videoGen.sv(160): truncated value with size 32 to match size of target (16) File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 160
-Info (12128): Elaborating entity "startScreen" for hierarchy "startScreen:start" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 142
+Info (12128): Elaborating entity "startScreen" for hierarchy "startScreen:start" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 181
 Info (278001): Inferred 2 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:gameBoardDrawer|Div1" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 94
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:gameBoardDrawer|Div0" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/videoGen.sv Line: 92
@@ -639,23 +628,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "game_over_led" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 22
     Warning (13410): Pin "estado[2]" is stuck at GND File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 24
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 19 registers lost all their fanouts during netlist optimizations.
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/output_files/conecta_4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "col_left_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 5
-    Warning (15610): No output dependent on input pin "col_right_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 6
-Info (21057): Implemented 850 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "p1_start_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 8
+    Warning (15610): No output dependent on input pin "p2_start_raw" File: C:/Users/Xpc/Documents/GitHub/gbolaos_ablanco_bfeng_digital_desing_lab_2025/Laboratorio_3/Connect4_Top.sv Line: 9
+Info (21057): Implemented 1443 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 792 logic cells
+    Info (21061): Implemented 1385 logic cells
     Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4908 megabytes
-    Info: Processing ended: Wed May  7 00:21:29 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Wed May  7 02:08:52 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +------------------------------------------+

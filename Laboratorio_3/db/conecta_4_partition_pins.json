@@ -168,11 +168,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "p1_start_raw",
+					"name" : "col_left_raw",
 					"strict" : false
 				},
 				{
-					"name" : "p2_start_raw",
+					"name" : "col_right_raw",
 					"strict" : false
 				}
 			]

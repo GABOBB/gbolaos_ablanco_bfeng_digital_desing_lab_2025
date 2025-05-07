@@ -23,6 +23,30 @@ module Connect4_Top (
     output [3:0] estado
 );
 
+    // Señales debounced
+    wire col_left_clean;
+    wire col_right_clean;
+    wire confirm_clean;
+
+    debounce db_left (
+    .clk(clk), .rst(rst),
+    .noisy_in(col_left_raw),
+    .debounced_out(col_left_clean)
+);
+
+debounce db_right (
+    .clk(clk), .rst(rst),
+    .noisy_in(col_right_raw),
+    .debounced_out(col_right_clean)
+);
+
+debounce db_confirm (
+    .clk(clk), .rst(rst),
+    .noisy_in(confirm_raw),
+    .debounced_out(confirm_clean)
+);
+
+
     // Clock PLL para VGA
     wire clk_25MHz;
     vga_pll pll_inst (
@@ -70,10 +94,10 @@ module Connect4_Top (
     always_comb begin
         estado_sig = estado_reg;
         case (estado_reg)
-            P_INICIO:   if (p1_start_raw || p2_start_raw) estado_sig = JUGADA_P1;
+            P_INICIO:   if (confirm_clean) estado_sig = JUGADA_P1;
             JUGADA_P1:  estado_sig = win ? GAME_OVER : JUGADA_P2;
             JUGADA_P2:  estado_sig = win ? GAME_OVER : JUGADA_P1;
-            GAME_OVER:  if (p1_start_raw || p2_start_raw) estado_sig = P_INICIO;
+            GAME_OVER:  if (confirm_clean) estado_sig = P_INICIO;
             default:    estado_sig = P_INICIO;
         endcase
     end
@@ -94,7 +118,7 @@ module Connect4_Top (
         .clk(clk),
         .rst(rst),
         .col_sel(selected_col),
-        .drop(confirm_raw),
+        .drop(confirm_clean),
         .player(player),
         .win(win),
         .draw(draw),
@@ -117,6 +141,21 @@ module Connect4_Top (
     assign valid_columns[2] = (matrix[(5*7 + 2)*2 +: 2] == 2'b00);
     assign valid_columns[1] = (matrix[(5*7 + 1)*2 +: 2] == 2'b00);
     assign valid_columns[0] = (matrix[(5*7 + 0)*2 +: 2] == 2'b00);
+
+    // Control del selector de columna
+    logic [2:0] selected_col_reg;
+    assign selected_col = selected_col_reg;
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst)
+            selected_col_reg <= 3'd0;
+        else if (estado_reg == JUGADA_P1 || estado_reg == JUGADA_P2) begin
+            if (col_left_clean && selected_col_reg > 0 && valid_columns[selected_col_reg - 1])
+                selected_col_reg <= selected_col_reg - 1;
+            else if (col_right_clean && selected_col_reg < 6 && valid_columns[selected_col_reg + 1])
+                selected_col_reg <= selected_col_reg + 1;
+        end
+    end
 
     videoGen gameBoardDrawer ( 
         .clk(clk),       
