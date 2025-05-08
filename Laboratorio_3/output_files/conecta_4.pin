@@ -1,0 +1,978 @@
+ -- Copyright (C) 2022  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and any partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details, at
+ -- https://fpgasoftware.intel.com/eula.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V, 3.0V or 3.3V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.1V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3A:       2.5V
+ --                  Bank 3B:       2.5V
+ --                  Bank 4A:       2.5V
+ --                  Bank 5A:       2.5V
+ --                  Bank 5B:       2.5V
+ --                  Bank 6B:       2.5V
+ --                  Bank 6A:  2.5V
+ --                  Bank 7A:  2.5V
+ --                  Bank 7B:  2.5V
+ --                  Bank 7C:  2.5V
+ --                  Bank 7D:  2.5V
+ --                  Bank 8A:  2.5V
+ --                  Bank 9A:  Dedicated configuration pins only, no VCCIO required.
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+CHIP  "conecta_4"  ASSIGNED TO AN: 5CSXFC6D6F31C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A2        : gnd    :                   :         :           :                
+GND*                         : A3        :        :                   :         : 8A        :                
+GND*                         : A4        :        :                   :         : 8A        :                
+GND*                         : A5        :        :                   :         : 8A        :                
+GND*                         : A6        :        :                   :         : 8A        :                
+VCCIO8A                      : A7        : power  :                   : 2.5V    : 8A        :                
+GND*                         : A8        :        :                   :         : 8A        :                
+GND*                         : A9        :        :                   :         : 8A        :                
+GND*                         : A10       :        :                   :         : 8A        :                
+GND*                         : A11       :        :                   :         : 8A        :                
+GND                          : A12       : gnd    :                   :         :           :                
+GND*                         : A13       :        :                   :         : 8A        :                
+GND*                         : A14       :        :                   :         : 7D        :                
+GND*                         : A15       :        :                   :         : 7D        :                
+GND*                         : A16       :        :                   :         : 7C        :                
+GND                          : A17       : gnd    :                   :         :           :                
+GND*                         : A18       :        :                   :         : 7B        :                
+GND*                         : A19       :        :                   :         : 7B        :                
+GND*                         : A20       :        :                   :         : 7B        :                
+GND*                         : A21       :        :                   :         : 7B        :                
+GND                          : A22       : gnd    :                   :         :           :                
+GND*                         : A23       :        :                   :         : 7A        :                
+GND*                         : A24       :        :                   :         : 7A        :                
+GND*                         : A25       :        :                   :         : 7A        :                
+GND                          : A26       :        :                   :         : 7A        :                
+GND                          : A27       : gnd    :                   :         :           :                
+HPS_TRST                     : A28       :        :                   :         : 7A        :                
+HPS_TMS                      : A29       :        :                   :         : 7A        :                
+GND                          : AA1       :        :                   :         : B0L       :                
+GND                          : AA2       :        :                   :         : B0L       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+VCCE_GXBL                    : AA5       : power  :                   : 1.1V    :           :                
+GND                          : AA6       : gnd    :                   :         :           :                
+DNU                          : AA7       :        :                   :         :           :                
+VCCA_FPLL                    : AA8       : power  :                   : 2.5V    :           :                
+GND                          : AA9       : gnd    :                   :         :           :                
+VCCPD3A                      : AA10      : power  :                   : 2.5V    : 3A        :                
+GND                          : AA11      : gnd    :                   :         :           :                
+GND*                         : AA12      :        :                   :         : 3A        :                
+GND*                         : AA13      :        :                   :         : 3B        :                
+col_right_raw                : AA14      : input  : 2.5 V             :         : 3B        : Y              
+col_left_raw                 : AA15      : input  : 2.5 V             :         : 3B        : Y              
+GND*                         : AA16      :        :                   :         : 4A        :                
+VCCIO4A                      : AA17      : power  :                   : 2.5V    : 4A        :                
+GND*                         : AA18      :        :                   :         : 4A        :                
+GND*                         : AA19      :        :                   :         : 4A        :                
+GND*                         : AA20      :        :                   :         : 4A        :                
+GND*                         : AA21      :        :                   :         : 4A        :                
+GND                          : AA22      : gnd    :                   :         :           :                
+VCCPGM                       : AA23      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+p1_led                       : AA24      : output : 2.5 V             :         : 5A        : Y              
+GND*                         : AA25      :        :                   :         : 5A        :                
+GND*                         : AA26      :        :                   :         : 5B        :                
+VCCIO5B                      : AA27      : power  :                   : 2.5V    : 5B        :                
+GND*                         : AA28      :        :                   :         : 5B        :                
+VREFB5BN0                    : AA29      : power  :                   :         : 5B        :                
+GND*                         : AA30      :        :                   :         : 5B        :                
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : B0L       :                
+GXB_NC                       : AB4       :        :                   :         : B0L       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+VCCH_GXBL                    : AB6       : power  :                   : 2.5V    :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+nCSO, DATA4                  : AB8       :        :                   :         : 3A        :                
+TDO                          : AB9       : output :                   :         : 3A        :                
+VCCPGM                       : AB10      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+VCC_AUX                      : AB11      : power  :                   : 2.5V    :           :                
+GND*                         : AB12      :        :                   :         : 3A        :                
+GND*                         : AB13      :        :                   :         : 3B        :                
+VCCIO3B                      : AB14      : power  :                   : 2.5V    : 3B        :                
+GND*                         : AB15      :        :                   :         : 3B        :                
+VCC_AUX                      : AB16      : power  :                   : 2.5V    :           :                
+estado[0]                    : AB17      : output : 2.5 V             :         : 4A        : N              
+VCCPD3B4A                    : AB18      : power  :                   : 2.5V    : 3B, 4A    :                
+GND                          : AB19      : gnd    :                   :         :           :                
+VCCPD3B4A                    : AB20      : power  :                   : 2.5V    : 3B, 4A    :                
+GND*                         : AB21      :        :                   :         : 4A        :                
+GND*                         : AB22      :        :                   :         : 5A        :                
+p2_led                       : AB23      : output : 2.5 V             :         : 5A        : Y              
+VCCIO5A                      : AB24      : power  :                   : 2.5V    : 5A        :                
+GND*                         : AB25      :        :                   :         : 5A        :                
+GND*                         : AB26      :        :                   :         : 5A        :                
+GND*                         : AB27      :        :                   :         : 5B        :                
+GND*                         : AB28      :        :                   :         : 5B        :                
+GND                          : AB29      : gnd    :                   :         :           :                
+p1_start_raw                 : AB30      : input  : 2.5 V             :         : 5B        : Y              
+GND                          : AC1       :        :                   :         : B0L       :                
+GND                          : AC2       :        :                   :         : B0L       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+TCK                          : AC5       : input  :                   :         : 3A        :                
+GND                          : AC6       : gnd    :                   :         :           :                
+AS_DATA3, DATA3              : AC7       :        :                   :         : 3A        :                
+GND                          : AC8       : gnd    :                   :         :           :                
+GND*                         : AC9       :        :                   :         : 3A        :                
+VCCPD3A                      : AC10      : power  :                   : 2.5V    : 3A        :                
+VCCIO3A                      : AC11      : power  :                   : 2.5V    : 3A        :                
+GND*                         : AC12      :        :                   :         : 3A        :                
+VCCPD3B4A                    : AC13      : power  :                   : 2.5V    : 3B, 4A    :                
+GND*                         : AC14      :        :                   :         : 3B        :                
+VCCPD3B4A                    : AC15      : power  :                   : 2.5V    : 3B, 4A    :                
+GND                          : AC16      : gnd    :                   :         :           :                
+VCCPD3B4A                    : AC17      : power  :                   : 2.5V    : 3B, 4A    :                
+GND*                         : AC18      :        :                   :         : 4A        :                
+VCCPD3B4A                    : AC19      : power  :                   : 2.5V    : 3B, 4A    :                
+GND*                         : AC20      :        :                   :         : 4A        :                
+VCCIO4A                      : AC21      : power  :                   : 2.5V    : 4A        :                
+GND*                         : AC22      :        :                   :         : 4A        :                
+game_over_led                : AC23      : output : 2.5 V             :         : 4A        : Y              
+VREFB5AN0                    : AC24      : power  :                   :         : 5A        :                
+GND*                         : AC25      :        :                   :         : 5A        :                
+GND                          : AC26      : gnd    :                   :         :           :                
+GND*                         : AC27      :        :                   :         : 5A        :                
+GND*                         : AC28      :        :                   :         : 5B        :                
+GND*                         : AC29      :        :                   :         : 5B        :                
+GND*                         : AC30      :        :                   :         : 5B        :                
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+GXB_NC                       : AD3       :        :                   :         : B0L       :                
+GXB_NC                       : AD4       :        :                   :         : B0L       :                
+GND                          : AD5       : gnd    :                   :         :           :                
+VREFB3AN0                    : AD6       : power  :                   :         : 3A        :                
+GND*                         : AD7       :        :                   :         : 3A        :                
+VCCIO3A                      : AD8       : power  :                   : 2.5V    : 3A        :                
+GND*                         : AD9       :        :                   :         : 3A        :                
+GND*                         : AD10      :        :                   :         : 3A        :                
+GND*                         : AD11      :        :                   :         : 3A        :                
+GND*                         : AD12      :        :                   :         : 3A        :                
+VCCIO3B                      : AD13      : power  :                   : 2.5V    : 3B        :                
+GND*                         : AD14      :        :                   :         : 3B        :                
+DNU                          : AD15      :        :                   :         :           :                
+VCCPD3B4A                    : AD16      : power  :                   : 2.5V    : 3B, 4A    :                
+GND*                         : AD17      :        :                   :         : 4A        :                
+VCCIO4A                      : AD18      : power  :                   : 2.5V    : 4A        :                
+GND*                         : AD19      :        :                   :         : 4A        :                
+GND*                         : AD20      :        :                   :         : 4A        :                
+GND*                         : AD21      :        :                   :         : 4A        :                
+VCC_AUX                      : AD22      : power  :                   : 2.5V    :           :                
+GND                          : AD23      : gnd    :                   :         :           :                
+GND*                         : AD24      :        :                   :         : 4A        :                
+GND*                         : AD25      :        :                   :         : 5A        :                
+GND*                         : AD26      :        :                   :         : 5A        :                
+GND*                         : AD27      :        :                   :         : 5A        :                
+VCCIO5A                      : AD28      : power  :                   : 2.5V    : 5A        :                
+GND*                         : AD29      :        :                   :         : 5B        :                
+GND*                         : AD30      :        :                   :         : 5B        :                
+GND                          : AE1       :        :                   :         : B0L       :                
+GND                          : AE2       :        :                   :         : B0L       :                
+GND                          : AE3       : gnd    :                   :         :           :                
+GND                          : AE4       : gnd    :                   :         :           :                
+AS_DATA1, DATA1              : AE5       :        :                   :         : 3A        :                
+AS_DATA0, ASDO, DATA0        : AE6       :        :                   :         : 3A        :                
+GND*                         : AE7       :        :                   :         : 3A        :                
+AS_DATA2, DATA2              : AE8       :        :                   :         : 3A        :                
+GND*                         : AE9       :        :                   :         : 3A        :                
+GND                          : AE10      : gnd    :                   :         :           :                
+GND*                         : AE11      :        :                   :         : 3A        :                
+GND*                         : AE12      :        :                   :         : 3A        :                
+GND*                         : AE13      :        :                   :         : 3B        :                
+GND*                         : AE14      :        :                   :         : 3B        :                
+VCCIO3B                      : AE15      : power  :                   : 2.5V    : 3B        :                
+GND*                         : AE16      :        :                   :         : 4A        :                
+GND*                         : AE17      :        :                   :         : 4A        :                
+GND*                         : AE18      :        :                   :         : 4A        :                
+GND*                         : AE19      :        :                   :         : 4A        :                
+GND                          : AE20      : gnd    :                   :         :           :                
+VCCPD3B4A                    : AE21      : power  :                   : 2.5V    : 3B, 4A    :                
+GND*                         : AE22      :        :                   :         : 4A        :                
+GND*                         : AE23      :        :                   :         : 4A        :                
+GND*                         : AE24      :        :                   :         : 4A        :                
+VCCIO4A                      : AE25      : power  :                   : 2.5V    : 4A        :                
+GND*                         : AE26      :        :                   :         : 5A        :                
+GND*                         : AE27      :        :                   :         : 5A        :                
+GND*                         : AE28      :        :                   :         : 5A        :                
+GND*                         : AE29      :        :                   :         : 5B        :                
+VCCIO5B                      : AE30      : power  :                   : 2.5V    : 5B        :                
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+GND                          : AF3       : gnd    :                   :         :           :                
+GND*                         : AF4       :        :                   :         : 3A        :                
+GND*                         : AF5       :        :                   :         : 3A        :                
+GND*                         : AF6       :        :                   :         : 3A        :                
+VCCIO3A                      : AF7       : power  :                   : 2.5V    : 3A        :                
+GND*                         : AF8       :        :                   :         : 3A        :                
+GND*                         : AF9       :        :                   :         : 3A        :                
+GND*                         : AF10      :        :                   :         : 3A        :                
+GND*                         : AF11      :        :                   :         : 3B        :                
+GND                          : AF12      : gnd    :                   :         :           :                
+GND*                         : AF13      :        :                   :         : 3B        :                
+clk                          : AF14      : input  : 2.5 V             :         : 3B        : Y              
+GND*                         : AF15      :        :                   :         : 3B        :                
+GND*                         : AF16      :        :                   :         : 4A        :                
+GND                          : AF17      : gnd    :                   :         :           :                
+GND*                         : AF18      :        :                   :         : 4A        :                
+GND*                         : AF19      :        :                   :         : 4A        :                
+GND*                         : AF20      :        :                   :         : 4A        :                
+GND*                         : AF21      :        :                   :         : 4A        :                
+VCCIO4A                      : AF22      : power  :                   : 2.5V    : 4A        :                
+GND*                         : AF23      :        :                   :         : 4A        :                
+GND*                         : AF24      :        :                   :         : 4A        :                
+GND*                         : AF25      :        :                   :         : 4A        :                
+r[5]                         : AF26      : output : 2.5 V             :         : 4A        : Y              
+GND                          : AF27      : gnd    :                   :         :           :                
+GND*                         : AF28      :        :                   :         : 5A        :                
+GND*                         : AF29      :        :                   :         : 5A        :                
+GND*                         : AF30      :        :                   :         : 5A        :                
+GND*                         : AG1       :        :                   :         : 3A        :                
+GND*                         : AG2       :        :                   :         : 3A        :                
+GND*                         : AG3       :        :                   :         : 3A        :                
+VCCIO3A                      : AG4       : power  :                   : 2.5V    : 3A        :                
+GND*                         : AG5       :        :                   :         : 3A        :                
+GND*                         : AG6       :        :                   :         : 3A        :                
+GND*                         : AG7       :        :                   :         : 3A        :                
+GND*                         : AG8       :        :                   :         : 3A        :                
+GND                          : AG9       : gnd    :                   :         :           :                
+GND*                         : AG10      :        :                   :         : 3B        :                
+GND*                         : AG11      :        :                   :         : 3B        :                
+GND*                         : AG12      :        :                   :         : 3B        :                
+GND*                         : AG13      :        :                   :         : 3B        :                
+GND                          : AG14      : gnd    :                   :         :           :                
+GND*                         : AG15      :        :                   :         : 3B        :                
+segments[3]                  : AG16      : output : 2.5 V             :         : 4A        : Y              
+segments[2]                  : AG17      : output : 2.5 V             :         : 4A        : Y              
+segments[5]                  : AG18      : output : 2.5 V             :         : 4A        : Y              
+VCCIO4A                      : AG19      : power  :                   : 2.5V    : 4A        :                
+GND*                         : AG20      :        :                   :         : 4A        :                
+estado[3]                    : AG21      : output : 2.5 V             :         : 4A        : N              
+GND*                         : AG22      :        :                   :         : 4A        :                
+GND*                         : AG23      :        :                   :         : 4A        :                
+GND                          : AG24      : gnd    :                   :         :           :                
+GND*                         : AG25      :        :                   :         : 4A        :                
+r[6]                         : AG26      : output : 2.5 V             :         : 4A        : Y              
+GND*                         : AG27      :        :                   :         : 5A        :                
+GND*                         : AG28      :        :                   :         : 5A        :                
+VCCIO5A                      : AG29      : power  :                   : 2.5V    : 5A        :                
+GND*                         : AG30      :        :                   :         : 5A        :                
+GND                          : AH1       : gnd    :                   :         :           :                
+GND*                         : AH2       :        :                   :         : 3A        :                
+GND*                         : AH3       :        :                   :         : 3A        :                
+GND*                         : AH4       :        :                   :         : 3A        :                
+estado[2]                    : AH5       : output : 2.5 V             :         : 3A        : N              
+GND                          : AH6       : gnd    :                   :         :           :                
+GND*                         : AH7       :        :                   :         : 3B        :                
+GND*                         : AH8       :        :                   :         : 3B        :                
+GND*                         : AH9       :        :                   :         : 3B        :                
+GND*                         : AH10      :        :                   :         : 3B        :                
+GND                          : AH11      : gnd    :                   :         :           :                
+GND*                         : AH12      :        :                   :         : 3B        :                
+GND*                         : AH13      :        :                   :         : 3B        :                
+GND*                         : AH14      :        :                   :         : 3B        :                
+GND*                         : AH15      :        :                   :         : 3B        :                
+VCCIO4A                      : AH16      : power  :                   : 2.5V    : 4A        :                
+segments[4]                  : AH17      : output : 2.5 V             :         : 4A        : Y              
+segments[6]                  : AH18      : output : 2.5 V             :         : 4A        : Y              
+b[4]                         : AH19      : output : 2.5 V             :         : 4A        : Y              
+b[2]                         : AH20      : output : 2.5 V             :         : 4A        : Y              
+GND                          : AH21      : gnd    :                   :         :           :                
+GND*                         : AH22      :        :                   :         : 4A        :                
+g[7]                         : AH23      : output : 2.5 V             :         : 4A        : Y              
+g[5]                         : AH24      : output : 2.5 V             :         : 4A        : Y              
+g[2]                         : AH25      : output : 2.5 V             :         : 4A        : Y              
+VCCIO4A                      : AH26      : power  :                   : 2.5V    : 4A        :                
+r[4]                         : AH27      : output : 2.5 V             :         : 4A        : Y              
+GND*                         : AH28      :        :                   :         : 5A        :                
+GND*                         : AH29      :        :                   :         : 5A        :                
+GND*                         : AH30      :        :                   :         : 5A        :                
+GND*                         : AJ1       :        :                   :         : 3A        :                
+GND*                         : AJ2       :        :                   :         : 3A        :                
+GND                          : AJ3       : gnd    :                   :         :           :                
+GND*                         : AJ4       :        :                   :         : 3B        :                
+GND*                         : AJ5       :        :                   :         : 3B        :                
+GND*                         : AJ6       :        :                   :         : 3B        :                
+GND*                         : AJ7       :        :                   :         : 3B        :                
+VCCIO3B                      : AJ8       : power  :                   : 2.5V    : 3B        :                
+GND*                         : AJ9       :        :                   :         : 3B        :                
+GND*                         : AJ10      :        :                   :         : 3B        :                
+GND*                         : AJ11      :        :                   :         : 3B        :                
+GND*                         : AJ12      :        :                   :         : 3B        :                
+VCCIO3B                      : AJ13      : power  :                   : 2.5V    : 3B        :                
+rst                          : AJ14      : input  : 2.5 V             :         : 3B        : Y              
+VREFB3BN0                    : AJ15      : power  :                   :         : 3B        :                
+b[6]                         : AJ16      : output : 2.5 V             :         : 4A        : Y              
+b[5]                         : AJ17      : output : 2.5 V             :         : 4A        : Y              
+GND                          : AJ18      : gnd    :                   :         :           :                
+b[3]                         : AJ19      : output : 2.5 V             :         : 4A        : Y              
+b[1]                         : AJ20      : output : 2.5 V             :         : 4A        : Y              
+b[0]                         : AJ21      : output : 2.5 V             :         : 4A        : Y              
+GND*                         : AJ22      :        :                   :         : 4A        :                
+VCCIO4A                      : AJ23      : power  :                   : 2.5V    : 4A        :                
+g[4]                         : AJ24      : output : 2.5 V             :         : 4A        : Y              
+g[1]                         : AJ25      : output : 2.5 V             :         : 4A        : Y              
+r[7]                         : AJ26      : output : 2.5 V             :         : 4A        : Y              
+r[3]                         : AJ27      : output : 2.5 V             :         : 4A        : Y              
+GND                          : AJ28      : gnd    :                   :         :           :                
+GND*                         : AJ29      :        :                   :         : 5A        :                
+GND                          : AJ30      : gnd    :                   :         :           :                
+GND*                         : AK2       :        :                   :         : 3B        :                
+GND*                         : AK3       :        :                   :         : 3B        :                
+confirm_raw                  : AK4       : input  : 2.5 V             :         : 3B        : Y              
+GND                          : AK5       : gnd    :                   :         :           :                
+GND*                         : AK6       :        :                   :         : 3B        :                
+GND*                         : AK7       :        :                   :         : 3B        :                
+GND*                         : AK8       :        :                   :         : 3B        :                
+GND*                         : AK9       :        :                   :         : 3B        :                
+VCCIO3B                      : AK10      : power  :                   : 2.5V    : 3B        :                
+GND*                         : AK11      :        :                   :         : 3B        :                
+GND*                         : AK12      :        :                   :         : 3B        :                
+GND*                         : AK13      :        :                   :         : 3B        :                
+GND*                         : AK14      :        :                   :         : 3B        :                
+GND                          : AK15      : gnd    :                   :         :           :                
+b[7]                         : AK16      : output : 2.5 V             :         : 4A        : Y              
+VREFB4AN0                    : AK17      : power  :                   :         : 4A        :                
+vsync                        : AK18      : output : 2.5 V             :         : 4A        : Y              
+hsync                        : AK19      : output : 2.5 V             :         : 4A        : Y              
+VCCIO4A                      : AK20      : power  :                   : 2.5V    : 4A        :                
+vgaclk                       : AK21      : output : 2.5 V             :         : 4A        : Y              
+blank_b                      : AK22      : output : 2.5 V             :         : 4A        : Y              
+g[6]                         : AK23      : output : 2.5 V             :         : 4A        : Y              
+g[3]                         : AK24      : output : 2.5 V             :         : 4A        : Y              
+GND                          : AK25      : gnd    :                   :         :           :                
+g[0]                         : AK26      : output : 2.5 V             :         : 4A        : Y              
+r[2]                         : AK27      : output : 2.5 V             :         : 4A        : Y              
+r[1]                         : AK28      : output : 2.5 V             :         : 4A        : Y              
+r[0]                         : AK29      : output : 2.5 V             :         : 4A        : Y              
+GND*                         : B1        :        :                   :         : 8A        :                
+GND*                         : B2        :        :                   :         : 8A        :                
+GND*                         : B3        :        :                   :         : 8A        :                
+VCCIO8A                      : B4        : power  :                   : 2.5V    : 8A        :                
+GND*                         : B5        :        :                   :         : 8A        :                
+GND*                         : B6        :        :                   :         : 8A        :                
+GND*                         : B7        :        :                   :         : 8A        :                
+GND*                         : B8        :        :                   :         : 8A        :                
+GND                          : B9        : gnd    :                   :         :           :                
+VREFB8AN0                    : B10       : power  :                   :         : 8A        :                
+GND*                         : B11       :        :                   :         : 8A        :                
+GND*                         : B12       :        :                   :         : 8A        :                
+GND*                         : B13       :        :                   :         : 8A        :                
+GND                          : B14       : gnd    :                   :         :           :                
+GND*                         : B15       :        :                   :         : 7D        :                
+GND*                         : B16       :        :                   :         : 7C        :                
+GND*                         : B17       :        :                   :         : 7C        :                
+GND*                         : B18       :        :                   :         : 7B        :                
+GND                          : B19       : gnd    :                   :         :           :                
+GND*                         : B20       :        :                   :         : 7B        :                
+GND*                         : B21       :        :                   :         : 7B        :                
+GND*                         : B22       :        :                   :         : 7A        :                
+GND*                         : B23       :        :                   :         : 7A        :                
+GND                          : B24       : gnd    :                   :         :           :                
+GND*                         : B25       :        :                   :         : 7A        :                
+GND*                         : B26       :        :                   :         : 7A        :                
+HPS_TDI                      : B27       :        :                   :         : 7A        :                
+HPS_TDO                      : B28       :        :                   :         : 7A        :                
+GND                          : B29       : gnd    :                   :         :           :                
+GND*                         : B30       :        :                   :         : 6A        :                
+GND                          : C1        : gnd    :                   :         :           :                
+GND*                         : C2        :        :                   :         : 8A        :                
+GND*                         : C3        :        :                   :         : 8A        :                
+GND*                         : C4        :        :                   :         : 8A        :                
+GND*                         : C5        :        :                   :         : 8A        :                
+GND                          : C6        : gnd    :                   :         :           :                
+GND*                         : C7        :        :                   :         : 8A        :                
+GND*                         : C8        :        :                   :         : 8A        :                
+GND*                         : C9        :        :                   :         : 8A        :                
+GND*                         : C10       :        :                   :         : 8A        :                
+VCCIO8A                      : C11       : power  :                   : 2.5V    : 8A        :                
+GND*                         : C12       :        :                   :         : 8A        :                
+GND*                         : C13       :        :                   :         : 8A        :                
+GND*                         : C14       :        :                   :         : 7D        :                
+GND*                         : C15       :        :                   :         : 7D        :                
+GND                          : C16       : gnd    :                   :         :           :                
+GND*                         : C17       :        :                   :         : 7C        :                
+GND*                         : C18       :        :                   :         : 7C        :                
+GND*                         : C19       :        :                   :         : 7B        :                
+GND*                         : C20       :        :                   :         : 7B        :                
+GND                          : C21       : gnd    :                   :         :           :                
+GND*                         : C22       :        :                   :         : 7A        :                
+GND*                         : C23       :        :                   :         : 7A        :                
+GND*                         : C24       :        :                   :         : 7A        :                
+GND*                         : C25       :        :                   :         : 7A        :                
+GND                          : C26       : gnd    :                   :         :           :                
+HPS_nRST                     : C27       :        :                   :         : 7A        :                
+GND*                         : C28       :        :                   :         : 6A        :                
+GND*                         : C29       :        :                   :         : 6A        :                
+GND*                         : C30       :        :                   :         : 6A        :                
+GND*                         : D1        :        :                   :         : 8A        :                
+GND*                         : D2        :        :                   :         : 8A        :                
+GND                          : D3        : gnd    :                   :         :           :                
+GND*                         : D4        :        :                   :         : 8A        :                
+GND*                         : D5        :        :                   :         : 8A        :                
+GND*                         : D6        :        :                   :         : 8A        :                
+GND*                         : D7        :        :                   :         : 8A        :                
+VCCIO8A                      : D8        : power  :                   : 2.5V    : 8A        :                
+GND*                         : D9        :        :                   :         : 8A        :                
+GND*                         : D10       :        :                   :         : 8A        :                
+GND*                         : D11       :        :                   :         : 8A        :                
+GND*                         : D12       :        :                   :         : 8A        :                
+GND                          : D13       : gnd    :                   :         :           :                
+GND*                         : D14       :        :                   :         : 7D        :                
+GND*                         : D15       :        :                   :         : 7D        :                
+GND*                         : D16       :        :                   :         : 7D        :                
+GND*                         : D17       :        :                   :         : 7C        :                
+VCCIO7C_HPS                  : D18       : power  :                   : 2.5V    : 7C        :                
+GND*                         : D19       :        :                   :         : 7B        :                
+GND*                         : D20       :        :                   :         : 7B        :                
+GND*                         : D21       :        :                   :         : 7B        :                
+GND*                         : D22       :        :                   :         : 7A        :                
+GND                          : D23       : gnd    :                   :         :           :                
+GND*                         : D24       :        :                   :         : 7A        :                
+HPS_CLK1                     : D25       :        :                   :         : 7A        :                
+GND                          : D26       :        :                   :         : 7A        :                
+HPS_RZQ_0                    : D27       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : D28       : power  :                   : 2.5V    : 6A        :                
+GND*                         : D29       :        :                   :         : 6A        :                
+GND*                         : D30       :        :                   :         : 6A        :                
+GND*                         : E1        :        :                   :         : 8A        :                
+GND*                         : E2        :        :                   :         : 8A        :                
+GND*                         : E3        :        :                   :         : 8A        :                
+GND*                         : E4        :        :                   :         : 8A        :                
+VCCIO8A                      : E5        : power  :                   : 2.5V    : 8A        :                
+GND*                         : E6        :        :                   :         : 8A        :                
+GND*                         : E7        :        :                   :         : 8A        :                
+GND*                         : E8        :        :                   :         : 8A        :                
+GND*                         : E9        :        :                   :         : 8A        :                
+GND                          : E10       : gnd    :                   :         :           :                
+GND*                         : E11       :        :                   :         : 8A        :                
+GND*                         : E12       :        :                   :         : 8A        :                
+GND*                         : E13       :        :                   :         : 8A        :                
+GND*                         : E14       :        :                   :         : 7D        :                
+VCCIO7D_HPS                  : E15       : power  :                   : 2.5V    : 7D        :                
+GND*                         : E16       :        :                   :         : 7D        :                
+GND*                         : E17       :        :                   :         : 7C        :                
+GND*                         : E18       :        :                   :         : 7C        :                
+GND*                         : E19       :        :                   :         : 7B        :                
+VCCIO7B_HPS                  : E20       : power  :                   : 2.5V    : 7B        :                
+GND*                         : E21       :        :                   :         : 7B        :                
+VREFB7A7B7C7DN0_HPS          : E22       : power  :                   :         : 7A, 7B, 7C, 7D :                
+GND*                         : E23       :        :                   :         : 7A        :                
+GND*                         : E24       :        :                   :         : 7A        :                
+GND                          : E25       : gnd    :                   :         :           :                
+DNU                          : E26       :        :                   :         :           :                
+GND*                         : E27       :        :                   :         : 6A        :                
+GND*                         : E28       :        :                   :         : 6A        :                
+GND*                         : E29       :        :                   :         : 6A        :                
+GND                          : E30       : gnd    :                   :         :           :                
+DNU                          : F1        :        :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+CONF_DONE                    : F3        :        :                   :         : 9A        :                
+nSTATUS                      : F4        :        :                   :         : 9A        :                
+GND                          : F5        : gnd    :                   :         :           :                
+GND*                         : F6        :        :                   :         : 8A        :                
+GND                          : F7        : gnd    :                   :         :           :                
+GND*                         : F8        :        :                   :         : 8A        :                
+GND*                         : F9        :        :                   :         : 8A        :                
+GND*                         : F10       :        :                   :         : 8A        :                
+GND*                         : F11       :        :                   :         : 8A        :                
+VCCIO8A                      : F12       : power  :                   : 2.5V    : 8A        :                
+GND*                         : F13       :        :                   :         : 8A        :                
+GND*                         : F14       :        :                   :         : 8A        :                
+GND*                         : F15       :        :                   :         : 8A        :                
+GND*                         : F16       :        :                   :         : 7D        :                
+GND                          : F17       : gnd    :                   :         :           :                
+GND*                         : F18       :        :                   :         : 7C        :                
+GND*                         : F19       :        :                   :         : 7B        :                
+GND*                         : F20       :        :                   :         : 7B        :                
+GND*                         : F21       :        :                   :         : 7B        :                
+VCCIO7A_HPS                  : F22       : power  :                   : 2.5V    : 7A        :                
+HPS_nPOR                     : F23       :        :                   :         : 7A        :                
+HPS_PORSEL                   : F24       :        :                   :         : 7A        :                
+HPS_CLK2                     : F25       :        :                   :         : 7A        :                
+GND*                         : F26       :        :                   :         : 6A        :                
+GND                          : F27       : gnd    :                   :         :           :                
+GND*                         : F28       :        :                   :         : 6A        :                
+GND*                         : F29       :        :                   :         : 6A        :                
+GND*                         : F30       :        :                   :         : 6A        :                
+RREF                         : G1        :        :                   :         :           :                
+DNU                          : G2        :        :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+nCE                          : G5        :        :                   :         : 9A        :                
+MSEL2                        : G6        :        :                   :         : 9A        :                
+GND*                         : G7        :        :                   :         : 8A        :                
+GND*                         : G8        :        :                   :         : 8A        :                
+VCCIO8A                      : G9        : power  :                   : 2.5V    : 8A        :                
+GND*                         : G10       :        :                   :         : 8A        :                
+GND*                         : G11       :        :                   :         : 8A        :                
+GND*                         : G12       :        :                   :         : 8A        :                
+GND*                         : G13       :        :                   :         : 8A        :                
+VCCIO8A                      : G14       : power  :                   : 2.5V    : 8A        :                
+GND*                         : G15       :        :                   :         : 8A        :                
+GND*                         : G16       :        :                   :         : 7D        :                
+GND*                         : G17       :        :                   :         : 7C        :                
+GND*                         : G18       :        :                   :         : 7C        :                
+VCCIO7B_HPS                  : G19       : power  :                   : 2.5V    : 7B        :                
+GND*                         : G20       :        :                   :         : 7B        :                
+GND*                         : G21       :        :                   :         : 7A        :                
+GND*                         : G22       :        :                   :         : 7A        :                
+VCCRSTCLK_HPS                : G23       :        :                   :         : 7A        :                
+GND                          : G24       : gnd    :                   :         :           :                
+GND*                         : G25       :        :                   :         : 6A        :                
+GND*                         : G26       :        :                   :         : 6A        :                
+GND*                         : G27       :        :                   :         : 6A        :                
+GND*                         : G28       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : G29       : power  :                   : 2.5V    : 6A        :                
+GND*                         : G30       :        :                   :         : 6A        :                
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : B2L       :                
+GXB_NC                       : H4        :        :                   :         : B2L       :                
+GND                          : H5        : gnd    :                   :         :           :                
+VCCIO8A                      : H6        : power  :                   : 2.5V    : 8A        :                
+GND*                         : H7        :        :                   :         : 8A        :                
+GND*                         : H8        :        :                   :         : 8A        :                
+VCCBAT                       : H9        : power  :                   : 1.2V    :           :                
+VCC_AUX                      : H10       : power  :                   : 2.5V    :           :                
+GND                          : H11       : gnd    :                   :         :           :                
+GND*                         : H12       :        :                   :         : 8A        :                
+GND*                         : H13       :        :                   :         : 8A        :                
+GND*                         : H14       :        :                   :         : 8A        :                
+GND*                         : H15       :        :                   :         : 8A        :                
+VCCIO7D_HPS                  : H16       : power  :                   : 2.5V    : 7D        :                
+GND*                         : H17       :        :                   :         : 7C        :                
+GND*                         : H18       :        :                   :         : 7B        :                
+GND*                         : H19       :        :                   :         : 7B        :                
+GND*                         : H20       :        :                   :         : 7A        :                
+VCCIO7A_HPS                  : H21       : power  :                   : 2.5V    : 7A        :                
+HPS_TCK                      : H22       :        :                   :         : 7A        :                
+GND*                         : H23       :        :                   :         : 7A        :                
+GND*                         : H24       :        :                   :         : 6A        :                
+GND*                         : H25       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : H26       : power  :                   : 2.5V    : 6A        :                
+GND*                         : H27       :        :                   :         : 6A        :                
+GND*                         : H28       :        :                   :         : 6A        :                
+GND*                         : H29       :        :                   :         : 6A        :                
+GND*                         : H30       :        :                   :         : 6A        :                
+GND                          : J1        :        :                   :         : B2L       :                
+GND                          : J2        :        :                   :         : B2L       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+nCONFIG                      : J5        :        :                   :         : 9A        :                
+GND                          : J6        :        :                   :         : 9A        :                
+GND*                         : J7        :        :                   :         : 8A        :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND*                         : J9        :        :                   :         : 8A        :                
+GND*                         : J10       :        :                   :         : 8A        :                
+VCCPGM                       : J11       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+GND*                         : J12       :        :                   :         : 8A        :                
+VCCIO8A                      : J13       : power  :                   : 2.5V    : 8A        :                
+GND*                         : J14       :        :                   :         : 8A        :                
+DNU                          : J15       :        :                   :         :           :                
+VCC_AUX                      : J16       : power  :                   : 2.5V    :           :                
+VCCPD7C_HPS                  : J17       : power  :                   : 2.5V    : 7C        :                
+GND                          : J18       : gnd    :                   :         :           :                
+GND*                         : J19       :        :                   :         : 7B        :                
+VCCRSTCLK_HPS                : J20       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+VCC_AUX_SHARED               : J21       : power  :                   : 2.5V    :           :                
+GND                          : J22       :        :                   :         : 7A        :                
+GND*                         : J23       :        :                   :         : 6A        :                
+GND*                         : J24       :        :                   :         : 6A        :                
+GND*                         : J25       :        :                   :         : 6A        :                
+GND*                         : J26       :        :                   :         : 6A        :                
+GND*                         : J27       :        :                   :         : 6A        :                
+GND                          : J28       : gnd    :                   :         :           :                
+GND*                         : J29       :        :                   :         : 6A        :                
+GND*                         : J30       :        :                   :         : 6A        :                
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : B2L       :                
+GXB_NC                       : K4        :        :                   :         : B2L       :                
+GND                          : K5        : gnd    :                   :         :           :                
+MSEL1                        : K6        :        :                   :         : 9A        :                
+GND*                         : K7        :        :                   :         : 8A        :                
+GND*                         : K8        :        :                   :         : 8A        :                
+VCCA_FPLL                    : K9        : power  :                   : 2.5V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCPD8A                      : K11       : power  :                   : 2.5V    : 8A        :                
+GND*                         : K12       :        :                   :         : 8A        :                
+VCCPD8A                      : K13       : power  :                   : 2.5V    : 8A        :                
+GND*                         : K14       :        :                   :         : 8A        :                
+GND                          : K15       : gnd    :                   :         :           :                
+VCCPD7D_HPS                  : K16       : power  :                   : 2.5V    : 7D        :                
+GND*                         : K17       :        :                   :         : 7B        :                
+VCCPD7B_HPS                  : K18       : power  :                   : 2.5V    : 7B        :                
+VCCPD7A_HPS                  : K19       : power  :                   : 2.5V    : 7A        :                
+GND                          : K20       : gnd    :                   :         :           :                
+GND*                         : K21       :        :                   :         : 6A        :                
+GND*                         : K22       :        :                   :         : 6A        :                
+GND*                         : K23       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : K24       : power  :                   : 2.5V    : 6A        :                
+GND                          : K25       : gnd    :                   :         :           :                
+GND*                         : K26       :        :                   :         : 6A        :                
+GND*                         : K27       :        :                   :         : 6A        :                
+GND*                         : K28       :        :                   :         : 6A        :                
+GND*                         : K29       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : K30       : power  :                   : 2.5V    : 6A        :                
+GND                          : L1        :        :                   :         : B2L       :                
+GND                          : L2        :        :                   :         : B2L       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+VCCL_GXBL                    : L5        : power  :                   : 1.1V    :           :                
+GND                          : L6        : gnd    :                   :         :           :                
+MSEL3                        : L7        :        :                   :         : 9A        :                
+MSEL0                        : L8        :        :                   :         : 9A        :                
+MSEL4                        : L9        :        :                   :         : 9A        :                
+VCCPD8A                      : L10       : power  :                   : 2.5V    : 8A        :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCPD8A                      : L12       : power  :                   : 2.5V    : 8A        :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCPD8A                      : L14       : power  :                   : 2.5V    : 8A        :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCC_HPS                      : L16       : power  :                   : 1.1V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCC_HPS                      : L18       : power  :                   : 1.1V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCC_HPS                      : L20       : power  :                   : 1.1V    :           :                
+VCCPLL_HPS                   : L21       : power  :                   : 2.5V    :           :                
+GND                          : L22       : gnd    :                   :         :           :                
+GND*                         : L23       :        :                   :         : 6A        :                
+GND*                         : L24       :        :                   :         : 6A        :                
+GND*                         : L25       :        :                   :         : 6A        :                
+GND*                         : L26       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : L27       : power  :                   : 2.5V    : 6A        :                
+GND*                         : L28       :        :                   :         : 6A        :                
+GND*                         : L29       :        :                   :         : 6A        :                
+GND*                         : L30       :        :                   :         : 6A        :                
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : B2L       :                
+GXB_NC                       : M4        :        :                   :         : B2L       :                
+GND                          : M5        : gnd    :                   :         :           :                
+VCCE_GXBL                    : M6        : power  :                   : 1.1V    :           :                
+GND                          : M7        : gnd    :                   :         :           :                
+GND                          : M8        : gnd    :                   :         :           :                
+VCC                          : M9        : power  :                   : 1.1V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCC                          : M11       : power  :                   : 1.1V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCC                          : M13       : power  :                   : 1.1V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCC_HPS                      : M15       : power  :                   : 1.1V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+GND*                         : M17       :        :                   :         : 7D        :                
+GND                          : M18       : gnd    :                   :         :           :                
+GND*                         : M19       :        :                   :         : 6A        :                
+GND                          : M20       : gnd    :                   :         :           :                
+VCCPD6A6B_HPS                : M21       : power  :                   : 2.5V    : 6A, 6B    :                
+GND*                         : M22       :        :                   :         : 6A        :                
+GND*                         : M23       :        :                   :         : 6A        :                
+VCCIO6A_HPS                  : M24       : power  :                   : 2.5V    : 6A        :                
+GND*                         : M25       :        :                   :         : 6A        :                
+GND*                         : M26       :        :                   :         : 6A        :                
+GND*                         : M27       :        :                   :         : 6A        :                
+GND*                         : M28       :        :                   :         : 6A        :                
+GND                          : M29       : gnd    :                   :         :           :                
+GND*                         : M30       :        :                   :         : 6A        :                
+GND                          : N1        :        :                   :         : B2L       :                
+GND                          : N2        :        :                   :         : B2L       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : N5        : power  :                   : 1.1V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCA_FPLL                    : N7        : power  :                   : 2.5V    :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCC                          : N10       : power  :                   : 1.1V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCC                          : N12       : power  :                   : 1.1V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCC                          : N14       : power  :                   : 1.1V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+GND*                         : N16       :        :                   :         : 7D        :                
+GND                          : N17       : gnd    :                   :         :           :                
+GND*                         : N18       :        :                   :         : 6A        :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCC_HPS                      : N20       : power  :                   : 1.1V    :           :                
+VCCIO6A_HPS                  : N21       : power  :                   : 2.5V    : 6A        :                
+VCCPD6A6B_HPS                : N22       : power  :                   : 2.5V    : 6A, 6B    :                
+GND*                         : N23       :        :                   :         : 6A        :                
+GND*                         : N24       :        :                   :         : 6A        :                
+GND*                         : N25       :        :                   :         : 6A        :                
+GND                          : N26       : gnd    :                   :         :           :                
+GND*                         : N27       :        :                   :         : 6B        :                
+GND*                         : N28       :        :                   :         : 6B        :                
+GND*                         : N29       :        :                   :         : 6B        :                
+GND*                         : N30       :        :                   :         : 6B        :                
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : B1L       :                
+GXB_NC                       : P4        :        :                   :         : B1L       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCH_GXBL                    : P6        : power  :                   : 2.5V    :           :                
+GND                          : P7        : gnd    :                   :         :           :                
+GND                          : P8        :        :                   :         : B2L       :                
+GND                          : P9        :        :                   :         : B2L       :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCC                          : P11       : power  :                   : 1.1V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCC                          : P13       : power  :                   : 1.1V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCC_HPS                      : P15       : power  :                   : 1.1V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCC_HPS                      : P17       : power  :                   : 1.1V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCC_HPS                      : P19       : power  :                   : 1.1V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+VCCPD6A6B_HPS                : P21       : power  :                   : 2.5V    : 6A, 6B    :                
+GND*                         : P22       :        :                   :         : 6B        :                
+VCCIO6B_HPS                  : P23       : power  :                   : 2.5V    : 6B        :                
+GND*                         : P24       :        :                   :         : 6B        :                
+GND*                         : P25       :        :                   :         : 6B        :                
+GND*                         : P26       :        :                   :         : 6B        :                
+GND*                         : P27       :        :                   :         : 6B        :                
+VCCIO6B_HPS                  : P28       : power  :                   : 2.5V    : 6B        :                
+GND*                         : P29       :        :                   :         : 6B        :                
+GND*                         : P30       :        :                   :         : 6B        :                
+GND                          : R1        :        :                   :         : B1L       :                
+GND                          : R2        :        :                   :         : B1L       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+VCCL_GXBL                    : R5        : power  :                   : 1.1V    :           :                
+GND                          : R6        : gnd    :                   :         :           :                
+VCCA_FPLL                    : R7        : power  :                   : 2.5V    :           :                
+GND                          : R8        : gnd    :                   :         :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCC                          : R10       : power  :                   : 1.1V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCC                          : R12       : power  :                   : 1.1V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCC                          : R14       : power  :                   : 1.1V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCC_HPS                      : R16       : power  :                   : 1.1V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+GND*                         : R18       :        :                   :         : 6B        :                
+GND*                         : R19       :        :                   :         : 6B        :                
+VCCPD6A6B_HPS                : R20       : power  :                   : 2.5V    : 6A, 6B    :                
+GND*                         : R21       :        :                   :         : 6B        :                
+GND*                         : R22       :        :                   :         : 6B        :                
+VCCPD6A6B_HPS                : R23       : power  :                   : 2.5V    : 6A, 6B    :                
+GND*                         : R24       :        :                   :         : 6B        :                
+VCCIO6B_HPS                  : R25       : power  :                   : 2.5V    : 6B        :                
+GND*                         : R26       :        :                   :         : 6B        :                
+GND*                         : R27       :        :                   :         : 6B        :                
+GND*                         : R28       :        :                   :         : 6B        :                
+GND*                         : R29       :        :                   :         : 6B        :                
+GND                          : R30       : gnd    :                   :         :           :                
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : B1L       :                
+GXB_NC                       : T4        :        :                   :         : B1L       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCE_GXBL                    : T6        : power  :                   : 1.1V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+GND                          : T8        :        :                   :         : B1L       :                
+GND                          : T9        :        :                   :         : B1L       :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCC                          : T11       : power  :                   : 1.1V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCC                          : T13       : power  :                   : 1.1V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCC_HPS                      : T17       : power  :                   : 1.1V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCC_HPS                      : T19       : power  :                   : 1.1V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+GND*                         : T21       :        :                   :         : 6B        :                
+VCCIO6B_HPS                  : T22       : power  :                   : 2.5V    : 6B        :                
+GND*                         : T23       :        :                   :         : 6B        :                
+GND*                         : T24       :        :                   :         : 6B        :                
+GND*                         : T25       :        :                   :         : 6B        :                
+GND*                         : T26       :        :                   :         : 6B        :                
+GND                          : T27       : gnd    :                   :         :           :                
+GND*                         : T28       :        :                   :         : 6B        :                
+GND*                         : T29       :        :                   :         : 6B        :                
+GND*                         : T30       :        :                   :         : 6B        :                
+GND                          : U1        :        :                   :         : B1L       :                
+GND                          : U2        :        :                   :         : B1L       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : U5        : power  :                   : 1.1V    :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+DCLK                         : U7        :        :                   :         : 3A        :                
+TDI                          : U8        : input  :                   :         : 3A        :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCC                          : U10       : power  :                   : 1.1V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCC                          : U12       : power  :                   : 1.1V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCC                          : U14       : power  :                   : 1.1V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCC_HPS                      : U16       : power  :                   : 1.1V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCC_HPS                      : U18       : power  :                   : 1.1V    :           :                
+VCCIO6B_HPS                  : U19       : power  :                   : 2.5V    : 6B        :                
+GND*                         : U20       :        :                   :         : 6B        :                
+VCC                          : U21       : power  :                   : 1.1V    :           :                
+GND                          : U22       : gnd    :                   :         :           :                
+VCCPD5B                      : U23       : power  :                   : 2.5V    : 5B        :                
+GND                          : U24       : gnd    :                   :         :           :                
+GND*                         : U25       :        :                   :         : 6B        :                
+GND*                         : U26       :        :                   :         : 6B        :                
+GND*                         : U27       :        :                   :         : 6B        :                
+GND*                         : U28       :        :                   :         : 6B        :                
+GND                          : U29       : gnd    :                   :         :           :                
+GND*                         : U30       :        :                   :         : 6B        :                
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : B1L       :                
+GXB_NC                       : V4        :        :                   :         : B1L       :                
+GND                          : V5        : gnd    :                   :         :           :                
+VCCH_GXBL                    : V6        : power  :                   : 2.5V    :           :                
+GND                          : V7        : gnd    :                   :         :           :                
+VCCA_FPLL                    : V8        : power  :                   : 2.5V    :           :                
+TMS                          : V9        : input  :                   :         : 3A        :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCC                          : V11       : power  :                   : 1.1V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCC                          : V13       : power  :                   : 1.1V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCC                          : V15       : power  :                   : 1.1V    :           :                
+estado[1]                    : V16       : output : 2.5 V             :         : 4A        : N              
+sync_b                       : V17       : output : 2.5 V             :         : 4A        : N              
+segments[1]                  : V18       : output : 2.5 V             :         : 4A        : Y              
+GND                          : V19       : gnd    :                   :         :           :                
+GND*                         : V20       :        :                   :         : 6B        :                
+GND                          : V21       : gnd    :                   :         :           :                
+VCCPD5A                      : V22       : power  :                   : 2.5V    : 5A        :                
+GND*                         : V23       :        :                   :         : 5A        :                
+VCCPD5A                      : V24       : power  :                   : 2.5V    : 5A        :                
+GND*                         : V25       :        :                   :         : 5B        :                
+VCCIO6B_HPS                  : V26       : power  :                   : 2.5V    : 6B        :                
+GND*                         : V27       :        :                   :         : 6B        :                
+GND*                         : V28       :        :                   :         : 6B        :                
+GND*                         : V29       :        :                   :         : 6B        :                
+GND*                         : V30       :        :                   :         : 6B        :                
+GND                          : W1        :        :                   :         : B1L       :                
+GND                          : W2        :        :                   :         : B1L       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+VCCL_GXBL                    : W5        : power  :                   : 1.1V    :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+GND                          : W7        :        :                   :         : B0L       :                
+GND                          : W8        :        :                   :         : B0L       :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCC                          : W10       : power  :                   : 1.1V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCC                          : W12       : power  :                   : 1.1V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCC                          : W14       : power  :                   : 1.1V    :           :                
+GND*                         : W15       :        :                   :         : 3B        :                
+GND*                         : W16       :        :                   :         : 4A        :                
+segments[0]                  : W17       : output : 2.5 V             :         : 4A        : Y              
+GND                          : W18       : gnd    :                   :         :           :                
+GND*                         : W19       :        :                   :         : 4A        :                
+GND*                         : W20       :        :                   :         : 5A        :                
+GND*                         : W21       :        :                   :         : 5A        :                
+GND*                         : W22       :        :                   :         : 5A        :                
+VCCIO5A                      : W23       : power  :                   : 2.5V    : 5A        :                
+GND*                         : W24       :        :                   :         : 5A        :                
+GND*                         : W25       :        :                   :         : 5B        :                
+GND*                         : W26       :        :                   :         : 6B        :                
+GND*                         : W27       :        :                   :         : 6B        :                
+GND                          : W28       : gnd    :                   :         :           :                
+GND*                         : W29       :        :                   :         : 6B        :                
+GND*                         : W30       :        :                   :         : 6B        :                
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : B0L       :                
+GXB_NC                       : Y4        :        :                   :         : B0L       :                
+GND                          : Y5        : gnd    :                   :         :           :                
+VCCE_GXBL                    : Y6        : power  :                   : 1.1V    :           :                
+GND                          : Y7        : gnd    :                   :         :           :                
+GND                          : Y8        : gnd    :                   :         :           :                
+VCC                          : Y9        : power  :                   : 1.1V    :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCC                          : Y11       : power  :                   : 1.1V    :           :                
+GND                          : Y12       : gnd    :                   :         :           :                
+VCC                          : Y13       : power  :                   : 1.1V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+GND                          : Y15       : gnd    :                   :         :           :                
+GND*                         : Y16       :        :                   :         : 3B        :                
+GND*                         : Y17       :        :                   :         : 4A        :                
+GND*                         : Y18       :        :                   :         : 4A        :                
+GND*                         : Y19       :        :                   :         : 4A        :                
+GND                          : Y20       : gnd    :                   :         :           :                
+GND*                         : Y21       :        :                   :         : 5A        :                
+VCCA_FPLL                    : Y22       : power  :                   : 2.5V    :           :                
+GND*                         : Y23       :        :                   :         : 5A        :                
+GND*                         : Y24       :        :                   :         : 5A        :                
+GND                          : Y25       : gnd    :                   :         :           :                
+GND*                         : Y26       :        :                   :         : 5B        :                
+p2_start_raw                 : Y27       : input  : 2.5 V             :         : 5B        : Y              
+GND*                         : Y28       :        :                   :         : 6B        :                
+GND*                         : Y29       :        :                   :         : 6B        :                
+GND                          : Y30       : gnd    :                   :         :           :                
